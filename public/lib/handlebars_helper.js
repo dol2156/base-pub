@@ -324,25 +324,19 @@ Handlebars.registerHelper('DV2', function (p1, options) {
 /************************************************
  페이지 렌더링
  *************************************************/
-(() => {
-  const tpl_list = document.querySelectorAll(`script[type="text/x-handlebars-template"]`);
-  let tpl = '';
-  const render_data = {};
-  tpl_list.forEach((el_script, idx) => {
-    const src = el_script.src;
-    if (src) {
-      tpl = Handlebars.loadHtml(src);
-    } else {
-      tpl = el_script.innerHTML;
-    }
+const Include = (path, render_data) => {
+  const el_script = document.currentScript;
+  console.log(`el_script == `, el_script);
 
-    //Compile the template
-    const compiled_template = Handlebars.compile(tpl);
+  const html_str = Handlebars.loadHtml(path);
 
-    //Render the data into the template
-    const rendered = compiled_template(render_data);
+  //Compile the template
+  const compiled_template = Handlebars.compile(html_str);
 
-    el_script.insertAdjacentHTML('afterend', rendered);
-    el_script.remove();
-  });
-})();
+  //Render the data into the template
+  const rendered = compiled_template(render_data);
+
+  document.write(rendered);
+
+  el_script.remove();
+};
