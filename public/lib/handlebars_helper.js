@@ -7,8 +7,9 @@ Handlebars.logger.level = 'debug';
  * @constructor
  */
 const Include = (path, render_data) => {
+  if (typeof render_data === 'undefined') render_data = {};
+
   const el_script = document.currentScript;
-  console.log(`el_script == `, el_script);
 
   const html_str = Handlebars.loadHtml(path);
 
@@ -62,8 +63,6 @@ Handlebars.loadHtml = (path, convert) => {
 
   return html_str;
 };
-
-
 
 /**
  * short uid 반환
@@ -152,7 +151,6 @@ Handlebars.registerHelper('ARR', function (array_str, options) {
 Handlebars.registerHelper('ON', function (active_index, custom_str, options) {
   const { index } = this;
   if (typeof custom_str != 'string') custom_str = 'On';
-
   const result = active_index === index ? custom_str : '';
   return result;
 });
@@ -346,3 +344,22 @@ Handlebars.registerHelper('DV2', function (p1, options) {
   console.log(options);
 });
 
+/**
+ * 기본값 할당
+ * {{DF this 'array' '1|2|3'}}
+ */
+Handlebars.registerHelper('DF', function (object, node_name, value, options) {
+  if (value.name !== 'DF') {
+    if (typeof object === 'object') {
+      if (typeof object[node_name] === 'undefined') {
+        object[node_name] = value;
+      } else {
+        // console.warn(`Handlebars : DF : ${node_name}에 이미 값이 할당 되어 있습니다.`);
+        // console.log(`${node_name} == `, object[node_name]);
+      }
+    }
+  } else {
+    // value 가 할당 되지 않았을 경우 경고
+    console.error('Handlebars : DF : value 가 필요합니다.');
+  }
+});

@@ -98,8 +98,20 @@
   --tw-backdrop-sepia:  
 }
 
+.absolute {
+  position: absolute
+}
+
+.relative {
+  position: relative
+}
+
 .flex {
   display: flex
+}
+
+.hidden {
+  display: none
 }
 
 .text-3xl {
@@ -113,4 +125,8 @@
 
 .underline {
   text-decoration-line: underline
+}
+
+.New>.\[\.New\>\&\]\:block {
+  display: block
 }

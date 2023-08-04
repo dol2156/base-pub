@@ -1,5 +1,21 @@
 <footer>
-  {{#LOOP 10}}
-    <div>Footer</div>
-  {{/LOOP}}
+  <div class='FixedBox'>
+    <div class='FixedShell' style='bottom:0;'>
+      {{!--      {{> 'module/BottomNavi_1' }}--}}
+      <script>Include('/html/parts/component/BottomNavi_1-a.hbs');</script>
+      <div class='SafeArea' style='background-color:white;'></div>
+    </div>
+  </div>
 </footer>
+{{!
+<footer data-only-view="MO" class="RR">
+  <div style="height: var(--footer-hei); display: flex; align-items: center; justify-content: center; gap: 0px">
+    MO Footer
+  </div>
+</footer>
+<footer data-only-view="PC" class="RR">
+  <div style="height: var(--footer-hei); display: flex; align-items: center; justify-content: center; gap: 0px">
+    PC Footer
+  </div>
+</footer>
+}}
