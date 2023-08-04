@@ -1,6 +1,29 @@
 Handlebars.logger.level = 'debug';
 
 /**
+ *
+ * @param path
+ * @param render_data
+ * @constructor
+ */
+const Include = (path, render_data) => {
+  const el_script = document.currentScript;
+  console.log(`el_script == `, el_script);
+
+  const html_str = Handlebars.loadHtml(path);
+
+  //Compile the template
+  const compiled_template = Handlebars.compile(html_str);
+
+  //Render the data into the template
+  const rendered = compiled_template(render_data);
+
+  document.write(rendered);
+
+  el_script.remove();
+};
+
+/**
  * 동기 HTML 로드
  * @param path
  * @param convert
@@ -39,6 +62,8 @@ Handlebars.loadHtml = (path, convert) => {
 
   return html_str;
 };
+
+
 
 /**
  * short uid 반환
@@ -321,22 +346,3 @@ Handlebars.registerHelper('DV2', function (p1, options) {
   console.log(options);
 });
 
-/************************************************
- 페이지 렌더링
- *************************************************/
-const Include = (path, render_data) => {
-  const el_script = document.currentScript;
-  console.log(`el_script == `, el_script);
-
-  const html_str = Handlebars.loadHtml(path);
-
-  //Compile the template
-  const compiled_template = Handlebars.compile(html_str);
-
-  //Render the data into the template
-  const rendered = compiled_template(render_data);
-
-  document.write(rendered);
-
-  el_script.remove();
-};
