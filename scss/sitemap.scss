@@ -1,0 +1,72 @@
+html {
+  background: linear-gradient(-45deg, #ee7752, #fff980, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+  height: 100vh;
+  background-attachment: fixed;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 20%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 20%;
+  }
+}
+/**/
+#Sitemap {
+  padding: 30px;
+}
+#Sitemap > ul {
+  display: grid;
+  gap: 10px;
+}
+#Sitemap > ul {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+#Sitemap > ul > li {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+#Sitemap > ul > li > *:not(ul) {
+  font-weight: 600;
+  font-size: 20px;
+}
+#Sitemap > ul > li > ul {
+}
+#Sitemap > ul > li > ul > li {
+}
+#Sitemap > ul > li > ul > li > ul {
+}
+#Sitemap > ul > li * {
+  padding: 2px;
+}
+#Sitemap > ul > li ul {
+  margin-left: 20px;
+}
+#Sitemap > ul > li a[href] {
+  padding: 5px 10px;
+  color: dodgerblue;
+  display: block;
+  border-radius: 5px;
+}
+#Sitemap > ul > li a[href]:hover {
+  background-color: gold;
+}
+/* 768px 이상 화면*/
+@media screen and (min-width: 768px) {
+  #Sitemap > ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* 1280px 이상 화면*/
+@media screen and (min-width: 1280px) {
+  #Sitemap > ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

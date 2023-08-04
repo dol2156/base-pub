@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node five-server.js",
+    "dev": "concurrently \"npm run scss:global\" \"npm run scss:sitemap\" \"npm run twc\" \"npm run fs\"",
+    "scss:sitemap":"sass -w scss/sitemap.scss public/css/sitemap.css",
+    "scss:global":"sass -w scss/global.scss public/css/global.css",
+    "twc":"npx tailwindcss -i scss/input.css -o public/css/output.css --watch",
+    "fs": "node five-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +23,11 @@
   "homepage": "https://github.com/ksm-friends/base-include#readme",
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
+    "concurrently": "^8.2.0",
     "five-server": "^0.3.1",
     "prettier": "^3.0.1",
     "prettier-plugin-tailwindcss": "^0.4.1",
+    "sass": "^1.64.0",
     "tailwindcss": "^3.3.3"
   }
 }

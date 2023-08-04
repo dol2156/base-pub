@@ -1,0 +1,19 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_Small">
+<g id="Group 2608576">
+<g id="Group 2608575">
+<path id="Union" d="M13.2064 9.28992C13.2076 9.31191 13.2101 9.3335 13.214 9.35462V11.3068H2.13574V9.35461C2.13961 9.3335 2.14216 9.3119 2.1433 9.28992C2.29488 6.36669 4.71364 4.04276 7.67486 4.04276C10.6361 4.04276 13.0548 6.36669 13.2064 9.28992Z" stroke="#FF3838" stroke-linejoin="round"/>
+<path id="Union_2" d="M8.25793 5.70477C9.89596 5.9587 11.1226 7.22698 11.3863 8.76289" stroke="#FF3838" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Rectangle 4392">
+<mask id="path-3-inside-1_1529_18195" fill="white">
+<rect x="1" y="10.8214" width="13.3496" height="3.17848" rx="0.5"/>
+</mask>
+<rect x="1" y="10.8214" width="13.3496" height="3.17848" rx="0.5" stroke="#FF3838" stroke-width="2" stroke-linejoin="round" mask="url(#path-3-inside-1_1529_18195)"/>
+</g>
+</g>
+<line id="Line 171" x1="2.97847" y1="3.03421" x2="3.61988" y2="3.67562" stroke="#FF3838" stroke-linecap="round"/>
+<line id="Line 172" x1="0.5" y1="-0.5" x2="1.40709" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.8241 3.03421)" stroke="#FF3838" stroke-linecap="round"/>
+<line id="Line 173" x1="0.5" y1="-0.5" x2="1.40709" y2="-0.5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 7.99268 1)" stroke="#FF3838" stroke-linecap="round"/>
+</g>
+</g>
+</svg>
