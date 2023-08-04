@@ -1,0 +1,27 @@
+{
+  "name": "base-include",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node five-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksm-friends/base-include.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksm-friends/base-include/issues"
+  },
+  "homepage": "https://github.com/ksm-friends/base-include#readme",
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "five-server": "^0.3.1",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
