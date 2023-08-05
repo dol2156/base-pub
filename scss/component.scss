@@ -1716,6 +1716,10 @@
   border: 1px solid var(--sub-border-1, #ebebeb);
   background: var(--sub-white, #fff);
 
+  &.On {
+    outline: 3px solid #ff3838;
+  }
+
   .Txt1 {
     color: #303030;
     font-size: 14px;
@@ -2118,18 +2122,32 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
-  .Title1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 8px 14px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fbeded;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: 20px;
-    background: #ff3838;
-    margin-bottom: 16px;
+
+  > article {
+    flex-direction: column;
+    align-items: stretch;
+
+    > .Txt-230806012151 {
+      color: #303030;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    > .Title1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 8px 14px;
+      font-family: 'Montserrat', sans-serif;
+      color: #fbeded;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 20px;
+      background: #ff3838;
+      margin-bottom: 16px;
+    }
   }
 }
 /**/
@@ -2174,4 +2192,58 @@
     font-weight: 600;
     line-height: 24px;
   }
+}
+/**/
+.Wrap_230806005443 {
+  padding-top: 30px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  background-color: #e03434;
+
+  .Box1 {
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 16px 30px;
+  }
+
+  .Txt1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .Txt2 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .Txt3 {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+  .Phone {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/**/
+.Text_230806010425 {
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+}
+/**/
+.Text_230806010357 {
+  display: inline-block;
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 20px;
+  background-color: #f4f4f4;
 }

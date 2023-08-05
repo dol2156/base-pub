@@ -7,47 +7,48 @@
     <style>
       html{ background-color:#f4f4f4; }
     </style>
-    <section data-seq="20230801093944101" style="background-color:#E03434;">
-      <img style="width:361px; margin-left:auto; margin-right:auto;" src="/public/icon/2308010939.png" alt=""/>
-      <div style="z-index:10; position:absolute; top:0px; left:0px; width:100%;">
-        <article class="CenterCenter" style="margin-top:30px;">
-          <div style="border-radius: 100px; background: rgba(255, 255, 255, 0.10); display:inline-block; padding:16px 30px;">
-            <div style="color:#fff; font-size:18px; font-weight:600; line-height:24px; text-align:center;">
-              오프라인에서도 <span style="color:#FFCC45;">C.point</span>를
-              <br/>
+    <section data-seq='20230801093944101'>
+      <div class='Wrap_230806005443'>
+        <article class='CenterCenter'>
+          <div class='Box1'>
+            <div class='Txt1'>
+              오프라인에서도
+              <span style='color:#FFCC45;'>C.point</span>를
+              <br />
               사용해보세요!
             </div>
           </div>
         </article>
-        <article style="text-align:center; margin-top:26px;">
-          <div style="color:#FFFFFF; font-size:16px; font-weight:600;">
+        <article style='text-align:center; margin-top:26px;'>
+          <div class='Txt2'>
             오프라인 바코드 결제란?
           </div>
-          <div style="margin-top:16px; color:#FFFFFF; font-size:12px; font-weight:600; line-height:18px;">
+          <div class='Txt3' style='margin-top:16px;'>
             충전 및 적립된 C.point를
-            <br/>
+            <br />
             오프라인에서도 사용하실 수 있습니다
           </div>
         </article>
+        <img style='margin-top:26px;' class='Phone' src='/public/icon/2308062456.png' alt='' />
       </div>
     </section>
-    <section data-seq="20230801095933673" style="padding-top:37px; padding-bottom:60px; background-color:white;">
-      <div class="HBox">
-        <div class="Inner">
-          <article style="text-align:center;">
-            <div style="color:#303030; font-size:16px; font-weight:600;">
+    <section data-seq='20230801095933673' style='padding-top:37px; padding-bottom:60px; background-color:white;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <article style='text-align:center;'>
+            <div class='Text_230806010425'>
               이용 가능 제휴사
             </div>
-            <div style="margin-top:10px; display:inline-block; color:#a6a6a6; font-size:14px; font-weight:500; padding:8px 20px; background-color:#f4f4f4;">
+            <div class='Text_230806010357' style='margin-top:10px;'>
               GS25, CU, 세븐일레븐, 미니스톱, 이마트24
             </div>
           </article>
-          <div style="margin-top:27px;">
-            <ul style="display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:16px;">
+          <div style='margin-top:27px;'>
+            <ul style='display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:16px;'>
               {{#LOOP 5}}
                 <li>
                   <div class='ImgBox_3'>
-                    <img style='width: 100%;' src='/public/image/brand/{{number}}.png' alt=''/>
+                    <img style='width: 100%;' src='/public/image/brand/{{number}}.png' alt='' />
                   </div>
                 </li>
               {{/LOOP}}
@@ -56,73 +57,87 @@
         </div>
       </div>
     </section>
-    <section data-seq="20230801100714212" style="padding-top:54px;">
-      <div class="HBox">
-        <div class="Inner">
-          <article style="text-align:center;">
-            <div style="color:#303030; font-size:16px; font-weight:600;">
+    <section data-seq='20230801100714212' style='padding-top:54px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <article style='text-align:center;'>
+            <div style='color:#303030; font-size:16px; font-weight:600;'>
               이용방법
             </div>
           </article>
-          <ul class="space-y-[14px]" style="margin-top:28px;">
+          <ul class='space-y-[14px]' style='margin-top:28px;'>
             <li>
-              {{#> 'module/StepBox_1.block' step=1 }}
-                <div style="color:#303030; text-align:center; font-size:12px; font-weight:400; line-height:20px">
-                  <strong>[지갑]</strong> 메뉴에서
-                  <br/>
-                  <p>'오프라인 바코드 결제' 버튼을 클릭해주세요</p>
-                </div>
-                <div style="margin-top:24px;">
-                  <div>
-                    {{> 'module/PointBox_3-b' }}
+              <div class='StepBox_1'>
+                <article class='CenterCenter'>
+                  <div class='Title1'>STEP 1</div>
+                  <div class='Txt-230806012151'>
+                    <strong>[지갑]</strong>
+                    메뉴에서
+                    <br />
+                    <p>'오프라인 바코드 결제' 버튼을 클릭해주세요</p>
                   </div>
-                  <div style="margin-top:20px;">
-                    {{> 'module/BarcodeBox_1-b' }}
+                  <div style='margin-top:24px;'>
+                    <div>
+                      <script>Include('/hbs/component/PointBox_3-b.hbs');</script>
+                    </div>
+                    <div style='margin-top:20px;'>
+                      <script>Include('/hbs/component/BarcodeBox_1-a.hbs', {outline:true});</script>
+                    </div>
                   </div>
-                </div>
-              {{/ 'module/StepBox_1.block' }}
+                </article>
+              </div>
             </li>
             <li>
-              {{#> 'module/StepBox_1.block' step=2 }}
-                <div style="color:#303030; text-align:center; font-size:12px; font-weight:400; line-height:20px">
-                  C.point 오프라인 사용가능 매장인지 확인해주세요
-                </div>
-                <ul style="margin-top:23px; display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:16px;">
-                  {{#LOOP 5}}
-                    <li>
-                      <div class='ImgBox_3'>
-                        <img style='width: 100%;' src='/public/image/brand/{{number}}.png' alt=''/>
-                      </div>
-                    </li>
-                  {{/LOOP}}
-                </ul>
-              {{/ 'module/StepBox_1.block' }}
+              <div class='StepBox_1'>
+                <article class='CenterCenter'>
+                  <div class='Title1'>STEP 2</div>
+                  <div class='Txt-230806012151'>
+                    C.point 오프라인 사용가능 매장인지 확인해주세요
+                  </div>
+                  <ul style='margin-top:23px; display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:16px;'>
+                    {{#LOOP 5}}
+                      <li>
+                        <div class='ImgBox_3'>
+                          <img style='width: 100%;' src='/public/image/brand/{{number}}.png' alt='' />
+                        </div>
+                      </li>
+                    {{/LOOP}}
+                  </ul>
+                </article>
+              </div>
             </li>
             <li>
-              {{#> 'module/StepBox_1.block' step=3 }}
-                <div style="color:#303030; text-align:center; font-size:12px; font-weight:400; line-height:20px">
-                  결제 바코드를 매장 직원에게 보여주세요.
-                  <br/>
-                  <span style="color:#767676">(C.point로 결제한다고 말해주시면 더욱 좋습니다)</span>
-                </div>
-                <div style="margin-top:28px;">
-                  <img style="margin-left:auto; margin-right:auto;" src="/public/image/2308011111.png" alt=""/>
-                </div>
-              {{/ 'module/StepBox_1.block' }}
+              <div class='StepBox_1'>
+                <article class='CenterCenter'>
+                  <div class='Title1'>STEP 3</div>
+                  <div class='Txt-230806012151'>
+                    결제 바코드를 매장 직원에게 보여주세요.
+                    <br />
+                    <span style='color:#767676'>(C.point로 결제한다고 말해주시면 더욱 좋습니다)</span>
+                  </div>
+                  <div style='margin-top:30px;'>
+                    <img style='margin-left:auto; margin-right:auto;' src='/public/image/2308011111.png' alt='' />
+                  </div>
+                </article>
+              </div>
             </li>
             <li>
-              {{#> 'module/StepBox_1.block' step=4 }}
-                <div style="color:#303030; text-align:center; font-size:12px; font-weight:400; line-height:20px">
-                  바코드 스캔 후 결제가 완료 되며,
-                  <br/>
-                  이용 내역은 <strong>[지갑] > [포인트 결제 내역]</strong>에서
-                  <br/>
-                  확인하실 수 있습니다.
-                </div>
-                <div style="margin-top:24px;">
-                  <img style="margin-left:auto; margin-right:auto;" src="/public/image/2308011103.png" alt=""/>
-                </div>
-              {{/ 'module/StepBox_1.block' }}
+              <div class='StepBox_1'>
+                <article class='CenterCenter'>
+                  <div class='Title1'>STEP 4</div>
+                  <div class='Txt-230806012151'>
+                    바코드 스캔 후 결제가 완료 되며,
+                    <br />
+                    이용 내역은
+                    <strong>[지갑] > [포인트 결제 내역]</strong>에서
+                    <br />
+                    확인하실 수 있습니다.
+                  </div>
+                  <div style='margin-top:24px;'>
+                    <img style='margin-left:auto; margin-right:auto;' src='/public/image/2308011103.png' alt='' />
+                  </div>
+                </article>
+              </div>
             </li>
           </ul>
         </div>
@@ -132,4 +147,4 @@
   <script>
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
-  </div>
+</div>

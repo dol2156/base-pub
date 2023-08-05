@@ -3,12 +3,12 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230731163919457" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_6-a' txt1='C.point 충전이 완료되었습니다!' }}
-          <div style="margin-top:40px;">
-            {{> 'module/InfoList_1-e' }}
+    <section data-seq='20230731163919457' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs', {txt1:'C.point 충전이 완료되었습니다!'});</script>
+          <div style='margin-top:40px;'>
+            <script>Include('/hbs/component/InfoList_1-e.hbs');</script>
           </div>
         </div>
       </div>
@@ -18,4 +18,15 @@
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='확인' style=2 }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '확인',
+        style: 2,
+        disabled:false,
+      },
+    ],
+  });
+</script>

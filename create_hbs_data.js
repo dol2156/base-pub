@@ -10,7 +10,7 @@ files.forEach((f, idx) => {
   const folder_name = path_obj.dir.split('./hbs/')[1];
   const {dir, base} = path_obj;
   path_obj.folder_name = folder_name;
-  path_obj.path = `/${dir.split('./')[1]}/${base}`;
+  path_obj.path = `${dir.split('./')[1]}/${base}`;
   arr.push(path_obj);
   
 });
