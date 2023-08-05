@@ -1653,3 +1653,98 @@
     }
   }
 }
+/**/
+.PointBox_3 {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+
+  &.Border {
+    border: 1px solid #ebebeb;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .Txt1 {
+    color: #303030;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .Txt2 {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .Box {
+    border-radius: 8px 8px 0px 0px;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    background: #f4f4f4;
+  }
+  .BoxLabel {
+    text-align: center;
+    border: 1px solid #ebebeb;
+    border-radius: 0px 0px 8px 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+/**/
+.PointBox_4 {
+  > .Head {
+    background-color: #e03434;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 30px 20px;
+  }
+
+  > .Body {
+    padding: 24px 20px;
+    border: 1px solid #ebebeb;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+/**/
+.BarcodeBox_1 {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--sub-border-1, #ebebeb);
+  background: var(--sub-white, #fff);
+
+  .Txt1 {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+/**/
+.LinkList_1 {
+  background-color: white;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+
+  > ul {
+    > li {
+      a {
+        color: #303030;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px;
+        height: 60px;
+        padding: 0 16px;
+      }
+    }
+
+    > li + li {
+      border-top: 1px solid #ebebeb;
+    }
+  }
+}
