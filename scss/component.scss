@@ -1596,3 +1596,60 @@
     font-weight: 400;
   }
 }
+/**/
+.ProfileBox_1 {
+  background-color: #e03434;
+  border-radius: 8px;
+  padding: 21px 26px;
+
+  .Txt1 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .Thumb {
+    width: 58px;
+    aspect-ratio: 1;
+    border: 1px solid #ebebeb;
+    border-radius: 12px;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+}
+/**/
+.InfoBox_1 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  > * {
+    flex: 1;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    .Txt1 {
+      color: #767676;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .Txt2 {
+      color: #303030;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 14px;
+    }
+
+    + * {
+      border-left: 1px solid #ebebeb;
+    }
+  }
+}
