@@ -1,5 +1,28 @@
 Handlebars.logger.level = 'debug';
 
+let PageName;
+(() => {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  PageName = urlParams.get('page');
+  if(!PageName) PageName = '_pub_sitemap';
+})();
+if (PageName) {
+  /**
+   * 문서 타이틀 지정
+   */
+  const setDocTitle = () => {
+    const current_page = window.location;
+    MENU_DATA_ORI.forEach((obj, idx) => {
+      if (PageName == obj.PAGE) {
+        document.title = obj.뎁스1 || obj.뎁스2 || obj.뎁스3;
+      }
+    });
+  };
+  setDocTitle();
+}
+
+
 /**
  *
  * @param path
@@ -23,6 +46,14 @@ const Include = (path, render_data) => {
 
   el_script.remove();
 };
+
+/**
+ * 페이지 컨텐츠 Write
+ * @constructor
+ */
+const LoadPage = () => {
+  Include(`/hbs/page/${PageName}.hbs`, {window});
+}
 
 /**
  * 동기 HTML 로드

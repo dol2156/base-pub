@@ -16,5 +16,5 @@ files.forEach((f, idx) => {
 });
 arr = _.groupBy(arr, 'folder_name');
 
-const file_txt = `const HBS_DATA = ${JSON.stringify(arr)};`;
+const file_txt = `var HBS_DATA = ${JSON.stringify(arr)};`;
 FileUtil.writeFile('./public/data/HBS_DATA.js', file_txt);
