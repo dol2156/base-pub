@@ -32,6 +32,29 @@
   }
 }
 /**/
+.TopActionBar_2 {
+  > .Inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    padding-left: 24px;
+    padding-right: 20px;
+    height: 56px;
+  }
+
+  .PageTitle {
+    color: var(--text-color1);
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+/**/
+.TopActionBar_3 {
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+}
+/**/
 .TabBar_1 {
   background-color: white;
   display: flex;
@@ -421,10 +444,12 @@
 }
 /**/
 .ProductList_1 {
-  > li {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #ebebeb;
+  > ul {
+    > li {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ebebeb;
+    }
   }
 }
 /**/
@@ -672,13 +697,13 @@
 }
 /**/
 .AlertBox_1 {
-  width:100%;
+  width: 100%;
   text-align: center;
   border: 1px solid #ebebeb;
   border-radius: 8px;
   background: #f4f4f4;
   padding: 12px 10px;
-  font-weight:500;
+  font-weight: 500;
   &.Style1 {
     background-color: #f2f5ff;
   }
@@ -698,7 +723,7 @@
   border-width: 1px;
   border-style: solid;
   padding: 0px 10px;
-  height:26px;
+  height: 26px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -741,7 +766,7 @@
 }
 /**/
 .EmptyList_1 {
-  width:100%;
+  width: 100%;
   padding-top: 90px;
   padding-bottom: 90px;
 
@@ -761,4 +786,52 @@
     line-height: 20px;
   }
 }
+/**/
+.FilterBtnBox_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  > button {
+    flex: 1;
+  }
+}
+/**/
+.NotiItemList_1 {
+  > ul {
+    > li {
+      .Txt1 {
+        color: #a6a6a6;
+        font-size: 12px;
+        font-weight: 400;
+      }
 
+      .Txt2 {
+        color: #303030;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .Txt3 {
+        color: #767676;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+
+      + li {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+/**/
+.NotiItem_1 {
+  border-radius: 8px;
+  border: 1px solid var(--sub-border-1, #ebebeb);
+  background: var(--sub-white, #ffffff);
+  padding: 20px 16px;
+  &.On {
+    border-color: #ff3838;
+  }
+}
