@@ -188,6 +188,52 @@
   aspect-ratio: 1/1;
   background-color: #f4f4f4;
   border-radius: 8px;
+
+  .New {
+    z-index: 10;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 14px;
+  }
+
+  .Like {
+    z-index: 10;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+  }
+
+  .Rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    border-radius: 6px;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #fe3839;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .DDay {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    background-color: #ff3838;
+    border-radius: 4px;
+  }
 }
 /**/
 .ProductInfo_1 {
@@ -402,5 +448,13 @@
     color: #303030;
     font-size: 14px;
     font-weight: 600;
+  }
+}
+/**/
+.ProductList_1 {
+  > li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ebebeb;
   }
 }
