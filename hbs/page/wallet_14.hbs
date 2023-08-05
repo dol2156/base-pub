@@ -6,10 +6,10 @@
     <section data-seq="20230801163708261" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_6-a' txt1='본인 명의의 계좌번호를 입력해주세요.' }}
+          <script>Include('/hbs/component/TitleBox_1-a.hbs', {txt1:'본인 명의의 계좌번호를 입력해주세요.'});</script>
 
           <div style="margin-top:30px;">
-            {{> 'module/TitleBox_5-a' txt1='은행선택' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs',{txt1:'은행선택'});</script>
             <div style="margin-top:8px;">
               <select class="SelectUi Style1 w-full" data-form-hei="Md">
                 <option value="aaa">하나은행</option>
@@ -19,7 +19,7 @@
             </div>
           </div>
           <div style="margin-top:40px;">
-            {{> 'module/TitleBox_5-a' txt1='계좌번호' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs',{txt1:'계좌번호'});</script>
             <div style="margin-top:8px;">
               <div class="InputUi Style1 w-full" data-form-hei="Md">
                 <input placeholder="계좌번호를 입력해주세요.">
@@ -38,12 +38,12 @@
               <input class="CheckBoxUi Style2" type="checkbox" data-size="Lg">
               <div class="LabalUi">전체동의</div>
             </label>
-            <article style="margin-top:20px; display:flex; gap:8px; flex-direction:column;">
+            <article style="margin-top:20px;">
               <label class="CenterLeft">
                 <input class="CheckBoxUi Style2" type="checkbox" data-size="Md" checked>
                 <div class="LabalUi">(필수) 개인정보 수집 및 이용동의</div>
               </label>
-              <label class="CenterLeft">
+              <label class="CenterLeft" style="margin-top:8px;">
                 <input class="CheckBoxUi Style2" type="checkbox" data-size="Md">
                 <div class="LabalUi">(필수) 개인정보 제3자 제공 동의</div>
               </label>
@@ -57,4 +57,15 @@
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='다음' style=2 }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '다음',
+        style: 2,
+        disabled:false,
+      },
+    ],
+  });
+</script>
