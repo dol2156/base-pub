@@ -6,16 +6,24 @@
     <section data-seq="20230801200939992" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_6-a' txt1='계좌등록이 완료 되었습니다.' }}
+          <script>Include('/hbs/component/TitleBox_1-a.hbs', {txt1:'계좌등록이 완료 되었습니다.'});</script>
           <div style="margin-top:30px; position:relative;">
-            {{> 'module/InfoBox_2-c' }}
+            <script>Include('/hbs/component/InfoBox_2-c.hbs');</script>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <script>
-    Include('/hbs/layout/Footer_1-a.hbs');
-  </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='확인' style=1 }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '확인',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
