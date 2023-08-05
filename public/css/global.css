@@ -300,7 +300,7 @@ strong {
   gap: 0px;
   padding-left: 10px;
   padding-right: 10px;
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
   height: 50px;
 }
 .TabBar_1 > button {
@@ -316,10 +316,10 @@ strong {
   font-weight: 600;
 }
 .TabBar_1 > button.On {
-  color: #FF3838;
+  color: #ff3838;
 }
 .TabBar_1 > button.On:after {
-  background-color: #FF3838;
+  background-color: #ff3838;
   width: 100%;
   height: 2px;
   bottom: -1px;
@@ -357,7 +357,7 @@ strong {
   font-weight: 400;
 }
 .BottomNavi_1 button.On .Label {
-  color: #EA2C2C;
+  color: #ea2c2c;
   font-weight: 600;
 }
 
@@ -383,7 +383,7 @@ strong {
 .ButtonList_1 button .Icon {
   width: 100%;
   aspect-ratio: 1/1;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -411,12 +411,139 @@ strong {
   background: #ebebeb;
 }
 
+/**/
+.Title_1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/**/
+.Title_2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #303030;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/**/
+.Title_3 {
+  color: #767676;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/**/
+.ImgBox_1 {
+  padding: 4px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+/**/
+.ProductInfo_1 {
+  background-color: white;
+}
+.ProductInfo_1 .Txt1 {
+  color: #a6a6a6;
+  font-size: 10px;
+  font-weight: 400;
+}
+.ProductInfo_1 .Txt1-1 {
+  color: #a6a6a6;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ProductInfo_1 .Txt2 {
+  color: #303030;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt2-1 {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt3 {
+  color: #303030;
+  font-size: 10px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt3-1 {
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt3-2 {
+  color: #303030;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt4 {
+  color: #ff3838;
+  font-size: 10px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt4-1 {
+  color: #ff3838;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt4-2 {
+  color: #ff3838;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ProductInfo_1 .Txt5 {
+  color: #a6a6a6;
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.ProductInfo_1 .Txt5-1 {
+  color: #a6a6a6;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.ProductInfo_1 .Txt6 {
+  color: #a6a6a6;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ProductInfo_1 .Txt7 {
+  color: #a6a6a6;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .BannerSwiper_1 {
   position: relative;
   width: 100%;
 }
 .BannerSwiper_1 .swiper-slide {
   width: 88.88%;
+}
+
+/**/
+.ProductSwiper_1 {
+  position: relative;
+  padding-left: var(--contents-side-padding) !important;
+  padding-right: var(--contents-side-padding) !important;
 }
 
 :root {
@@ -814,6 +941,100 @@ input[type=radio][data-size=Lg] + .LabalUi {
 }
 .ToggleUi.Style1[disabled] {
   opacity: 0.4;
+}
+
+.Btn_1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/**/
+.Btn_2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color1);
+}
+
+/**/
+.Btn_3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  background-color: white;
+  color: #767676;
+  font-size: 10px;
+  font-weight: 400;
+  height: 20px;
+  padding: 0 10px;
+}
+.Btn_3.Style1 {
+  color: #4168f6;
+}
+.Btn_3.Style2 {
+  color: #ff3838;
+}
+
+/**/
+.Btn_4 {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #e1e1e1;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+  padding-right: 20px;
+}
+.Btn_4.On {
+  background-color: #F4F4F4;
+}
+
+/**/
+.Btn_5 {
+  border-radius: 8px;
+  border: 1px solid #E1E1E1;
+  background: #F4F4F4;
+  padding: 12px;
+  width: 100%;
+  color: #767676;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/**/
+.Btn_6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  border-radius: 8px;
+  border: 1px solid var(--sub-border-2, #e1e1e1);
+  background: var(--sub-white, #fff);
+  color: var(--sub-text-sub, #767676);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 100% */
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+}
+.Btn_6.On {
+  border-color: #ff3838;
+  color: #ff3838;
+}
+.Btn_6[disabled] {
+  background-color: #f4f4f4;
 }
 
 page-title {

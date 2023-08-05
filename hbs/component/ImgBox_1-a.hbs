@@ -1,0 +1,28 @@
+<div class='ImgBox_1'>
+  {{#if new}}
+    <div style='z-index: 10; position: absolute; top: 5px; left: 5px; width: 14px'>
+      <img style='width: 100%;' src='/public/icon/2307170959.svg' alt='' />
+    </div>
+  {{/if}}
+  {{#if rank}}
+    <div class='Montserrat' style='display:flex; align-items:center; justify-content:center; gap:0px; border-radius:6px; z-index:1; position:absolute; top:0px; right:0px; background-color:#FE3839; width:22px; height:22px; color:#fff; font-size:12px; font-weight:600;'>
+      {{number}}
+    </div>
+  {{/if}}
+  {{#if grayscale}}
+    <img class='Grayscale' style='width: 100%;' src='https://gifpng.com/88x88/ffd4d4/ff4444' alt='' />
+  {{else}}
+    <img style='width: 100%;' src='https://gifpng.com/88x88/ffd4d4/ff4444' alt='' />
+  {{/if}}
+  {{#if like}}
+    <div style='z-index: 10; position: absolute; bottom: 6px; right: 6px'>
+      {{!<img style="width: 100%" src="/public/icon2/2307231115.svg" alt="" />}}
+      <img style='width: 100%' src='/public/icon2/2307231115_on.svg' alt='' />
+    </div>
+  {{/if}}
+  {{#if dday}}
+  <div style='z-index:1; position:absolute; top:0px; left:0px; color:#fff; font-size:12px; font-weight:600; padding:5px; background-color:#ff3838; border-radius:4px;'>
+    D-5
+  </div>
+  {{/if}}
+</div>

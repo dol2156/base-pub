@@ -298,6 +298,13 @@
   -webkit-line-clamp: 3
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1
+}
+
 .line-clamp-none {
   overflow: visible;
   display: block;
@@ -411,6 +418,10 @@
 
 .w-1 {
   width: 0.25rem
+}
+
+.w-full {
+  width: 100%
 }
 
 .flex-shrink {
@@ -2033,5 +2044,13 @@
 }
 
 .On>.\[\.On\>\&\]\:hidden {
+  display: none
+}
+
+[disabled]>.\[\[disabled\]\>\&\]\:block {
+  display: block
+}
+
+[disabled]>.\[\[disabled\]\>\&\]\:hidden {
   display: none
 }
