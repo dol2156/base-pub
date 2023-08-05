@@ -1,12 +1,12 @@
 <ul class='ProductList_1'>
   {{#LOOP 10}}
     <li>
-      <article style='display:flex; align-items:center; gap:20px;'>
+      <article class="CenterLeft">
         <div>
           <script>Include('/hbs/component/ImgBox_1-a.hbs',{like:true, new:true});</script>
         </div>
-        <div>
-          {{!--          {{> 'module/ProductInfo_1-c' }}--}}
+        <div style="margin-left:20px;">
+          <script>Include('/hbs/component/ProductInfo_1-c.hbs');</script>
         </div>
       </article>
     </li>
