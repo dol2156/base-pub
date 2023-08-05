@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/hbs/page/_pub_etc_button.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/TitleBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/TitleBox_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/output.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/sitemap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sitemap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/sitemap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sitemap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/handlebars_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/handlebars_helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_6.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/btn/Btn_6.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +46,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include",
+    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/hbs/page",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,11 +57,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include" />
       <recent name="C:\MyProjects\ksm-friends\base-include\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\data" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\swiper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
