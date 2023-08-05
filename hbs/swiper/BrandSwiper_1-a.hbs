@@ -4,7 +4,11 @@
     <div class='swiper-wrapper'>
       {{#LOOP 20}}
         <div class='swiper-slide' data-key='{{index}}'>
-          <script>Include('/hbs/component/BrandItem_1-a.hbs', {number:{{number}} });</script>
+          {{#if @root.rank}}
+            <script>Include('/hbs/component/BrandItem_1-a.hbs', {rank:{{number}} });</script>
+          {{else}}
+            <script>Include('/hbs/component/BrandItem_1-a.hbs');</script>
+          {{/if}}
         </div>
       {{/LOOP}}
     </div>

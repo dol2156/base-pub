@@ -1,5 +1,10 @@
 <div class='BrandItem_1'>
-  <script>Include('/hbs/component/ImgBox_1-a.hbs', { rank:{{number}} });</script>
+  {{#if rank}}
+    <script>Include('/hbs/component/ImgBox_1-a.hbs', { rank:{{rank}} });</script>
+  {{else}}
+    <script>Include('/hbs/component/ImgBox_1-a.hbs');</script>
+  {{/if}}
+
   <div class='Label'>
     Label
     {{number}}
