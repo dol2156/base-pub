@@ -3,11 +3,11 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230725121809499">
-      {{> 'module/ScrollTabBar_1-a' }}
+    <section data-seq='20230725121809499'>
+      <script>Include('/hbs/component/ScrollTabBar_1-a.hbs');</script>
     </section>
-    <section data-seq="20230725122652465" style="margin-top:30px;">
-      {{> 'module/ButtonList_3-a' len=11 }}
+    <section data-seq='20230725122652465' style='margin-top:30px;'>
+      <script>Include('/hbs/component/ButtonList_3-a.hbs', {len:11});</script>
     </section>
   </main>
   <script>

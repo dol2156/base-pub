@@ -32,3 +32,35 @@ const initInputUi = (trigger) => {
     }
   }
 };
+
+/**
+ * HScrollBox 가로 스크롤 쉐도우 초기 셋팅
+ * @param trigger
+ */
+const initHScrollBox = () => {
+  const el_target = document.currentScript.parentElement;
+  const el_hsb = el_target;
+  const el_track = el_hsb.querySelector(`.Track`);
+  el_track.addEventListener('scroll', (evt) => {
+    updateDisplay();
+  });
+  updateDisplay();
+
+  function updateDisplay() {
+    const sw = el_track.scrollWidth;
+    const sl = Math.ceil(el_track.scrollLeft);
+    const k = sw - sl;
+
+    if (k == sw) {
+      el_hsb.classList.add('Start');
+    } else {
+      el_hsb.classList.remove('Start');
+    }
+
+    if (k <= el_track.clientWidth) {
+      el_hsb.classList.add('End');
+    } else {
+      el_hsb.classList.remove('End');
+    }
+  }
+};
