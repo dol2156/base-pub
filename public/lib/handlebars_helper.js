@@ -401,3 +401,4 @@ Handlebars.registerHelper('SAFE', function (node_name, value, options) {
     }
   }
 });
+
