@@ -1,32 +1,34 @@
-{{#if preview}}
-  {{SAFE2 this 'txt1|txt2|txt3'}}
-{{/if}}
+{{#DV}}
+  {{SAFE 'txt1'}}
+  {{SAFE 'txt2'}}
+  {{SAFE 'txt3'}}
+{{/DV}}
 <div class='InfoBox_3'>
   <article class='CenterBetween'>
     <div>
-      <div style='color:#a6a6a6; font-size:12px; font-weight:500;'>
+      <div class="t-130ad8d1">
         2023-05-20 13:24
       </div>
     </div>
     <div>
       {{#if txt1}}
-        <div style='color:#a6a6a6; font-size:12px; font-weight:600;'>
+        <div class="t-c69c5f29">
           {{txt1}}
         </div>
       {{/if}}
       {{#if txt2}}
-        <div style='color:#FF3838; font-size:12px; font-weight:600;'>
+        <div class="t-4ec5fb48">
           {{txt2}}
         </div>
       {{/if}}
       {{#if txt3}}
-        <div style='color:#4168F6; font-size:12px; font-weight:600;'>
+        <div class="t-86f2b540">
           {{txt3}}
         </div>
       {{/if}}
     </div>
   </article>
-  <table>
+  <table class="Table_6" style="margin-top: 14px;">
     <tbody>
       <tr>
         <th>

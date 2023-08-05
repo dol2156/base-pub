@@ -1,19 +1,17 @@
-<ul class="InfoBoxList_1">
-  {{#LOOP 2}}
+<div class='InfoBoxList_1'>
+  <ul>
     <li>
-      {{> 'module/InfoBox_3-a' }}
+      <script>Include('/hbs/component/InfoBox_3-a.hbs', {hide:true});</script>
     </li>
     <li>
-      {{> 'module/InfoBox_3-a' txt1='거래손 환불' }}
+      <script>Include('/hbs/component/InfoBox_3-a.hbs', {txt1:'거래손 환불'});</script>
     </li>
     <li>
-      {{> 'module/InfoBox_3-a' txt2='거래소 결제' }}
+      <script>Include('/hbs/component/InfoBox_3-a.hbs', {txt2:'거래소 결제'});</script>
     </li>
     <li>
-      {{> 'module/InfoBox_3-a' txt3='판매대금 지금' }}
+      <script>Include('/hbs/component/InfoBox_3-a.hbs', {txt3:'판매대금 지금'});</script>
     </li>
-  {{/LOOP}}
-</ul>
-<div class="CenterCenter" style="margin-top: 30px">
-  {{> 'module/MoreBtn_1-a' }}
+  </ul>
+  <script>Include('/hbs/component/MoreBtn_1-a.hbs');</script>
 </div>

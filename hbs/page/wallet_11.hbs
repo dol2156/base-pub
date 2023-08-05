@@ -3,19 +3,23 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230801091618966" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/FilterBtnBox_1-a' array='결제|충전/적립|출금|전환' }}
+    <section data-seq='20230801091618966' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/FilterBtnBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
-    <section data-seq="20230801091704231" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/Text_1-c' }}
-          <div style="margin-top:30px;">
-            {{> 'module/InfoBoxList_1-a' }}
+    <section data-seq='20230801091704231' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='Text_1'>
+            C.point
+            <br />
+            <span class='Color1'>출금 내역</span>을 알려드립니다.
+          </div>
+          <div style='margin-top:30px;'>
+            <script>Include('/hbs/component/InfoBoxList_1-a.hbs');</script>
           </div>
         </div>
       </div>

@@ -1901,7 +1901,29 @@
   border: 1px solid #e1e1e1;
   background: #fff;
   padding: 16px;
+}
+/**/
+.Table_6 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
 
+  th {
+    text-align: left;
+    color: #767676;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+  }
 }
 /**/
 .InfoBox_3 {
@@ -1910,34 +1932,38 @@
   background: #ffffff;
   padding: 20px 16px;
 
-  > table {
-    table-layout: fixed;
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 14px;
+  .t-130ad8d1 {
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 500;
+  }
 
-    th {
-      text-align: left;
-      color: #767676;
-      font-size: 12px;
-      font-weight: 600;
-    }
+  .t-c69c5f29 {
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 600;
+  }
 
-    td {
-      padding-top: 8px;
-      padding-bottom: 8px;
-      font-family: 'Montserrat', sans-serif;
-      color: #303030;
-      font-size: 12px;
-      font-weight: 600;
-      text-align: right;
-    }
+  .t-4ec5fb48 {
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .t-86f2b540 {
+    color: #4168f6;
+    font-size: 12px;
+    font-weight: 600;
   }
 }
 /**/
 .InfoBoxList_1 {
-  > li + li {
-    margin-top: 16px;
+  > ul {
+    > li {
+      & + li {
+        margin-top: 16px;
+      }
+    }
   }
 }
 /**/
