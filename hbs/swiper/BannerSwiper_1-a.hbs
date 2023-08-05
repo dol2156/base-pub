@@ -1,0 +1,53 @@
+{{DF @root 'id' (UID)}}
+<div class='relative'>
+  <div id='BannerSwiper_1-{{id}}' class='swiper BannerSwiper_1'>
+    <div class='swiper-wrapper'>
+      {{#LOOP 10}}
+        <div class='swiper-slide' data-key='{{index}}'>
+          <div>
+            <img
+              style='display:block; width:100%; border-radius:10px; overflow:hidden;'
+              src='https://gifpng.com/320x98/ffd4d4/ff4444'
+              alt=''
+            />
+          </div>
+        </div>
+      {{/LOOP}}
+    </div>
+  </div>
+  {{!--prettier-ignore--}}
+  <script>
+    (() => {
+      const swiper_option = {
+        // slidesPerView: 1, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+        // slidesPerGroup: 1,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        // autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
+        init: false,
+        // grabCursor: true,
+      };
+
+      let swiper = new Swiper('#BannerSwiper_1-{{id}}', swiper_option);
+
+      swiper.on('init', function () {
+        // console.log('init');
+      });
+
+      swiper.on('slideChange', function () {
+        // console.log('slideChange');
+      });
+
+      swiper.on('slideChangeTransitionEnd', function () {
+        // console.log('slideChangeTransitionEnd');
+      });
+
+      swiper.init();
+    })();
+  </script>
+</div>

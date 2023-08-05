@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/ksm-friends/base-include#readme",
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.4.4",
     "concurrently": "^8.2.0",
     "five-server": "^0.3.1",
     "prettier": "^3.0.1",

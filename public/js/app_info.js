@@ -2,7 +2,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
   
   const html = `
   <style>
-    #AppInfo{}
+    #AppInfo{ display:none; }
+    [data-env="development"] #AppInfo{ display:block; }
     #AppInfo > a{ z-index:9999; position:fixed; top:0px; left:50%; }
     #AppInfo > a{ display:flex; align-items:center; justify-content:center; gap:4px; }
     #AppInfo > a{ color:yellow; font-size:12px; font-weight:400; }

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./html/**/*.{html,js,hbs}'],
+  content: ['./**/*.{html,js,hbs}'],
   corePlugins: {
     preflight: false,
   },
@@ -16,5 +16,4 @@ module.exports = {
       '3xl': '1800px',
     },
   },
-  plugins: [require('@tailwindcss/line-clamp')],
 };
