@@ -1754,6 +1754,24 @@
   border: 1px solid #ebebeb;
   background-color: white;
   padding: 33px 30px;
+
+  .Txt1 {
+    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .Txt2 {
+    color: #ff3838;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .Txt3 {
+    color: #767676;
+    font-size: 12px;
+    font-weight: 600;
+  }
 }
 /**/
 .ButtonBox_1 {
@@ -2130,4 +2148,30 @@
   justify-content: center;
   gap: 4px;
   padding: 22px 0;
+}
+/**/
+.BannerList_1 {
+  > ul {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 25px;
+    overflow: auto;
+    padding-left: var(--contents-side-padding);
+    padding-right: var(--contents-side-padding);
+  }
+  .BannerImg {
+    > img {
+      border-radius: 10px;
+    }
+  }
+}
+/**/
+.TitleBox_4 {
+  .Txt1 {
+    color: #303030;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
 }

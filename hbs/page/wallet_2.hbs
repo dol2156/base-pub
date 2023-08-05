@@ -7,27 +7,37 @@
     <style>
       html{ background-color:#f4f4f4; }
     </style>
-    <section data-seq="20230730191218374" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-{{!--          {{> 'module/PointBarcodeBox_1-a' }}--}}
+    <section data-seq='20230730191218374' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/PointBarcodeBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
-    <section data-seq="20230730191813390" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          <article class="CenterCenter">
-            <button class="ButtonUi Style4 w-full" data-form-hei="Md">
+    <section data-seq='20230730191813390' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <article class='CenterCenter'>
+            <button class='ButtonUi Style4 w-full' data-form-hei='Md'>
               오프라인 바코드 결제 이용안내
-              <img src="/public/icon/2307301919.svg" alt=""/>
+              <img src='/public/icon/2307301919.svg' alt='' />
             </button>
           </article>
         </div>
+      </div>
+    </section>
+    <section data-seq='20230806000912801' style='margin-top:40px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'이달의 <span class="Color1">컬쳐랜드</span> 이벤트'});</script>
+        </div>
+      </div>
+      <div style='margin-top:15px;'>
+        <script>Include('/hbs/component/BannerList_1-a.hbs');</script>
       </div>
     </section>
   </main>
   <script>
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
-  </div>
+</div>

@@ -6,17 +6,14 @@
     <section data-seq="20230731115136262" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_4-a' }}
-          {{> 'module/TitleBox_4-b' }}
-          {{> 'module/TitleBox_4-c' }}
-          {{> 'module/TitleBox_4-d' }}
+          <script>Include('/hbs/component/TitleBox_4-a.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230731122331333" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_5-a' txt1='충전금액' }}
+          <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'충전금액'});</script>
           <div style="margin-top:8px;">
             <div class="InputUi Style1 w-full" data-form-hei="Md">
               <input value="10,000원">
@@ -27,7 +24,7 @@
             </div>
           </div>
           <div style="margin-top:16px;">
-            {{> 'module/RadioGroup_3-a' array='5,000원|10,000원|30,000원|50,000원' }}
+            <script>Include('/hbs/component/RadioGroup_3-a.hbs');</script>
           </div>
         </div>
       </div>
@@ -35,7 +32,7 @@
     <section data-seq="20230731133742513" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_5-a' txt1='출금계좌' }}
+          <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'출금계좌'});</script>
           <div style="margin-top:8px;">
             <button class='Btn_4'>
               <article class='CenterBetween'>
@@ -55,7 +52,7 @@
             </button>
           </div>
           <div style="margin-top:60px;">
-            {{> 'module/TosBox_1-c' }}
+            <script>Include('/hbs/component/TosBox_1-a.hbs');</script>
           </div>
         </div>
       </div>
@@ -65,4 +62,15 @@
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='충전하기' }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '충전하기',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>

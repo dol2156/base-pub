@@ -1,9 +1,6 @@
-{{#if preview}}
-  {{VAR this 'array' '1|2|3'}}
-{{/if}}
 <div class='RadioGroup_3'>
-  {{#EACH (ARR array)}}
-    <button class="ButtonUi Style4 {{ON (SAFE ../active 0) 'On2'}}" data-form-hei="Sm">
+  {{#EACH (ARR '9,999원|9,999원|9,999원|9,999원')}}
+    <button class="ButtonUi Style4 {{ON 0 'On2'}}" data-form-hei="Sm">
       {{obj}}
     </button>
   {{/EACH}}

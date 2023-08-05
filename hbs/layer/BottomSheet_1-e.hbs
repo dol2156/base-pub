@@ -1,42 +1,29 @@
-<div class='BottomSheet_1 pb-[30px]' style='width: 360px'>
+<div class='BottomSheet_1' style='width: 360px;'>
   <div class='Head'>
     <button class='Handlebar'></button>
   </div>
   <div class='Body'>
     <div class='TitleBar NoBottom'>계좌선택</div>
     <article class='CenterCenter' style='flex-direction:column; gap:4px; margin-top:16px;'>
-      <button class='Btn_4 On'>
-        <article class='CenterBetween'>
-          <article class='CenterLeft'>
+      {{#LOOP 3}}
+        <button class='Btn_4 {{ON 1}}'>
+          <article class='CenterBetween'>
+            <article class='CenterLeft'>
+              <div>
+                <img src='/public/icon/2307311340.svg' alt='' />
+              </div>
+              <div style='margin-left:10px; text-align:left;'>
+                <div class='Txt1'>하나</div>
+                <div class='Txt2'>하나 287****5007</div>
+              </div>
+            </article>
             <div>
-              <img src='/public/icon/2307311340.svg' alt='' />
-            </div>
-            <div style='margin-left:10px; text-align:left;'>
-              <div style='color:#303030; font-size:14px; font-weight:600;'>하나</div>
-              <div style='margin-top:8px; color:#767676; font-size:12px; font-weight:400;'>하나 287****5007</div>
+              <img class='[.Btn\_4.On_&]:hidden' src='/public/icon/2307311609.svg' alt='' />
+              <img class='hidden [.Btn\_4.On_&]:block' src='/public/icon/2307311609_on.svg' alt='' />
             </div>
           </article>
-          <div>
-            <img src='/public/icon/2307311609_on.svg' alt='' />
-          </div>
-        </article>
-      </button>
-      <button class='Btn_4'>
-        <article class='CenterBetween'>
-          <article class='CenterLeft'>
-            <div>
-              <img src='/public/icon/2307311340.svg' alt='' />
-            </div>
-            <div style='margin-left:10px; text-align:left;'>
-              <div style='color:#303030; font-size:14px; font-weight:600;'>하나</div>
-              <div style='margin-top:8px; color:#767676; font-size:12px; font-weight:400;'>하나 287****5007</div>
-            </div>
-          </article>
-          <div>
-            <img src='/public/icon/2307311609.svg' alt='' />
-          </div>
-        </article>
-      </button>
+        </button>
+      {{/LOOP}}
     </article>
     <article class='CenterCenter' style='margin-top:16px;'>
       <button class='Btn_5'>
