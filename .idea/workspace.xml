@@ -5,26 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/base-include.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ base-include.iml" afterPathEscaped="$PROJECT_DIR$/.idea/🟢 base-include.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/page/_pub_plyr.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon/favicon-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon/favicon-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon/site.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoBox_2-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/InfoBox_2-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-b.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-b.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-c.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-c.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-d.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-d.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-e.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-e.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-f.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-f.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-g.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-g.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/ToolTip_1-h.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1-h.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/wallet_7.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/wallet_7.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/wallet_8.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/wallet_8.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/layer/Video_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/MENU_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/MENU_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,30 +49,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MyProjects/ksm-friends/base-include/public/icon&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/public",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "editing.templates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\public" />
+      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\icon" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\layout" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\swiper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
