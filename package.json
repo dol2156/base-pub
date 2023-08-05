@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run cmd\" \"npm run chd\" \"npm run scss:global\" \"npm run scss:sitemap\" \"npm run twc\" \"npm run fs\"",
+    "dev": "concurrently \"npm run cmd\" \"npm run chd\" \"npm run wh\" \"npm run scss:global\" \"npm run scss:sitemap\" \"npm run twc\" \"npm run fs\"",
     "cmd": "node create_menu_data.js",
     "chd": "node create_hbs_data.js",
+    "wh": "node watch_hbs.js",
     "scss:sitemap": "sass --style=compressed -w scss/sitemap.scss public/css/sitemap.css",
     "scss:global": "sass --style=compressed -w scss/global.scss public/css/global.css",
     "twc": "npx tailwindcss -i scss/input.css -o public/css/output.css --watch --minify",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/ksm-friends/base-include#readme",
   "devDependencies": {
+    "chokidar": "^3.5.3",
     "concurrently": "^8.2.0",
     "five-server": "^0.3.1",
     "js-beautify": "^1.14.9",

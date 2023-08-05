@@ -1,0 +1,39 @@
+{{#DV}}
+  {{SAFE 'txt1'}}
+  {{SAFE 'txt2'}}
+  {{SAFE 'txt3'}}
+  {{SAFE 'txt4'}}
+  {{SAFE 'btn1'}}
+{{/DV}}
+<div class='TitleBox_3'>
+  <article class='CenterBetween'>
+    <div>
+      {{#if txt1}}
+        <div class='Title_2'>{{txt1}}</div>
+      {{/if}}
+      {{#if txt2}}
+        <div class='Title_2' style='padding-left:14px;'>
+          {{txt2}}
+          {{!--<img src="/public/icon/2307291136.svg" alt=""/>--}}
+          <img src="/public/icon/2307291136_on.svg" alt=""/>
+        </div>
+      {{/if}}
+      {{#if txt4}}
+        <div class='Title_2' style='padding-left:14px;'>
+          {{txt4}}
+        </div>
+      {{/if}}
+    </div>
+    <div>
+      {{#if btn1}}
+        <button class='ButtonUi Style2' data-form-hei='Xs'>
+          {{btn1}}
+          <img style='margin-left:4px;' src='/public/icon/2307271325.svg' alt='' />
+        </button>
+      {{/if}}
+      {{#if txt3}}
+        <div class="Txt3 Montserrat" style='padding-right:16px;'>{{txt3}}</div>
+      {{/if}}
+    </div>
+  </article>
+</div>
