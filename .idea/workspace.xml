@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/hbs/component/Table_2-a.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-d.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-d.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-f.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-f.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +65,7 @@
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs" />
     </key>

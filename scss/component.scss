@@ -642,14 +642,30 @@
   color: #303030;
   font-size: 12px;
   font-weight: 600;
-  th{
-    padding-top:6px;
-    padding-bottom:6px;
-    text-align:left;
+  th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: left;
   }
-  td{
-    padding-top:6px;
-    padding-bottom:6px;
-    text-align:right;
+  td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: right;
+  }
+}
+/**/
+.Ol_1 {
+  --p-left: 1em;
+}
+.Ol_1 {
+  width: calc(100% - var(--p-left));
+  color: #303030;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4em;
+  list-style: auto;
+  margin-left: var(--p-left);
+  li + li {
+    margin-top: 0.5em;
   }
 }
