@@ -279,6 +279,12 @@ strong {
   gap: 0px;
   height: 100%;
 }
+.TopActionBar_1 .Sec0 .LeftArea {
+  padding-left: var(--contents-side-padding);
+}
+.TopActionBar_1 .Sec0 .RightArea {
+  padding-right: var(--contents-side-padding);
+}
 .TopActionBar_1 .PageTitle {
   z-index: 0;
   position: absolute;

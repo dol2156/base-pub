@@ -5,7 +5,7 @@ let PageName;
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   PageName = urlParams.get('page');
-  if(!PageName) PageName = '_pub_sitemap';
+  if (!PageName) PageName = '_pub_sitemap';
 })();
 if (PageName) {
   /**
@@ -21,7 +21,6 @@ if (PageName) {
   };
   setDocTitle();
 }
-
 
 /**
  *
@@ -52,8 +51,8 @@ const Include = (path, render_data) => {
  * @constructor
  */
 const LoadPage = () => {
-  Include(`/hbs/page/${PageName}.hbs`, {window});
-}
+  Include(`/hbs/page/${PageName}.hbs`, { window });
+};
 
 /**
  * 동기 HTML 로드
@@ -276,16 +275,6 @@ Handlebars.registerHelper('ADD', function (v1, v2, options) {
 });
 
 /**
- * 값이 없을 경우 기본값 반환
- * {{SAFE height 'auto'}}
- */
-Handlebars.registerHelper('SAFE', function (value, safeValue, options) {
-  const out = value || safeValue;
-  // return new Handlebars.SafeString(out);
-  return out;
-});
-
-/**
  * 모듈 제작시에 전달 되지 않은 매개변수 값대신에 노드명을 넣어줌
  * {{SAFE2 this 'txt1|txt2|btn1|btn2'}}
  */
@@ -353,18 +342,6 @@ Handlebars.registerHelper('CONATIN', function (p1, condition, options) {
 });
 
 /**
- * 변수 값이 있는지 체크 후 Boolean 반환
- * {{#if (DV ID)}}
- *   <div>ID value is required.</div>
- * {{else}}
- *   <div>FALSE</div>
- * {{/if}}
- */
-Handlebars.registerHelper('DV', function (p1, options) {
-  return typeof p1 === 'undefined';
-});
-
-/**
  * 변수 값이 있는지 체크 후 없으면 노드명을 값으로 할당
  * {{DV2 'txt1'}}
  */
@@ -379,7 +356,6 @@ Handlebars.registerHelper('DV2', function (p1, options) {
  * {{DF this 'array' '1|2|3'}}
  */
 Handlebars.registerHelper('DF', function (object, node_name, value, options) {
-  
   if (value.name !== 'DF') {
     if (typeof object === 'object') {
       if (typeof object[node_name] === 'undefined') {
@@ -392,5 +368,36 @@ Handlebars.registerHelper('DF', function (object, node_name, value, options) {
   } else {
     // value 가 할당 되지 않았을 경우 경고
     console.error('Handlebars : DF : value 가 필요합니다.');
+  }
+});
+
+/**
+ * root 데이터 있나 없나 체크
+ */
+Handlebars.registerHelper('DV', function (options) {
+  const root = this;
+  const len = Object.keys(root).length;
+  if (len == 0) {
+    return options.fn(this);
+    // return true;
+  } else {
+    return options.inverse(this);
+    // return false;
+  }
+});
+
+/**
+ * root 에 데이터 있나 확인 하고 없으면 node_name 할당
+ * {{SAFE height 'auto'}}
+ */
+Handlebars.registerHelper('SAFE', function (node_name, value, options) {
+  if (typeof this[node_name] === 'undefined') {
+    if (arguments.length == 2) {
+      this[node_name] = node_name;
+    }
+
+    if (arguments.length == 3) {
+      this[node_name] = value;
+    }
   }
 });
