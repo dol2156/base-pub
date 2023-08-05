@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko" data-env="development">
+  <head>
+    <script src="/public/lib/handlebars.js"></script>
+    <script src="/public/lib/handlebars_helper.js"></script>
+    <script>
+      Include('/hbs/layout/Head.hbs');
+    </script>
+  </head>
+  <body>
+    <div id="page">
+      <main>
+        <style>
+          html {
+            background-color: #ffffd4;
+          }
+          main section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+          main section .FixedShell {
+            position: relative !important;
+          }
+        </style>
+        <div class="H1">Component Guide</div>
+        <br />
+        <script>Include('/hbs/module/component_guide.hbs', {HBS_DATA});</script>
+      </main>
+    </div>
+  </body>
+</html>

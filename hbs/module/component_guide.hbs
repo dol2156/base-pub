@@ -1,0 +1,9 @@
+{{#EACH HBS_DATA.component}}
+  <section id='{{obj.path}}'>
+    <div class='H3'>
+      <input style='display:inline-block; width:100%; outline:none; border:none;' readonly type='text' value='{{obj.path}}' onclick='this.select();' />
+    </div>
+    <br />
+    <script>Include('{{obj.path}}');</script>
+  </section>
+{{/EACH}}

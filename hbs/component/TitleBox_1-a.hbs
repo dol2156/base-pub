@@ -1,5 +1,5 @@
 {{#if preview}}
-  {{SAFE2 this 'txt1|btn1|btn2'}}
+  {{SAFE2 @root 'txt1|btn1|btn2'}}
 {{/if}}
 <div class='TitleBox_1'>
   <article class='CenterBetween'>
@@ -16,11 +16,11 @@
         </button>
       {{/if}}
       {{#if btn2}}
-      <button class='Btn_1 On'>
-        {{btn2}}
-        <img class='block [.On>&]:hidden' src='/public/icon/2307171341.svg' alt='' />
-        <img class='hidden [.On>&]:block' src='/public/icon/2307171341_on.svg' alt='' />
-      </button>
+        <button class='Btn_1 On'>
+          {{btn2}}
+          <img class='block [.On>&]:hidden' src='/public/icon/2307171341.svg' alt='' />
+          <img class='hidden [.On>&]:block' src='/public/icon/2307171341_on.svg' alt='' />
+        </button>
       {{/if}}
     </div>
   </article>

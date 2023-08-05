@@ -348,6 +348,7 @@ Handlebars.registerHelper('DV2', function (p1, options) {
  * {{DF this 'array' '1|2|3'}}
  */
 Handlebars.registerHelper('DF', function (object, node_name, value, options) {
+  
   if (value.name !== 'DF') {
     if (typeof object === 'object') {
       if (typeof object[node_name] === 'undefined') {

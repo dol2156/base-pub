@@ -1,5 +1,9 @@
+<script>
+  console.log(Object.keys({}).length==0);
+</script>
+{{log @root}}
 {{DF @root 'array' '1|2|3|4|5'}}
-{{DF @root 'active' 1}}
+{{!--{{DF @root 'active' 1}}--}}
 <div class='TabBar_1'>
   {{#EACH (ARR array)}}
     <button class='{{ON 0}} {{ON @root.active 'New'}}'>
