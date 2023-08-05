@@ -279,3 +279,111 @@
     font-weight: 600;
   }
 }
+/**/
+.ButtonList_3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  justify-items: center;
+  padding: 0px 20px;
+  > button {
+    width: 100%;
+
+    .ImgBox_1 {
+      border: 1px solid #ebebeb;
+      background: #f4f4f4;
+    }
+
+    .Label {
+      margin-top: 16px;
+      color: #161616;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+    }
+  }
+
+  > button.On {
+    .ImgBox_1 {
+      position: relative;
+      border-color: #ff3838;
+      border-width: 2px;
+
+      &:after {
+        white-space: nowrap;
+        background-color: #ff3838;
+        color: #ffffff;
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: 400;
+        padding: 0px 10px;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 8px;
+        display: inline-block;
+        content: '이용중';
+        position: absolute;
+        z-index: 3;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+/**/
+.TopActionBar_2 {
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+
+  > .Inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    padding-left: 24px;
+    padding-right: 20px;
+    height: 56px;
+  }
+
+  .PageTitle {
+    color: var(--text-color1);
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+/**/
+.SearchBox_1 {
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: white;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  padding-left: 20px;
+  padding-right: 10px;
+  color: var(--text-color1);
+  > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  &.focus {
+    border-color: #e1e1e1;
+    background: white;
+  }
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    &::placeholder {
+      color: var(--text-color3);
+    }
+  }
+}

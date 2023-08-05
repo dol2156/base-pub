@@ -1,0 +1,33 @@
+{{#DV}}
+  {{SAFE 'txt1'}}
+  {{SAFE 'txt2'}}
+  {{SAFE 'btn1'}}
+  {{SAFE 'btn2'}}
+{{/DV}}
+<div class='TitleBox_2'>
+  <article class='CenterBetween'>
+    <div>
+      {{#if txt1}}
+        <div class='Title_2'>{{txt1}}</div>
+      {{/if}}
+      {{#if txt2}}
+        <div class='Title_2' style='margin-left:4px;'>
+          <span class='Color1'>{{txt2}}</span>
+        </div>
+      {{/if}}
+    </div>
+    <div>
+      {{#if btn1}}
+        <button class='Btn_1'>
+          {{btn1}}
+          <img src='/public/icon/2307171331.svg' alt='' />
+        </button>
+      {{/if}}
+      {{#if btn2}}
+        <button class='Btn_1'>
+          {{btn2}}
+        </button>
+      {{/if}}
+    </div>
+  </article>
+</div>
