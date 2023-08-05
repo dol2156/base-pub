@@ -1,0 +1,36 @@
+{{log this}}
+<ul>
+  {{#each MENU_DATA}}
+    <li data-key='{{@key}}'>
+      {{#if this.PAGE}}
+        <a class='label' href='/page/{{this.PAGE}}.html'><span style='color:orangered'>[ {{this.PAGE}} ]</span>
+          {{this.뎁스1}}</a>
+      {{else}}
+        <div class='label'>{{this.뎁스1}}</div>
+      {{/if}}
+      <ul>
+        {{#each this.child}}
+          <li data-key='{{@key}}'>
+            {{#if this.PAGE}}
+              <a class='label' href='/page/{{this.PAGE}}.html'><span style='color:orangered'>[ {{this.PAGE}} ]</span>
+                {{this.뎁스2}}</a>
+            {{else}}
+              <div class='label'>{{this.뎁스2}}</div>
+            {{/if}}
+            <ul>
+              {{#each this.child}}
+                <li>
+                  {{#if this.PAGE}}
+                    <a class='label' href='/page/{{this.PAGE}}.html'><span style='color:orangered'>[ {{this.PAGE}} ]</span> {{this.뎁스3}}</a>
+                  {{else}}
+                    <div class='label'>{{this.뎁스3}}</div>
+                  {{/if}}
+                </li>
+              {{/each}}
+            </ul>
+          </li>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>

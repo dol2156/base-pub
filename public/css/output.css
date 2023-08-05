@@ -2047,6 +2047,10 @@
   display: none
 }
 
+[data-env='development'] .\[\[data-env\=\'development\'\]_\&\]\:block {
+  display: block
+}
+
 [disabled]>.\[\[disabled\]\>\&\]\:block {
   display: block
 }
