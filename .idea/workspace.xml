@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/hbs/component/AccodianChild.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/AlertBox_2-a.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/Badge_1.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/Badge_2.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/CardList_1-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/InfoTable_1-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/PointBox_1-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/PointBox_2-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/ProductInfo_1-d.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/ProductInfo_1-e.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/ProductItem_1-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/ProductItem_4-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/RadioGroup_1-a.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/AlertBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/AlertBox_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/buy_2.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/buy_2.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-d.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/InfoList_1-d.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/buy_4.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/buy_4.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/buy_5.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/buy_5.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/buy_6.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/buy_6.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/buy_8.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/buy_8.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
@@ -27,9 +35,9 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="handlebars" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="handlebars" />
       </list>
     </option>
   </component>

@@ -3,28 +3,51 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230728144700582" style="margin-top:20px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/AlertBox_1-f' }}
+    <section data-seq='20230728144700582' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='AlertBox_1'>
+            <div class='CenterCenter'>
+              <div class='Txt1'>
+                <p><strong>결제가 완료되었습니다.</strong></p>
+                <p>쿠폰을 사용하시려면 “쿠폰보기” 버튼을 클릭해주세요.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section data-seq="20230728144801015" style="margin-top:14px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/ProductItem_4-a' }}
+    <section data-seq='20230728144801015' style='margin-top:14px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/ProductItem_4-a.hbs');</script>
         </div>
       </div>
     </section>
-    <section data-seq="20230728145010752" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_3-a' txt1='결제수단' }}
-          {{> 'module/InfoList_1-d' }}
+    <section data-seq='20230728145010752' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt1:'결제수단'});</script>
+          <script>Include('/hbs/component/InfoList_1-d.hbs');</script>
         </div>
       </div>
     </section>
   </main>
 </div>
-{{!--{{> 'module/BottomBtnBox_1-a' btn1='쿠폰보기' btn2='확인' }}--}}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '쿠폰보기',
+        style: 2,
+        disabled:false,
+      },
+      {
+        label: '확인',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
