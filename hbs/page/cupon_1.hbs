@@ -1,27 +1,30 @@
-{{#> 'Page' }}
-  {{> 'layout/Header_2-a' }}
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
   <main>
-    <section data-seq="20230726180139001">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TabBar_2-a' array='사용가능|사용완료|만료' }}
-          <div style="margin-top:20px;">
-            {{> 'module/SearchBox_1-a' }}
+    <section data-seq='20230726180139001'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TabBar_2-a.hbs');</script>
+          <div style='margin-top:20px;'>
+            <script>Include('/hbs/component/SearchBox_1-a.hbs');</script>
           </div>
         </div>
       </div>
     </section>
-    <section data-seq="20230726180833325" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_2-a' txt1='상품' txt2='3개' btn1='유효기간 짧은 순' }}
-
-          <div style="margin-top:16px;">
-            {{> 'module/ProductList_2-a' }}
+    <section data-seq='20230726180833325' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'상품',txt2:'3개',btn1:'유효기간 짧은 순'});</script>
+          <div style='margin-top:16px;'>
+            <script>Include('/hbs/component/ProductList_2-a.hbs');</script>
           </div>
-
         </div>
       </div>
     </section>
   </main>
-{{/ 'Page' }}
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>

@@ -286,6 +286,7 @@ Handlebars.registerHelper('SAFE2', function (ori_data, array_string, options) {
   });
 });
 
+
 /**
  * Partial 사용시에 경로를 동적으로 넣어야하는 경우가 있을때 사용
  * {{> (PATH obj.partial_path) }}
@@ -388,7 +389,7 @@ Handlebars.registerHelper('DV', function (options) {
 
 /**
  * root 에 데이터 있나 확인 하고 없으면 node_name 할당
- * {{SAFE height 'auto'}}
+ * {{SAFE 'array' '1|2|3'}}
  */
 Handlebars.registerHelper('SAFE', function (node_name, value, options) {
   if (typeof this[node_name] === 'undefined') {
@@ -400,5 +401,15 @@ Handlebars.registerHelper('SAFE', function (node_name, value, options) {
       this[node_name] = value;
     }
   }
+});
+
+/**
+ * value 가 undefined 일 경우 safeValue 반환
+ * {{SAFE2 height 'auto'}}
+ */
+Handlebars.registerHelper('SAFE2', function (value, safeValue, options) {
+  const out = value || safeValue;
+  // return new Handlebars.SafeString(out);
+  return out;
 });
 

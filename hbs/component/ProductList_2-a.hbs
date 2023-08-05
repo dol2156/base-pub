@@ -2,17 +2,15 @@
   <ul class="space-y-[8px]">
     {{#LOOP 2}}
       <li>
-        {{> 'module/ProductItem_2-a' dday=true }}
+        <script>Include('/hbs/component/ProductItem_2-a.hbs', {dday:true});</script>
       </li>
     {{/LOOP}}
     {{#LOOP 2}}
       <li>
-        {{> 'module/ProductItem_2-a' grayscale=true }}
+        <script>Include('/hbs/component/ProductItem_2-a.hbs', {grayscale:true});</script>
       </li>
     {{/LOOP}}
   </ul>
-  <div style="margin-top:30px;">
-    {{> 'module/MoreBtn_1-a' }}
-  </div>
+  <script>Include('/hbs/component/MoreBtn_1-a.hbs');</script>
 </div>
 

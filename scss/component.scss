@@ -994,7 +994,6 @@
 }
 /**/
 .ScrollTabBar_1 {
-
   .TabBtns {
     background-color: white;
     display: inline-flex;
@@ -1078,5 +1077,46 @@
 
   &.End:after {
     opacity: 0;
+  }
+}
+/**/
+.ProductItem_2 {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #ffffff;
+
+  > article {
+    align-items: flex-start;
+  }
+
+  .Txt1 {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .Txt2 {
+    color: #303030;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .Txt3 {
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .Txt4 {
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .Txt5 {
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 400;
   }
 }
