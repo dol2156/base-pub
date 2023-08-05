@@ -3,35 +3,46 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230727115222119" style="margin-top:20px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/CuponBox_1-a' }}
+    <section data-seq='20230727115222119' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/CuponBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
-    <section data-seq="20230727123020938" style="margin-top:30px;">
-      {{> 'module/Text_2-a' }}
+    <section data-seq='20230727123020938' style='margin-top:30px;'>
+      <div class='Text_2'>
+        <div class='Txt1 Montserrat'>CU</div>
+        <div class='Txt2'>3천원권</div>
+      </div>
     </section>
-    <section data-seq="20230727132654573" style="margin-top:16px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_3-a' txt2='구매정보' btn1='신고하기' }}
-          {{> 'module/InfoList_1-b' }}
+    <section data-seq='20230727132654573' style='margin-top:16px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt4:'구매정보', btn1:'신고하기' });</script>
+          <script>Include('/hbs/component/InfoList_1-b.hbs');</script>
         </div>
       </div>
     </section>
-    <section data-seq="20230727135114299" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_3-a' txt2='상품안내' }}
-          {{> 'module/Collase_1-a' }}
+    <section data-seq='20230727135114299' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt4:'상품안내' });</script>
+          <script>Include('/hbs/component/Collapse_1-a.hbs');</script>
         </div>
       </div>
     </section>
   </main>
-  <script>
-    Include('/hbs/layout/Footer_1-a.hbs');
-  </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='사용완료' }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '사용완료',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>

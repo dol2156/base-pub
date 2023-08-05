@@ -1,0 +1,44 @@
+{{#DV}}
+  {{SAFE 'txt1'}}
+  {{SAFE 'txt2'}}
+  {{SAFE 'txt3'}}
+{{/DV}}
+<div class="ProductItem_3">
+  <article class="CenterLeft">
+    <div style="padding-right:17px;">
+      <div style="position:relative;">
+        <script>Include('/hbs/component/ImgBox_1-a.hbs');</script>
+        {{#if txt1}}
+          <div class="Flag Style1">
+            {{txt1}}
+          </div>
+        {{/if}}
+        {{#if txt2}}
+          <div class="Flag Style2">
+            {{txt2}}
+          </div>
+        {{/if}}
+        {{#if txt3}}
+          <div class="Flag Style3">
+            {{txt3}}
+          </div>
+        {{/if}}
+      </div>
+    </div>
+    <div>
+      <div class="Txt1">교촌치킨</div>
+      <div class="Txt2 Montserrat" style="margin-top:10px;">
+        후라이드치킨+콜라 1.25L
+      </div>
+      <div class="Txt3 Montserrat" style="margin-top:4px;">
+        가격: 2,800원
+      </div>
+      <div class="Txt4 Montserrat" style="margin-top:4px; ">
+        쿠폰번호 : 9891463531813726
+      </div>
+      <div class="Txt5" style="margin-top:10px;">
+        유효기간 : <span class="Montserrat">2023-05-17</span>
+      </div>
+    </div>
+  </article>
+</div>

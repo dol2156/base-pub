@@ -1,0 +1,54 @@
+<div class="ProductItem_3">
+  <article class="CenterRight" style="align-items:center;">
+    {{#if txt3}}
+      <div class="Badge_2 Style1">{{txt3}}</div>
+    {{/if}}
+    {{#if txt4}}
+      <div class="Badge_2 Style2">{{txt4}}</div>
+    {{/if}}
+    {{#if txt6}}
+      <div class="Txt6" style="margin-right:6px;">{{txt6}}</div>
+    {{/if}}
+    {{#if txt5}}
+      <div class="Badge_2 Style3">{{txt5}}</div>
+    {{/if}}
+  </article>
+  <article class="CenterLeft" style="margin-top:2px;">
+    <div style="padding-right:17px;">
+      <div style="position:relative;">
+        {{> 'module/ImgBox_2-a' }}
+        {{#if txt1}}
+          <div class="Flag Style4">
+            {{txt1}}
+          </div>
+        {{/if}}
+        {{#if txt2}}
+          <div class="Flag Style5">
+            {{txt2}}
+          </div>
+        {{/if}}
+      </div>
+    </div>
+    <div>
+      <div class="Txt1">교촌치킨</div>
+      <div class="Txt2 Montserrat" style="margin-top:10px;">
+        후라이드치킨+콜라 1.25L
+      </div>
+      {{#if (IF txt4 '==' '판매불가')}}
+        <div class="Txt3 Montserrat" style="margin-top:4px;">
+          불가사유: 이미 등록된 상품
+        </div>
+      {{else}}
+        <div class="Txt3 Montserrat" style="margin-top:4px;">
+          가격: 2,800원
+        </div>
+        <div class="Txt4 Montserrat" style="margin-top:10px;">
+          쿠폰번호 : 9891463531813726
+        </div>
+        <div class="Txt5" style="margin-top:10px;">
+          유효기간 : <span class="Montserrat">2023-05-17</span>
+        </div>
+      {{/if}}
+    </div>
+  </article>
+</div>
