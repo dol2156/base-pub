@@ -15,10 +15,10 @@
         <div class='Inner'>
           <script>Include('/hbs/component/TabBar_2-a.hbs', {len:2});</script>
           <div style='margin-top:30px;'>
-            {{!--            {{> 'module/TitleBox_2-1' txt1=' ' btn1='최저가순' }}--}}
+            <script>Include('/hbs/component/TitleBox_2-a.hbs', {btn1:'최저가순'});</script>
           </div>
           <div style='margin-top:19px;'>
-            {{!--            {{> 'module/Table_1-a' }}--}}
+            <script>Include('/hbs/component/Table_1-a.hbs');</script>
           </div>
         </div>
       </div>
@@ -42,4 +42,3 @@
     ],
   });
 </script>
-{{!--{{> 'module/BottomBtnBox_1-a' btn1='장바구니 담기' btn2='구매하기' }}--}}

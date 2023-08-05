@@ -1,0 +1,40 @@
+<div class='Table_1'>
+  <table>
+    <thead>
+    <tr>
+      <th style="width:56px;">선택</th>
+      <th>
+        <div style="position:relative;">
+          <button class='Btn_1 On'>
+            <span style="color:#303030;">판매자</span>
+            <img class='block [.On>&]:hidden' src='/public/icon/2307171341.svg' alt=''/>
+            <img class='hidden [.On>&]:block' src='/public/icon/2307171341_on.svg' alt=''/>
+          </button>
+          <div style="z-index:10; position:absolute; top:27px; left:0px;">
+            <script>Include('/hbs/layer/ToolTip_1-b.hbs');</script>
+          </div>
+        </div>
+      </th>
+      <th>유효기간</th>
+      <th>금액</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#LOOP 10}}
+      <tr>
+        <td>
+          <input class='CheckBoxUi Style1' type='checkbox' data-size='Md' {{ON 1 'checked'}} />
+        </td>
+        <td>
+          컬쳐랜드
+          {{#if (IF index '==' 1)}}
+            <span style="color:#a6a6a6;">></span>
+          {{/if}}
+        </td>
+        <td>~23/07/08</td>
+        <td>1,323,780원</td>
+      </tr>
+    {{/LOOP}}
+    </tbody>
+  </table>
+</div>

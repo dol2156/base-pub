@@ -964,3 +964,31 @@
   border-top: 1px solid #ebebeb;
   padding: 26px 20px;
 }
+/**/
+.ButtonList_2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  justify-items: center;
+  padding: 30px 20px;
+  button {
+    width: 98px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 14px;
+    //box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    .Icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0px;
+    }
+    .Label {
+      margin-top: 12px;
+      color: #161616;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
