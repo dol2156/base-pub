@@ -1,15 +1,20 @@
-<div class="SearchBox_1">
-  <div style="flex-grow: 1">
-    <input value="{{value}}" class="Inp" type="text" placeholder="{{placeholder}}"/>
-  </div>
-  <div>
-    <button class="CenterCenter DelBtn">
-      <img src="/public/icon/2307091854.svg" alt=""/>
-    </button>
-    <button class="CenterCenter SearchBtn">
-      <div style="width: 30px;">
-        <img src="/public/icon/2307091851.svg" alt=""/>
-      </div>
-    </button>
+{{#DV}}
+  {{SAFE 'placeholder'}}
+  {{!--{{SAFE 'array' '1|2|3'}}--}}
+{{/DV}}
+<div class='SearchBox_1'>
+  <div class='InputUi Style1 w-full HasValue' data-form-hei='Md'>
+    <input type='text' value='{{value}}' placeholder='{{placeholder}}' />
+    <article class="CenterRight" style="gap:2px;">
+      <button class='CenterCenter DelBtn'>
+        <img src='/public/icon/2307091854.svg' alt='' />
+      </button>
+      <button class='CenterCenter SearchBtn'>
+        <div style='width: 30px;'>
+          <img src='/public/icon/2307091851.svg' alt='' />
+        </div>
+      </button>
+    </article>
+    <script>initInputUi();</script>
   </div>
 </div>

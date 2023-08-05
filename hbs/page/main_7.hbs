@@ -9,10 +9,10 @@
           <div class='AlertBox_1 Style1'>
             <div class='CenterCenter'>
               <div class='Badge_1 Style1'>
-                Badge
+                특가상품
               </div>
               <div class='Txt1' style='margin-left: 6px;'>
-                Lorem Ipsum is simply dummy
+                한정수량 특가 상품 놓치지마세요.
               </div>
             </div>
           </div>
@@ -25,16 +25,16 @@
     <div class='HBox'>
       <div class='Inner'>
         <section data-seq='20230719172700928' style='margin-top: 20px'>
-          {{!--          {{> 'module/SearchBox_1-a' value='스타벅스' }}--}}
+          <script>Include('/hbs/component/SearchBox_1-a.hbs');</script>
         </section>
       </div>
     </div>
     <div class='HBox'>
       <div class='Inner'>
         <section data-seq='20230719133422251' style='margin-top: 30px'>
-          {{!--          {{> 'module/TitleBox_2-a' txt1='상품' txt2='10개' btn1='인기순' }}--}}
+          <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'상품', txt2:'10개', btn1:'인기순'});</script>
           <div style='margin-top:5px;'>
-            {{!--            {{> 'module/ProductList_1-a' }}--}}
+            <script>Include('/hbs/component/ProductList_1-a.hbs');</script>
           </div>
         </section>
       </div>

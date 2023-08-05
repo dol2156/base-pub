@@ -201,6 +201,7 @@
   gap: 0px;
   padding: 0px 1em;
   outline: none;
+  background-color:white;
   &.Style1 {
     border: 1px solid var(--form-border-color);
     &.Focus,
@@ -216,8 +217,8 @@
       border-color: #4168f6;
     }
     &.HasValue {
-      border-color: #333333;
-      background-color: white;
+      //border-color: #333333;
+      //background-color: white;
     }
     &.ReadOnly {
       color: #a6a6a6;
