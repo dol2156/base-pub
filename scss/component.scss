@@ -696,6 +696,32 @@
   }
 }
 /**/
+.ChipsList_2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: auto;
+  padding-left: var(--contents-side-padding);
+  padding-right: var(--contents-side-padding);
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 4px 10px;
+    padding-right: 7px;
+    color: #767676;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    > img {
+      margin-left: 4px;
+    }
+  }
+}
+/**/
 .AlertBox_1 {
   width: 100%;
   text-align: center;
@@ -840,4 +866,33 @@
   border-radius: 10px;
   background: var(--sub-white, #ffffff);
   padding: 20px;
+}
+/**/
+.RankingList_1 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  > li {
+    padding: 10px 15px;
+    padding-left: 0;
+  }
+
+  .Txt1 {
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .Txt2 {
+    margin-left: 12px;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .Arrow {
+    width: 16px;
+    height: 16px;
+  }
 }

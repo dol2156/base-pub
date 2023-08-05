@@ -1,0 +1,30 @@
+<ul class="ProductList_1">
+  {{#LOOP 2}}
+    <li>
+      <article style='display:flex; align-items:center;'>
+        <div>
+          {{> 'module/ImgBox_1-a' }}
+        </div>
+        <div style="flex:1; margin-left:20px;">
+          {{> 'module/ProductInfo_1-c' }}
+        </div>
+        <div>
+          <img src="/public/icon/2308031342.svg" alt=""/>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article style='display:flex; align-items:center;'>
+        <div>
+          {{> 'module/ImgBox_1-a' }}
+        </div>
+        <div style="flex:1; margin-left:20px;">
+          {{> 'module/ProductInfo_1-e' }}
+        </div>
+      </article>
+    </li>
+  {{/LOOP}}
+</ul>
+<div style="margin-top:16px;">
+  {{> 'module/MoreBtn_1-a' }}
+</div>

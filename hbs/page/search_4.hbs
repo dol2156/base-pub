@@ -1,0 +1,32 @@
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
+  <main>
+    <section data-seq="20230725101942388">
+      {{> 'module/ItemImgBox_1-a' }}
+    </section>
+    <section data-seq="20230725102347733">
+      {{> 'module/ProductInfoBox_1-a' }}
+    </section>
+    <div class="Divider_1"></div>
+    <section data-seq="20230725104607275">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TabBar_2-a' array='상품정보|이용안내'}}
+          <div style="margin-top:30px;">
+            {{> 'module/TitleBox_2-a' btn1='최저가순' }}
+          </div>
+          <div style="margin-top:19px;">
+            {{> 'module/Table_1-b' }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>
+{{> 'module/BottomBtnBox_1-a' btn1='장바구니 담기' btn2='구매하기' }}
+

@@ -1,0 +1,27 @@
+<ul class='RankingList_1'>
+  {{#LOOP 10}}
+    <li>
+      <article class='CenterBetween'>
+        <div class='CenterLeft'>
+          <div class='Txt1'>
+            {{number}}.
+          </div>
+          <div class='Txt2'>
+            스타벅스
+          </div>
+        </div>
+        <div>
+          <div class='Arrow CenterCenter'>
+            {{#if (IF index '==' 0)}}
+              <img src='/public/icon/2307241513.svg' alt='' />
+            {{else if (IF index '==' 1)}}
+              <img src='/public/icon/2307241513_down.svg' alt='' />
+            {{else}}
+              <img src='/public/icon/2307241513_up.svg' alt='' />
+            {{/if}}
+          </div>
+        </div>
+      </article>
+    </li>
+  {{/LOOP}}
+</ul>
