@@ -1,10 +1,12 @@
-{{#> 'Page' }}
-  {{> 'layout/Header_3-a' }}
-  {{!--prettier-ignore--}}
-  <style>
-    html{ background-color:#f4f4f4; }
-  </style>
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_3-a.hbs');
+  </script>
   <main>
+    {{!--prettier-ignore--}}
+    <style>
+      html{ background-color:#f4f4f4; }
+    </style>
     <section data-seq="20230730191218374" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
@@ -25,5 +27,7 @@
       </div>
     </section>
   </main>
-  {{> 'layout/Footer_1-a' }}
-{{/ 'Page' }}
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+  </div>

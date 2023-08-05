@@ -5,8 +5,10 @@
     <div class="LabalUi"><span style="color:white;">다시 보지 않기</span></div>
   </label>
 </div>
-{{#> 'Page' }}
-  {{> 'layout/Header_2-a' }}
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
   <main>
     <section data-seq="20230727115222119" style="margin-top:20px;">
       <div class="HBox">
@@ -53,7 +55,7 @@
       </div>
     </section>
   </main>
-{{/ 'Page' }}
+</div>
 <div class="FixedBox">
   <div class="FixedShell" style="bottom:0; z-index:9999;">
     <img style="z-index:9999; position:absolute; bottom:120px; left:30px;" src="/public/icon/2308041125.svg" alt=""/>

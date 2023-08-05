@@ -1,5 +1,7 @@
-{{#> 'Page' }}
-  {{> 'layout/Header_2-a' }}
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
   <main>
     <section data-seq="20230801112836728" style="margin-top:24px;">
       <div class="HBox">
@@ -87,5 +89,5 @@
       </div>
     </section>
   </main>
-{{/ 'Page' }}
+</div>
 {{> 'module/BottomBtnBox_1-b' btn='상품 등록하기' }}

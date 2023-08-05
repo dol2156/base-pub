@@ -1,5 +1,7 @@
-{{#> 'Page' }}
-  {{> 'layout/Header_2-a' }}
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
   <main>
     <section data-seq="20230731163919457" style="margin-top:30px;">
       <div class="HBox">
@@ -12,6 +14,8 @@
       </div>
     </section>
   </main>
-  {{> 'layout/Footer_1-a' }}
-{{/ 'Page' }}
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>
 {{> 'module/BottomBtnBox_1-b' btn='확인' style=2 }}

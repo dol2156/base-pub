@@ -1,5 +1,7 @@
-{{#> 'Page' }}
-  {{> 'layout/Header_2-a' }}
+<div id='page'>
+  <script>
+    Include('/hbs/layout/Header_2-a.hbs');
+  </script>
   <main>
     <section data-seq="20230804191203539" style="margin-top:20px;">
       <div class="HBox">
@@ -24,5 +26,7 @@
       {{> 'module/EmptyList_1-e' }}
     </section>
   </main>
-  {{> 'layout/Footer_1-a' }}
-{{/ 'Page' }}
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
+</div>
