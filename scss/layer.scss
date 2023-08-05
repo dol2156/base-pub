@@ -23,11 +23,10 @@
   border-top-right-radius: 30px;
   background-color: white;
   box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 360px;
+  width: 360px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 60px;
+  padding-bottom: calc(60px + var(--sab, 0px));
   &.On {
     bottom: 0;
   }
@@ -112,5 +111,21 @@
       font-weight: 400;
       border-top: 1px solid #938e8e;
     }
+  }
+}
+/**/
+.ToolTip_1 {
+  text-align: left;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.1);
+
+  .Txt1 {
+    color: #767676;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
   }
 }

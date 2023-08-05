@@ -39,25 +39,8 @@
   --header-hei: 50px;
   --footer-hei: 50px;
 }
-.SafeArea {
-  height: var(--sab);
-}
 [data-env='development'] {
-  .SafeArea {
-    outline:1px dashed red;
-    height: 20px;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
-    font-size: 12px;
-    font-weight: 700;
-    &:before {
-      content: 'SafeArea';
-    }
-  }
+  --sab: 20px;
 }
 /* lg - 1024px 이상*/
 @media screen and (min-width: 1024px) {
