@@ -3,33 +3,51 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230725101942388">
-      {{> 'module/ItemImgBox_1-a' }}
+    <section data-seq='20230725101942388'>
+      <script>Include('/hbs/component/ItemImgBox_1-a.hbs');</script>
     </section>
-    <section data-seq="20230725102347733">
-      {{> 'module/ProductInfoBox_1-a' }}
+    <section data-seq='20230725102347733'>
+      <script>Include('/hbs/component/ProductInfoBox_1-a.hbs');</script>
     </section>
-    <div class="Divider_1"></div>
-    <section data-seq="20230725104607275">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TabBar_2-a' array='상품정보|이용안내'}}
-          <div style="margin-top:30px;">
-            {{> 'module/TitleBox_2-a' btn1='최저가순' }}
+    <div class='Divider_1'></div>
+    <section data-seq='20230725104607275'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TabBar_2-a.hbs', {len:2});</script>
+          <div style='margin-top:30px;'>
+            <script>Include('/hbs/component/TitleBox_2-a.hbs', {btn1:'최저가순'});</script>
           </div>
-          <div style="margin-top:19px;">
-            {{> 'module/Table_1-a' }}
+          <div style='margin-top:19px;'>
+            <script>Include('/hbs/component/Table_1-a.hbs');</script>
           </div>
         </div>
       </div>
     </section>
-    <section data-seq="20230727195231588" style="margin-top:40px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/AlertBox_1-g' }}
+    <section data-seq='20230727195231588' style='margin-top:40px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='AlertBox_1 Style1'>
+            <div class='Txt1 font-medium'>해당 상품이 관심상품 목록에 추가되었습니다.</div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 </div>
-{{!--{{> 'module/BottomBtnBox_1-a' btn1='장바구니 담기' btn2='구매하기' }}--}}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '장바구니 담기',
+        style: 2,
+        disabled:false,
+      },
+      {
+        label: '구매하기',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
