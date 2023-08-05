@@ -596,11 +596,9 @@
       font-size: 12px;
       font-weight: 600;
       text-align: left;
-      padding-left: 10px;
     }
     td {
       text-align: right;
-      padding-right: 10px;
       padding-top: 8px;
       padding-bottom: 8px;
       color: #767676;
@@ -1412,8 +1410,8 @@
 }
 /**/
 .Ul_1 {
-  color: #303030;
-  font-size: 11px;
+  color: inherit;
+  font-size: inherit;
   font-weight: 400;
   line-height: 1.25em;
   > li {
@@ -1904,24 +1902,6 @@
   background: #fff;
   padding: 16px;
 
-  > table {
-    table-layout: fixed;
-    border-collapse: collapse;
-    width: 100%;
-
-    th {
-      text-align: left;
-      color: #303030;
-      font-size: 12px;
-      font-weight: 600;
-      height: 28px;
-    }
-    td {
-      color: #767676;
-      font-size: 12px;
-      font-weight: 600;
-    }
-  }
 }
 /**/
 .InfoBox_3 {

@@ -6,9 +6,9 @@
     <section data-seq="20230731165412026" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_6-a' txt1='출금 계좌정보를 확인해주세요.' }}
+          <script>Include('/hbs/component/TitleBox_1-a.hbs', {txt1:'출금 계좌정보를 확인해주세요.'});</script>
           <div style="margin-top:30px;">
-            {{> 'module/InfoBox_2-a' }}
+            <script>Include('/hbs/component/InfoBox_2-a.hbs');</script>
           </div>
           <article class="CenterCenter" style="margin-top:20px;">
             <button class='Btn_5'>
@@ -25,13 +25,13 @@
       <div class="HBox">
         <div class="Inner">
           <div style="position:relative;">
-            {{> 'module/TitleBox_3-a' txt2='보유중인 C.point' txt3='3,780원' }}
+            <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt2:'보유중인 C.point', txt3:'3,780원'});</script>
             <div style="z-index:10; position:absolute; top:40px; left:30px;">
-              {{> 'layer/ToolTip_1-e' }}
+              <script>Include('/hbs/layer/ToolTip_1-e.hbs');</script>
             </div>
           </div>
           <div>
-            {{> 'module/InfoList_1-g' }}
+            <script>Include('/hbs/component/InfoList_1-g.hbs');</script>
           </div>
           <article class="CenterLeft" style="margin-top:30px;">
             <div style="flex:1; margin-right:10px;">
@@ -50,13 +50,21 @@
     <section data-seq="20230731184410925" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/InfoList_1-h' }}
+          <script>Include('/hbs/component/InfoList_1-h.hbs');</script>
         </div>
       </div>
     </section>
   </main>
-  <script>
-    Include('/hbs/layout/Footer_1-a.hbs');
-  </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='출금신청' }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '출금신청',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
