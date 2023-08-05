@@ -2269,3 +2269,74 @@
   font-size: 12px;
   font-weight: 500;
 }
+/**/
+.Diagram_2 {
+  .b-93ea1a1c {
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 26px;
+    width: 1px;
+    height: 90%;
+    background-color: #ebebeb;
+  }
+
+  .d-9e1e83c6 {
+    margin-left: 15px;
+    color: #303030;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .d-3d03e213 {
+    color: #303030;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .c-d0e98f90 {
+    width: 52px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  > ul {
+    position: relative;
+
+    > li {
+      position: relative;
+      z-index: 10;
+    }
+    > li + li {
+      margin-top: 20px;
+    }
+  }
+}
+/**/
+.t-37f276e9 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+/**/
+.c-ce000e7d {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
