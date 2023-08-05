@@ -215,12 +215,15 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    background-color: #fe3839;
+    background-color: #a6a6a6;
     width: 22px;
     height: 22px;
     color: #fff;
     font-size: 12px;
     font-weight: 600;
+    &.Rank1 {
+      background-color: #fe3839;
+    }
   }
 
   .DDay {
@@ -667,5 +670,38 @@
   margin-left: var(--p-left);
   li + li {
     margin-top: 0.5em;
+  }
+}
+/**/
+.BrandItem_1 {
+  .Label {
+    text-align: center;
+    margin-top: 20px;
+    color: #161616;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+/**/
+.ChipsList_1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: auto;
+  padding-left: var(--contents-side-padding);
+  padding-right: var(--contents-side-padding);
+  button {
+    color: #767676;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    &.On {
+      color: white;
+      border-color: #ff3838;
+      background-color: #ff3838;
+    }
   }
 }
