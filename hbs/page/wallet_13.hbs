@@ -3,17 +3,24 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230801161840446" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/AlertBox_1-j' }}
+    <section data-seq='20230801161840446' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='AlertBox_1'>
+            <div class='CenterCenter'>
+              <div class='Txt1 font-medium'>
+                <strong>본인 명의의 계좌</strong>만 등록 가능합니다.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section data-seq="20230801163045367" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/ButtonList_3-a' len=12 active=1 }}
+    <section data-seq='20230801163045367' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          {{!--          {{> 'module/ButtonList_3-a' len=12 active=1 }}--}}
+          <script>Include('/hbs/component/ButtonList_3-a.hbs');</script>
         </div>
       </div>
     </section>
