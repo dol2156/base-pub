@@ -3,13 +3,29 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230731163919457" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_6-a' txt1='C.point가 컬쳐캐쉬로 전환되었습니다!' }}
-          <div style="margin-top:40px;">
-            {{> 'module/InfoList_1-k' }}
+    <section data-seq='20230731163919457' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs', {txt1:'C.point가 컬쳐캐쉬로 전환되었습니다!'});</script>
+          <div style='margin-top:40px;'>
+            <script>Include('/hbs/component/InfoList_1-k.hbs');</script>
           </div>
+        </div>
+      </div>
+    </section>
+    <section data-seq='20230806075437597' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'참여하고 컬쳐캐쉬 더 받으러 가기'});</script>
+          <ul class="space-y-[5px]" style="margin-top:17px;">
+            {{#LOOP 3}}
+              <li>
+                <a href='https://www.google.com' target='_blank'>
+                  <img class='rounded-[8px] w-full' src='https://gifpng.com/320x78/ffd4d4/ff4444' alt='' />
+                </a>
+              </li>
+            {{/LOOP}}
+          </ul>
         </div>
       </div>
     </section>
@@ -18,4 +34,15 @@
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='확인' style=2 }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '확인',
+        style: 2,
+        disabled:false,
+      },
+    ],
+  });
+</script>

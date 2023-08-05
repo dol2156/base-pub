@@ -6,7 +6,8 @@
     <section data-seq="20230731165412026" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_6-a' txt1='C.Point 를 컬쳐캐쉬로 전환하세요!' }}
+{{!--          {{> 'module/TitleBox_6-a' txt1='C.Point 를 컬쳐캐쉬로 전환하세요!' }}--}}
+          <script>Include('/hbs/component/TitleBox_1-a.hbs', {txt1:'C.Point 를 컬쳐캐쉬로 전환하세요!'});</script>
           <article style="margin-top:11px;">
             <button class="ButtonUi Style6" data-form-hei="Xs">전환 시, 컬쳐캐쉬 3% 캐쉬업</button>
           </article>
@@ -22,13 +23,13 @@
       <div class="HBox">
         <div class="Inner">
           <div style="position:relative;">
-            {{> 'module/TitleBox_3-a' txt2='보유중인 C.point' txt3='50,000원' }}
+            <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt2:'보유중인 C.point', txt3:'50,000원'});</script>
             <div style="z-index:10; position:absolute; top:40px; left:30px;">
-              {{> 'layer/ToolTip_1-f' }}
+              <script>Include('/hbs/layer/ToolTip_1-f.hbs');</script>
             </div>
           </div>
           <div>
-            {{> 'module/InfoList_1-j' }}
+            <script>Include('/hbs/component/InfoList_1-j.hbs');</script>
           </div>
           <article class="CenterLeft" style="margin-top:30px;">
             <div style="flex:1; margin-right:10px;">
@@ -47,7 +48,7 @@
     <section data-seq="20230731184410925" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/InfoList_1-i' }}
+          <script>Include('/hbs/component/InfoList_1-i.hbs');</script>
         </div>
       </div>
     </section>
@@ -56,4 +57,15 @@
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='컬쳐캐쉬 전환' }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '컬쳐캐쉬 전환',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
