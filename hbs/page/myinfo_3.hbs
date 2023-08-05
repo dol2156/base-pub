@@ -1,0 +1,23 @@
+{{#> 'Page' }}
+  {{> 'layout/Header_2-a' }}
+  <main>
+    <section data-seq="20230804104208570" style="margin-top:16px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/SearchBox_1-a' placeholder='상품명을 입력해주세요.' }}
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230804104328783" style="margin-top:45px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_2-a' txt1='상품' txt2='3개' btn1='최근 구매순' }}
+          <div style="margin-top:16px;">
+            {{> 'module/ProductList_5-a' }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> 'layout/Footer_1-a' }}
+{{/ 'Page' }}

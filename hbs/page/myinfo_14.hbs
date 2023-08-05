@@ -1,0 +1,30 @@
+{{#> 'Page' }}
+  {{> 'layout/Header_2-a' }}
+  <main>
+    <section data-seq="20230804183315754" style="margin-top:10px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TabBar_2-a' array='구매|판매' }}
+          <div class='AlertBox_1' style="margin-top:24px;">
+            <div class='CenterCenter'>
+              <div class="Txt1 font-medium">
+                판매하신 상품 관련 환불 요청 내역을 보여드립니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230804183434563" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_2-a' txt1='총' txt2='3건' btn1='최신순' }}
+          <div>
+            {{> 'module/ProductList_3-f' }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> 'layout/Footer_1-a' }}
+{{/ 'Page' }}

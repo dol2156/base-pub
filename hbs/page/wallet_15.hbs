@@ -1,0 +1,34 @@
+{{#> 'Page' }}
+  {{> 'layout/Header_2-a' }}
+  <main>
+    <section data-seq="20230801200939992" style="margin-top:20px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/AlertBox_1-k' }}
+          <div style="margin-top:30px; position:relative;">
+            {{> 'module/InfoBox_2-b' }}
+            <div style="z-index:10; padding:8px 10px; border-radius:8px; position:absolute; bottom:-16px; left:18px; background-color:#ff3838; color:#FFFFFF; font-size:12px; font-weight:500;">
+              <img style="z-index:10; position:absolute; top:-5px; left:15px;" src="/public/icon/2308012017.svg" alt=""/>
+              컬쳐랜드 뒤 4글자 확인
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230801163708261" style="margin-top:50px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_5-a' txt1='계좌인증' }}
+          <div style="margin-top:8px;">
+            <div class="InputUi Style1 w-full" data-form-hei="Md">
+              <input placeholder="4자리 글자를 입력해주세요.">
+              <script>initInputUi();</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> 'layout/Footer_1-a' }}
+{{/ 'Page' }}
+{{> 'module/BottomBtnBox_1-b' btn='다음' style=2 }}

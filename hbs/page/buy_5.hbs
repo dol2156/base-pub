@@ -1,0 +1,58 @@
+{{#> 'Page' }}
+  {{> 'layout/Header_2-a' }}
+  <main>
+    <section data-seq="20230728114030090">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/ProductItem_4-a' }}
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230728120147336" style="margin-top:16px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_3-a' txt1='결제방법' }}
+          <div style="margin-top:16px;">
+            {{> 'module/PointBox_1-a' }}
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="Divider_1"></div>
+    <section data-seq="20230728131216789" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_2-a' txt1='간편 카드 결제' }}
+        </div>
+      </div>
+      <div style="margin-top:16px;">
+        {{> 'module/CardList_1-a' }}
+      </div>
+    </section>
+    <section data-seq="20230728131216789" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_2-a' txt1='기타 결제 수단' }}
+          <div style="margin-top:16px;">
+            {{> 'module/RadioGroup_1-a' }}
+          </div>
+          <div style="margin-top:16px;">
+            {{> 'module/PointBox_2-a' }}
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="Divider_1"></div>
+    <section data-seq="20230728131216789" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_3-a' txt1='결제정보' }}
+          <div>
+            {{> 'module/InfoList_1-c' }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{{/ 'Page' }}
+{{> 'module/BottomBtnBox_1-b' btn='결제하기' }}

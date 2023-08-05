@@ -1,0 +1,31 @@
+{{#> 'Page' }}
+  {{> 'layout/Header_2-a' }}
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      html{ background-color:#F4F4F4; }
+    </style>
+    <section data-seq="20230729114329258" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/PointBox_3-a' }}
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230729223918986" style="margin-top:16px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/BarcodeBox_1-a' }}
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230729224847017" style="margin-top:40px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/LinkList_1-a' array='포인트 결제내역|포인트 충전/적립 내역|출금내역|전환내역' }}
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> 'layout/Footer_1-a' }}
+{{/ 'Page' }}

@@ -1,0 +1,58 @@
+{{#> 'Page' }}
+  {{> 'layout/Header_2-a' }}
+  <main>
+    <section data-seq="20230731165412026" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_6-a' txt1='출금 계좌정보를 확인해주세요.' }}
+          <div style="margin-top:30px;">
+            {{> 'module/InfoBox_2-a' }}
+          </div>
+          <article class="CenterCenter" style="margin-top:20px;">
+            <button class='Btn_5'>
+              <article class='CenterCenter'>
+                <img style='margin-right:10px;' src='/public/icon/2307311426.svg' alt=''/>
+                <div>계좌 추가 등록</div>
+              </article>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230728120147336" style="margin-top:20px;">
+      <div class="HBox">
+        <div class="Inner">
+          <div style="position:relative;">
+            {{> 'module/TitleBox_3-a' txt2='보유중인 C.point' txt3='3,780원' }}
+            <div style="z-index:10; position:absolute; top:40px; left:30px;">
+              {{> 'layer/ToolTip_1-e' }}
+            </div>
+          </div>
+          <div>
+            {{> 'module/InfoList_1-g' }}
+          </div>
+          <article class="CenterLeft" style="margin-top:30px;">
+            <div style="flex:1; margin-right:10px;">
+              <div class="InputUi Style1 w-full" data-form-hei="Sm">
+                <input type="text" value="10,000P">
+              </div>
+            </div>
+            <div style="min-width:80px;">
+              <button class="ButtonUi Style2 w-full" data-form-hei="Sm">전액출금</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="Divider_1"></div>
+    <section data-seq="20230731184410925" style="margin-top:20px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/InfoList_1-h' }}
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> 'layout/Footer_1-a' }}
+{{/ 'Page' }}
+{{> 'module/BottomBtnBox_1-b' btn='출금신청' }}

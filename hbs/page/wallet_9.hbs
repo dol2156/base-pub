@@ -1,0 +1,55 @@
+{{#> 'Page' }}
+  {{> 'layout/Header_2-a' }}
+  <main>
+    <section data-seq="20230731165412026" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/TitleBox_6-a' txt1='C.Point 를 컬쳐캐쉬로 전환하세요!' }}
+          <article style="margin-top:11px;">
+            <button class="ButtonUi Style6" data-form-hei="Xs">전환 시, 컬쳐캐쉬 3% 캐쉬업</button>
+          </article>
+          <article class="CenterCenter" style="margin-top:30px;">
+            <img src="/public/icon/2308010831.svg" alt=""/>
+            <img style="margin-left:16px; margin-right:16px;" src="/public/icon/2308010833.svg" alt=""/>
+            <img src="/public/icon/2308010832.svg" alt=""/>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230728120147336" style="margin-top:40px;">
+      <div class="HBox">
+        <div class="Inner">
+          <div style="position:relative;">
+            {{> 'module/TitleBox_3-a' txt2='보유중인 C.point' txt3='50,000원' }}
+            <div style="z-index:10; position:absolute; top:40px; left:30px;">
+              {{> 'layer/ToolTip_1-f' }}
+            </div>
+          </div>
+          <div>
+            {{> 'module/InfoList_1-j' }}
+          </div>
+          <article class="CenterLeft" style="margin-top:30px;">
+            <div style="flex:1; margin-right:10px;">
+              <div class="InputUi Style1 w-full" data-form-hei="Sm">
+                <input type="text" value="10,000P">
+              </div>
+            </div>
+            <div style="min-width:80px;">
+              <button class="ButtonUi Style2 w-full" data-form-hei="Sm">전액전환</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="Divider_1"></div>
+    <section data-seq="20230731184410925" style="margin-top:20px;">
+      <div class="HBox">
+        <div class="Inner">
+          {{> 'module/InfoList_1-i' }}
+        </div>
+      </div>
+    </section>
+  </main>
+  {{> 'layout/Footer_1-a' }}
+{{/ 'Page' }}
+{{> 'module/BottomBtnBox_1-b' btn='컬쳐캐쉬 전환' }}
