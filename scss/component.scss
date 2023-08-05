@@ -521,3 +521,135 @@
     }
   }
 }
+/**/
+.Table_1 {
+  background-color: white;
+
+  > table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    > thead {
+      color: #303030;
+      font-size: 12px;
+      font-weight: 600;
+      > tr {
+        > th {
+          height: 51px;
+        }
+      }
+    }
+    > tbody {
+      color: #303030;
+      font-size: 11px;
+      font-weight: 400;
+      > tr {
+        > * {
+          border-top: 1px solid #ebebeb;
+          height: 51px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+/**/
+.Table_2 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+
+  > tbody {
+    th {
+      color: #303030;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: left;
+      padding-left: 10px;
+    }
+    td {
+      text-align: right;
+      padding-right: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      color: #767676;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .Txt1 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+/**/
+.Table_3 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  > * {
+    > tr > * {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    th {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    td {
+      text-align: center;
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+
+  > tbody {
+    tr {
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+}
+/**/
+.Table_4 {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  color: #303030;
+  font-size: 12px;
+  font-weight: 500;
+  th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+  }
+}
+/**/
+.Table_5 {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  color: #303030;
+  font-size: 12px;
+  font-weight: 600;
+  th{
+    padding-top:6px;
+    padding-bottom:6px;
+    text-align:left;
+  }
+  td{
+    padding-top:6px;
+    padding-bottom:6px;
+    text-align:right;
+  }
+}
