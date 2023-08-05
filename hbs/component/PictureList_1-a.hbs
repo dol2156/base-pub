@@ -1,0 +1,23 @@
+{{#if preview}}
+  {{!--{{VAR this 'array' '1|2|3|4|5'}}--}}
+  {{!--{{SAFE2 this 'txt1|txt2|btn1|btn2'}}--}}
+{{/if}}
+<div class='PictureList_1'>
+  <ul>
+    <li>
+      <img style='width:100%;' src='/public/icon/2308022245.svg' alt='' />
+    </li>
+    {{#LOOP 4}}
+      <li class='Box On'>
+        <img class='Chk' src='/public/icon/2308022250.svg' alt='' />
+      </li>
+    {{/LOOP}}
+    {{#LOOP 7}}
+      <li class='Box'></li>
+    {{/LOOP}}
+  </ul>
+  <div style='margin-top:40px; text-align:center; color:#303030; font-size:16px; font-weight:600;'>
+    선택된 항목 표시
+    <span class='Color1'>(4개)</span>
+  </div>
+</div>

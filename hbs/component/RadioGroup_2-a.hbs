@@ -1,0 +1,13 @@
+<div class='RadioGroup_2'>
+  {{#EACH @root.wallet_3}}
+    <button class='{{ON 1}}'>
+      <div class='Icon' {{#if obj.bg}}style="background-color:{{obj.bg}}" {{/if}}>
+        <img src='/public/icon/wallet/{{obj.label}}.svg' alt='' />
+      </div>
+      <img class="Chk" src='/public/icon/2307201935.svg' alt='' />
+      <div class='Txt1'>
+        {{obj.label}}
+      </div>
+    </button>
+  {{/EACH}}
+</div>
