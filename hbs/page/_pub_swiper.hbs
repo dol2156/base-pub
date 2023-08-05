@@ -1,0 +1,23 @@
+<div id='page'>
+  <main>
+    {{!--prettier-ignore--}}
+    <style>
+      main section{
+        margin-top:50px;
+        margin-bottom:50px;
+      }
+    </style>
+    <div class="H1">Swiper Guide</div>
+    {{log '🔴 _pub_swiper.hbs : 11 ==> ' this}}
+    {{#EACH window.HBS_DATA.swiper}}
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly type="text" value="{{obj.path}}" onclick="this.select();"/>
+        </div>
+        <br/>
+{{!--        {{> (PATH obj.partial_path) id=obj.name }}--}}
+        <script>Include('{{obj.path}}');</script>
+      </section>
+    {{/EACH}}
+  </main>
+</div>
