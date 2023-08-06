@@ -22,6 +22,11 @@
   {{SAFE 'product_name_2'}}
 {{/DV}}
 <div class='PrdItem_1'>
+  {{#if checkbox}}
+    <article style="margin-bottom:23px;">
+      <input style="margin-left:-18px;" class="CheckBoxUi Style1" type="checkbox" checked>
+    </article>
+  {{/if}}
   <article class='Head'>
     {{#if state1}}
       <div class='state1'>{{state1}}</div>
@@ -45,7 +50,7 @@
   <article class='Body {{#if centered}} Centered {{/if}}'>
     <div class='Left'>
       <div class='ThumbBox'>
-        <script>Include('/hbs/component/ImgBox_1-a.hbs', { like:{{SAFE2 like false}}, grayscale:{{SAFE2 grayscale false}} });</script>
+        <script>Include('/hbs/component/ImgBox_1-a.hbs', {like:{{SAFE2 like false}}, grayscale:{{SAFE2 grayscale false}} });</script>
       </div>
       {{#if flag1}}
         <div class='Flag Style1'>
@@ -104,7 +109,7 @@
           <article class='CenterLeft'>
             <div class='price3'>26,400원</div>
             <div class='sale_per' style='margin-left:4px;'>12%</div>
-            <img style='margin-left:2px;' src='/public/icon/2307181513.svg' alt='' />
+            <img style='margin-left:2px;' src='/public/icon/2307181513.svg' alt=''/>
           </article>
           <div class='price4' style='margin-top:6px;'>4,500원</div>
         </div>
