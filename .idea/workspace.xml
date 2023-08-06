@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/EmptyList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/EmptyList_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/myinfo_15.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/myinfo_15.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/myinfo_16.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/myinfo_16.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductItem_1-a.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
