@@ -179,13 +179,13 @@
     }
   }
   &.Style7 {
-    border: 1px solid #4168F6;
-    background-color: #4168F6;
+    border: 1px solid #4168f6;
+    background-color: #4168f6;
     color: #ffffff;
   }
   &.Style8 {
-    border: 1px solid #E03434;
-    background-color: #E03434;
+    border: 1px solid #e03434;
+    background-color: #e03434;
     color: #ffffff;
   }
   &[disabled] {
@@ -196,12 +196,13 @@
 }
 /**/
 .InputUi {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0px;
   padding: 0px 1em;
   outline: none;
-  background-color:white;
+  background-color: white;
   &.Style1 {
     border: 1px solid var(--form-border-color);
     &.Focus,

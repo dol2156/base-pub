@@ -6,16 +6,27 @@
     <section data-seq="20230803133831368" style="margin-top:16px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/SearchBox_1-a' placeholder='해당 브랜드의 상품을 검색해주세요.' }}
+          <script>Include('/hbs/component/SearchBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230725121809499" style="margin-top:20px;">
-      {{> 'module/ScrollTabBar_1-a' }}
+      <script>Include('/hbs/component/ScrollTabBar_1-a.hbs');</script>
     </section>
     <section data-seq="20230725122652465" style="margin-top:30px;">
-      {{> 'module/ButtonList_3-a' len=11 }}
+      <script>Include('/hbs/component/ButtonList_3-a.hbs');</script>
     </section>
   </main>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='다음' }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '다음',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>

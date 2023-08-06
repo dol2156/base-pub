@@ -1,11 +1,10 @@
 {{#DV}}
   {{SAFE 'placeholder'}}
-  {{!--{{SAFE 'array' '1|2|3'}}--}}
 {{/DV}}
 <div class='SearchBox_1'>
-  <div class='InputUi Style1 w-full HasValue' data-form-hei='Md'>
+  <div class='InputUi Style1 w-full HasValue' data-form-hei='Md' style='border-bottom-left-radius:0; border-bottom-right-radius:0;'>
     <input type='text' value='{{value}}' placeholder='{{placeholder}}' />
-    <article class="CenterRight" style="gap:2px;">
+    <article class='CenterRight' style='gap:2px;'>
       <button class='CenterCenter DelBtn'>
         <img src='/public/icon/2307091854.svg' alt='' />
       </button>
@@ -17,4 +16,13 @@
     </article>
     <script>initInputUi();</script>
   </div>
+  <ul class='AutoCompleteList'>
+    {{#LOOP 4}}
+      <li>
+        <button>
+          Lorem Ipsum is simply
+        </button>
+      </li>
+    {{/LOOP}}
+  </ul>
 </div>

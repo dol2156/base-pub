@@ -2419,6 +2419,36 @@
   align-items: flex-start;
   justify-content: center;
   gap: 0px;
-  flex-direction:column;
-  height:100%;
+  flex-direction: column;
+  height: 100%;
+}
+/**/
+.SearchBox_1 {
+  position: relative;
+}
+/**/
+.AutoCompleteList {
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  background-color: white;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+
+  > li {
+    > button {
+      display: block;
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 0px;
+      height: 40px;
+    }
+  }
 }
