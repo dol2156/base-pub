@@ -6,21 +6,21 @@
     <section data-seq="20230803145011287" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/ProfileBox_1-b' }}
+          <script>Include('/hbs/component/ProfileBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230803145527589" style="margin-top:16px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/ButtonBox_1-a' }}
+          <script>Include('/hbs/component/ButtonBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230803150953755" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/PointBox_4-a' }}
+          <script>Include('/hbs/component/PointBox_4-a.hbs');</script>
         </div>
       </div>
     </section>
@@ -28,7 +28,8 @@
     <section data-seq="20230803151009813">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/LinkList_1-a' array='자주 묻는 질문|공지사항' }}
+{{!--          {{> 'module/LinkList_1-a' array='자주 묻는 질문|공지사항' }}--}}
+          <script>Include('/hbs/component/LinkList_1-a.hbs');</script>
         </div>
       </div>
     </section>
