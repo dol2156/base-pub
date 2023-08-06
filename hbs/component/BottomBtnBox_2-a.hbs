@@ -1,0 +1,36 @@
+{{#DV}}
+  {{SAFE 'txt1'}}
+  {{SAFE 'txt2'}}
+{{/DV}}
+<div class='FixedBox'>
+  <div class='FixedShell' style='bottom:0;'>
+    <div class='BottomBtnBox_2'>
+      <table class="InfoTable" style="margin-bottom:23px;">
+        <tbody>
+        <tr>
+          {{#if txt1}}
+            <td>{{{txt1}}}</td>
+          {{else}}
+            <td>txt1</td>
+          {{/if}}
+          {{#if txt2}}
+            <td>{{{txt2}}}</td>
+          {{else}}
+            <td>txt2</td>
+          {{/if}}
+        </tr>
+        </tbody>
+      </table>
+      <div class="Inner">
+        {{#if btns}}
+          {{#EACH btns}}
+            <button class='ButtonUi Style{{obj.style}}' data-form-hei='Md' {{#if obj.disabled}}disabled{{/if}}>{{obj.label}}</button>
+          {{/EACH}}
+        {{else}}
+          <button class='ButtonUi Style2' data-form-hei='Md'>Button.Style2</button>
+          <button class='ButtonUi Style1' data-form-hei='Md'>Button.Style1</button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

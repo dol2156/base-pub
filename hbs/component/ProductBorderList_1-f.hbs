@@ -1,13 +1,12 @@
 <div class='ProductBorderList_1'>
   <ul>
-    <li>
-      <script>Include('/hbs/component/PrdItem_1-a.hbs');</script>
-    </li>
-    <li>
-      <script>Include('/hbs/component/PrdItem_1-a.hbs', {checkbox:true, brand_name:'교촌치킨', product_name:'후라이드치킨+콜라 1.25L', price1:'8,000원', price2:'9,000원', date_txt:true});</script>
-    </li>
+    {{#LOOP 3}}
+      <li>
+        <script>Include('/hbs/component/PrdItem_1-a.hbs', {checkbox:true, brand_name:'교촌치킨', product_name:'후라이드치킨+콜라 1.25L', price1:'8,000원', price2:'9,000원', date_txt:true});</script>
+      </li>
+    {{/LOOP}}
   </ul>
-  <div style="margin-top:30px;">
-    <button class="ButtonUi Style4 w-full" data-form-hei="Md">상품추가</button>
+  <div style='margin-top:30px;'>
+    <button class='ButtonUi Style4 w-full' data-form-hei='Md'>상품추가</button>
   </div>
 </div>

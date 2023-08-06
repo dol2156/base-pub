@@ -414,6 +414,11 @@ Handlebars.registerHelper('SAFE2', function (value, safeValue, options) {
 
 /**
  * var_list_str (변수 리스트) 받아서 하나라도 true 이면 true 반환
+ * {{#OR 'price1|price2|price5'}}
+ *   TRUE
+ * {{else}}
+ *   FALSE
+ * {{/OR}}
  */
 Handlebars.registerHelper('OR', function (var_list_str, options) {
   if (arguments.length != 2) return false;
@@ -430,6 +435,40 @@ Handlebars.registerHelper('OR', function (var_list_str, options) {
     }
     ++i;
   }
+  if (reslut) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
+
+/**
+ * var_list_str (변수 리스트) 받아서 모두 true 이면 true 반환
+ * {{#AND 'txt1|txt2'}}
+ *   TRUE
+ * {{else}}
+ *   FALSE
+ * {{/AND}}
+ */
+Handlebars.registerHelper('AND', function (var_list_str, options) {
+  if (arguments.length != 2) return false;
+  
+  let reslut = true;
+  const var_list = var_list_str.split('|');
+  
+  let i = 0;
+  let len_i = var_list.length;
+  while (i < len_i) {
+    const node_name = var_list[i];
+    const v = this[node_name];
+    if (typeof v === 'undefined') {
+      reslut = false;
+      break;
+    }
+    ++i;
+  }
+  console.log(`reslut == `, reslut);
+  
   if (reslut) {
     return options.fn(this);
   } else {
