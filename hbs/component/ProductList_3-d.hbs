@@ -1,19 +1,14 @@
 <div class="ProductList_3">
-  <ul class="space-y-[8px]">
+  <ul>
     <li>
-      {{> 'module/ProductItem_3-d' txt3='상품 등록중' }}
+      <script>Include('/hbs/component/ProductItem_3-d.hbs', {txt3:'상품 등록중'});</script>
     </li>
     <li>
-      {{> 'module/ProductItem_3-d' txt5='정산완료' }}
+      <script>Include('/hbs/component/ProductItem_3-d.hbs', {txt4:'판매불가'});</script>
     </li>
     <li>
-      {{> 'module/ProductItem_3-d' txt5='정산완료' txt6='우수회원 즉시정산' }}
-    </li>
-    <li>
-      {{> 'module/ProductItem_3-d' txt4='판매불가' }}
+      <script>Include('/hbs/component/ProductItem_3-d.hbs', {txt5:'정산완료'});</script>
     </li>
   </ul>
-</div>
-<div class="CenterCenter" style="margin-top: 30px">
-  {{> 'module/MoreBtn_1-a' }}
+  <script>Include('/hbs/component/MoreBtn_1-a.hbs');</script>
 </div>

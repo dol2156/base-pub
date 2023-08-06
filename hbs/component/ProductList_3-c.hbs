@@ -1,13 +1,11 @@
 <div class="ProductList_3">
-  <ul class="space-y-[8px]">
+  <ul>
     <li>
-      {{> 'module/ProductItem_3-c' txt2='개인판매' txt3='판매중' }}
+      <script>Include('/hbs/component/ProductItem_3-d.hbs', {txt2:'개인판매', txt3:'판매중'});</script>
     </li>
     <li>
-      {{> 'module/ProductItem_3-c' txt1='컬쳐랜드에 판매' txt4='판매취소' }}
+      <script>Include('/hbs/component/ProductItem_3-d.hbs', {txt1:'컬쳐랜드에 판매', txt4:'판매취소'});</script>
     </li>
   </ul>
-</div>
-<div class="CenterCenter" style="margin-top: 30px">
-  {{> 'module/MoreBtn_1-a' }}
+  <script>Include('/hbs/component/MoreBtn_1-a.hbs');</script>
 </div>

@@ -1323,10 +1323,24 @@
   }
 }
 /**/
+.ProductList_2 {
+  > ul {
+    > li {
+      border-bottom: 1px solid #ebebeb;
+    }
+    > li + li {
+      margin-top: 8px;
+    }
+  }
+}
+/**/
 .ProductList_3 {
   > ul {
-    li {
+    > li {
       border-bottom: 1px solid #ebebeb;
+    }
+    > li + li {
+      margin-top: 8px;
     }
   }
 }
