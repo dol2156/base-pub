@@ -37,4 +37,20 @@
     </section>
   </main>
 </div>
-{{!--{{> 'module/BottomBtnBox_1-a' btn1='장바구니 담기' btn2='구매하기' }}--}}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '장바구니 담기',
+        style: 2,
+        disabled:false,
+      },
+      {
+        label: '구매하기',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
