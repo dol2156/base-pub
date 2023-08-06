@@ -1,4 +1,7 @@
 {{#DV}}
+  {{SAFE 'txt1'}}
+  {{SAFE 'txt2'}}
+  {{SAFE 'txt3'}}
   {{SAFE 'state1'}}
   {{SAFE 'state2'}}
   {{SAFE 'state3'}}
@@ -14,7 +17,9 @@
   {{SAFE 'btn2'}}
   {{SAFE 'btn3'}}
   {{SAFE 'brand_name'}}
+  {{SAFE 'brand_name_xs'}}
   {{SAFE 'product_name'}}
+  {{SAFE 'product_name_2'}}
 {{/DV}}
 <div class='PrdItem_1'>
   <article class='Head'>
@@ -37,9 +42,11 @@
       <div class='Badge_2 Style3'>{{badge3}}</div>
     {{/if}}
   </article>
-  <article class='Body'>
+  <article class='Body {{#if centered}} Centered {{/if}}'>
     <div class='Left'>
-      <script>Include('/hbs/component/ImgBox_1-a.hbs', { grayscale:{{SAFE2 grayscale false}} });</script>
+      <div class='ThumbBox'>
+        <script>Include('/hbs/component/ImgBox_1-a.hbs', { like:{{SAFE2 like false}}, grayscale:{{SAFE2 grayscale false}} });</script>
+      </div>
       {{#if flag1}}
         <div class='Flag Style1'>
           {{flag1}}
@@ -67,26 +74,53 @@
       {{/if}}
     </div>
     <div class='Right'>
+      {{#if brand_name_xs}}
+        <div class='brand_name_xs'>{{brand_name_xs}}</div>
+      {{/if}}
       {{#if brand_name}}
         <div class='brand_name'>{{brand_name}}</div>
       {{/if}}
       {{#if product_name}}
         <div class='product_name' style='margin-top:10px;'>{{product_name}}</div>
       {{/if}}
-      {{#OR 'price1|price2'}}
+      {{#if product_name_2}}
+        <div class='product_name_2' style='margin-top:4px;'>{{product_name_2}}</div>
+      {{/if}}
+      {{#OR 'price1|price2|price5'}}
         <article class='CenterLeft' style='margin-top:4px; gap:4px;'>
           {{#if price1}}
             <div class='price1'>{{price1}}</div>
+          {{/if}}
+          {{#if price5}}
+            <div class='price5'>{{price5}}</div>
           {{/if}}
           {{#if price2}}
             <div class='price2'>{{price2}}</div>
           {{/if}}
         </article>
       {{/OR}}
+      {{#if price_set}}
+        <div style='margin-top:10px;'>
+          <article class='CenterLeft'>
+            <div class='price3'>26,400원</div>
+            <div class='sale_per' style='margin-left:4px;'>12%</div>
+            <img style='margin-left:2px;' src='/public/icon/2307181513.svg' alt='' />
+          </article>
+          <div class='price4' style='margin-top:6px;'>4,500원</div>
+        </div>
+      {{/if}}
       {{#if cupon_num}}
         <div class='cupon_num' style='margin-top:10px;'>쿠폰번호 : 9891463531813726</div>
       {{/if}}
-
+      {{#if txt1}}
+        <div class="Txt1" style="margin-top:10px;">{{txt1}}</div>
+      {{/if}}
+      {{#if txt2}}
+        <div class="Txt2" style="margin-top:10px;">{{txt2}}</div>
+      {{/if}}
+      {{#if txt3}}
+        <div class="Txt3" style="margin-top:10px;">{{txt3}}</div>
+      {{/if}}
       {{#if date_txt}}
         <div style='margin-top:10px;'>
           <div class='date_txt'>ㅇㅇㅇㅇ : <span>2023-05-17 17:37</span></div>
@@ -96,21 +130,21 @@
     </div>
   </article>
   {{#if btn1}}
-    <div style='margin-top:20px;'>
+    <div style='margin-top:10px;'>
       <button class='ButtonUi Style4 w-full' data-form-hei='Xs'>
         {{{btn1}}}
       </button>
     </div>
   {{/if}}
   {{#if btn2}}
-    <div style='margin-top:20px;'>
+    <div style='margin-top:10px;'>
       <button class='ButtonUi Style7 w-full' data-form-hei='Xs'>
         {{{btn2}}}
       </button>
     </div>
   {{/if}}
   {{#if btn3}}
-    <div style='margin-top:20px;'>
+    <div style='margin-top:10px;'>
       <button class='ButtonUi Style8 w-full' data-form-hei='Xs'>
         {{{btn3}}}
       </button>

@@ -2252,9 +2252,40 @@
     display: flex;
     gap: 0px;
 
+    &.Centered {
+      align-items: center;
+    }
+
     > .Right {
+      flex: 1;
       margin-left: 17px;
     }
+  }
+
+  .Txt1 {
+    color: #767676;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .Txt2 {
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .Txt3 {
+    color: #4168f6;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .ThumbBox {
+    position: relative;
+    z-index: 5;
   }
 
   .Flag {
@@ -2263,6 +2294,22 @@
     font-weight: 400;
     padding: 8px 10px;
     text-align: center;
+    position: relative;
+    z-index: 0;
+
+    &:before {
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0px;
+      display: inline-block;
+      content: '';
+      position: absolute;
+      z-index: 3;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
     &.Style1 {
       background: #fbeded;
@@ -2308,6 +2355,12 @@
     font-weight: 600;
   }
 
+  .brand_name_xs {
+    color: #a6a6a6;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
   .brand_name {
     color: #303030;
     font-size: 14px;
@@ -2323,6 +2376,13 @@
     line-height: 18px;
   }
 
+  .product_name_2 {
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
   .price1 {
     font-family: 'Montserrat', sans-serif;
     color: #ff3838;
@@ -2330,8 +2390,35 @@
     font-weight: 600;
   }
 
+  .price5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
   .price2 {
     font-family: 'Montserrat', sans-serif;
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+
+  .price3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .sale_per {
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .price4 {
     color: #a6a6a6;
     font-size: 12px;
     font-weight: 400;
