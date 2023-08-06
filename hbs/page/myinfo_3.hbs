@@ -6,16 +6,16 @@
     <section data-seq="20230804104208570" style="margin-top:16px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/SearchBox_1-a' placeholder='상품명을 입력해주세요.' }}
+          <script>Include('/hbs/component/SearchBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230804104328783" style="margin-top:45px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_2-a' txt1='상품' txt2='3개' btn1='최근 구매순' }}
+          <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'상품', txt2:'3개', btn1:'최근 구매순'});</script>
           <div style="margin-top:16px;">
-            {{> 'module/ProductList_5-a' }}
+            <script>Include('/hbs/component/ProductList_5-a.hbs');</script>
           </div>
         </div>
       </div>

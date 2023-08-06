@@ -1,16 +1,20 @@
 <div class="ProductList_5">
   <ul>
     <li>
-      {{> 'module/ProductItem_6-a' }}
+      <script>Include('/hbs/component/ProductItem_6-a.hbs', {txt1:'사용가능'});</script>
     </li>
     <li>
-      {{> 'module/ProductItem_6-b' }}
+      <script>Include('/hbs/component/ProductItem_6-a.hbs', {txt2:'사용완료'});</script>
     </li>
     <li>
-      {{> 'module/ProductItem_6-c' }}
+      <script>Include('/hbs/component/ProductItem_6-a.hbs', {txt2:'기간만료'});</script>
+    </li>
+    <li>
+      <script>Include('/hbs/component/ProductItem_6-a.hbs', {txt3:'환불요청'});</script>
+    </li>
+    <li>
+      <script>Include('/hbs/component/ProductItem_6-a.hbs', {txt2:'환불완료'});</script>
     </li>
   </ul>
-</div>
-<div style="margin-top:16px;">
-  {{> 'module/MoreBtn_1-a' }}
+  <script>Include('/hbs/component/MoreBtn_1-a.hbs');</script>
 </div>
