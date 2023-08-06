@@ -1,13 +1,14 @@
 <div class="ProductList_3">
   <ul>
     <li>
-      {{> 'module/ProductItem_3-e' txt2='개인판매' txt4='확정보류' btn1='남은 정산시간 1일 16시간 20분' }}
+      <script>Include('/hbs/component/ProductItem_3-e.hbs', {txt2:'개인판매', txt4:'확정보류', btn1:'남은 정산시간 1일 16시간 20분'});</script>
     </li>
     <li>
-      {{> 'module/ProductItem_3-e' txt1='컬쳐랜드에 판매' txt4='정산보류' btn2='환불요청' }}
+      <script>Include('/hbs/component/ProductItem_3-e.hbs', {txt1:'컬쳐랜드에 판매', txt4:'정산보류', btn2:'환불요청'});</script>
+    </li>
+    <li>
+      <script>Include('/hbs/component/ProductItem_3-e.hbs', {txt1:'컬쳐랜드에 판매', txt5:'정산완료'});</script>
     </li>
   </ul>
-</div>
-<div class="CenterCenter" style="margin-top: 30px">
-  {{> 'module/MoreBtn_1-a' }}
+  <script>Include('/hbs/component/MoreBtn_1-a.hbs');</script>
 </div>
