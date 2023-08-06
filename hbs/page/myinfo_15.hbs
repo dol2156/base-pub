@@ -6,16 +6,16 @@
     <section data-seq="20230804185107259" style="margin-top:16px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/SearchBox_1-a' value='수수료' placeholder='궁금하신 사항을 키워드로 검색해보세요' }}
+          <script>Include('/hbs/component/SearchBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230804185152515" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TabBar_2-a' array='구매/결제|C.point|상품등록' }}
+          <script>Include('/hbs/component/TabBar_2-a.hbs', {len:3});</script>
           <div>
-            {{> 'module/Collase_2-a' }}
+            <script>Include('/hbs/component/Collapse_2-a.hbs');</script>
           </div>
         </div>
       </div>
