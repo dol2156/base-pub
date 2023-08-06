@@ -2458,3 +2458,25 @@
   font-size: 12px;
   font-weight: 500;
 }
+/**/
+.InfoTable_2 {
+  > .Inner {
+    padding-top: 17px;
+    padding-bottom: 18px;
+    border-top: 1px solid var(--sub-border-1, #ebebeb);
+    border-bottom: 1px solid var(--sub-border-1, #ebebeb);
+    background: var(--sub-white, #fff);
+  }
+
+  .t-9180769c {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .C-88e87f5c {
+    color: #ff3838;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
