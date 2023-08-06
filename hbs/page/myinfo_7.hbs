@@ -3,35 +3,51 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230727115222119" style="margin-top:20px;">
-      <div class="HBox">
-        <div class="Inner">
-          <div style="position:relative;">
-            {{> 'module/CuponBox_1-b' }}
-            <div class="Cover_230804112023">구매확정</div>
+    <section data-seq='20230727115222119' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div style='position:relative;'>
+            <script>Include('/hbs/component/CuponBox_1-b.hbs');</script>
+            <div class='Cover_230804112023'>구매확정</div>
           </div>
         </div>
       </div>
     </section>
-    <section data-seq="20230727123020938" style="margin-top:30px;">
-      {{> 'module/Text_2-a' }}
+    <section data-seq='20230727123020938' style='margin-top:30px;'>
+      <script>Include('/hbs/component/Text_2-a.hbs');</script>
     </section>
-    <section data-seq="20230727132654573" style="margin-top:16px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_3-a' txt4='구매정보' }}
-          {{> 'module/InfoList_1-b' }}
+    <section data-seq='20230727132654573' style='margin-top:16px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt4:'구매정보', btn1:'구매자에게 환불 요청하기'});</script>
+          <script>Include('/hbs/component/InfoList_1-b.hbs');</script>
         </div>
       </div>
     </section>
-    <section data-seq="20230727135114299" style="margin-top:30px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/TitleBox_3-a' txt4='상품안내' }}
-          {{> 'module/Collase_1-a' }}
+    <section data-seq='20230727135114299' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_3-a.hbs', {txt4:'상품안내'});</script>
+          <script>Include('/hbs/component/Collapse_1-a.hbs');</script>
         </div>
       </div>
     </section>
   </main>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='구매하기' }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '확정보류',
+        style: 2,
+        disabled:false,
+      },
+      {
+        label: '구매확정',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>

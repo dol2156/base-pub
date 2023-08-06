@@ -1,10 +1,5 @@
 <div class="Modal"></div>
-<div style="z-index:9999; position:absolute; top:50px; left:20px;">
-  <label class="CenterCenter">
-    <input class="CheckBoxUi Style1" type="checkbox" data-size="Md">
-    <div class="LabalUi"><span style="color:white;">다시 보지 않기</span></div>
-  </label>
-</div>
+<script>Include('/hbs/component/NotWatchChk_1-a.hbs');</script>
 <div id='page'>
   <script>
     Include('/hbs/layout/Header_2-a.hbs');
@@ -13,12 +8,12 @@
     <section data-seq="20230727115222119" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/CuponBox_1-a' }}
+          <script>Include('/hbs/component/CuponBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230727123020938" style="margin-top:30px;">
-      {{> 'module/Text_2-a' }}
+      <script>Include('/hbs/component/Text_2-a.hbs');</script>
     </section>
     <section data-seq="20230727132654573" style="margin-top:16px;">
       <div class="HBox">
@@ -42,15 +37,15 @@
               </div>
             </article>
           </div>
-          {{> 'module/InfoList_1-b' }}
+          <script>Include('/hbs/component/InfoList_1-b.hbs');</script>
         </div>
       </div>
     </section>
     <section data-seq="20230727135114299" style="margin-top:30px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_3-a' txt2='상품안내' }}
-          {{> 'module/Collase_1-a' }}
+          <script>Include('/hbs/component/TitleBox_3-a.hbs',{txt2:'상품안내'});</script>
+          <script>Include('/hbs/component/Collapse_1-a.hbs');</script>
         </div>
       </div>
     </section>
