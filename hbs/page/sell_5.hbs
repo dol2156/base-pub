@@ -3,20 +3,34 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230802225523385" style="margin-top:20px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/AlertBox_1-b' }}
+    <section data-seq='20230802225523385' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='AlertBox_1'>
+            <div class='CenterCenter'>
+              <div class='Txt1'>
+                등록하신 상품정보를 확인 후,
+                <br />
+                <strong>판매방법을</strong>
+                선택해주세요.
+                <br />
+                <button class='Btn_1' style='margin-top: 8px'>
+                  판매방법
+                  <img src='/public/icon/2307171341.svg' alt='' />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section data-seq="20230802230119762" style="margin-top:20px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/Legend_1-a' }}
+    <section data-seq='20230802230119762' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/Legend_1-a.hbs');</script>
 
-          <div style="margin-top:15px;">
-            {{> 'module/ProductList_4-a' }}
+          <div style='margin-top:15px;'>
+            <script>Include('/hbs/component/ProductList_4-a.hbs');</script>
           </div>
 
         </div>
@@ -27,4 +41,20 @@
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
-{{> 'module/BottomBtnBox_1-a' btn1='모든 판매취소' btn2='판매등록' disabled2=true }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '모든 판매취소',
+        style: 2,
+        disabled:false,
+      },
+      {
+        label: '판매등록',
+        style: 1,
+        disabled:true,
+      },
+    ],
+  });
+</script>

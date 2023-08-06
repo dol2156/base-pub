@@ -1,6 +1,6 @@
 <div class='ImgBox_1'>
   {{#if new}}
-    <div class="New">
+    <div class='New'>
       <img style='width: 100%;' src='/public/icon/2307170959.svg' alt='' />
     </div>
   {{/if}}
@@ -15,14 +15,34 @@
     <img style='width: 100%;' src='https://gifpng.com/88x88/ffd4d4/ff4444' alt='' />
   {{/if}}
   {{#if like}}
-    <div class="Like">
+    <div class='Like'>
       {{!<img style="width: 100%" src="/public/icon/2307231115.svg" alt="" />}}
       <img style='width: 100%' src='/public/icon/2307231115_on.svg' alt='' />
     </div>
   {{/if}}
   {{#if dday}}
-  <div class="DDay">
-    D-5
-  </div>
+    <div class='DDay'>
+      D-5
+    </div>
+  {{/if}}
+  {{#if (IF (IF c '==' true) '||' (IF p '==' true))}}
+    <article class='CenterRight' style='z-index:10; position:absolute; top:4px; right:4px;'>
+      {{#if c}}
+        <div>
+          <img src='/public/icon/2308022301.svg' alt='' />
+        </div>
+      {{/if}}
+      {{#if p}}
+        <div>
+          <img src='/public/icon/2308022302.svg' alt='' />
+        </div>
+      {{/if}}
+    </article>
+  {{/if}}
+  {{#if nosell}}
+    <article class='NoSellCover'>판매 불가</article>
+  {{/if}}
+  {{#if noadd}}
+    <article class='NoAddCover'>{{noadd}}</article>
   {{/if}}
 </div>
