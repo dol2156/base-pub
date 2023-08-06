@@ -2217,6 +2217,146 @@
   }
 }
 /**/
+.ProductBoxList_1 {
+  > ul {
+    > li {
+      border: 1px solid #ebebeb;
+      border-radius: 8px;
+      padding: 20px;
+
+      + li {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+/**/
+.ProductBorderList_1 {
+  > ul {
+    > li {
+      border-bottom: 1px solid #ebebeb;
+      padding: 20px;
+    }
+  }
+}
+/**/
+.PrdItem_1 {
+  > .Head {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  > .Body {
+    margin-top: 2px;
+    display: flex;
+    gap: 0px;
+
+    > .Right {
+      margin-left: 17px;
+    }
+  }
+
+  .Flag {
+    border-radius: 0px 0px 8px 8px;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 8px 10px;
+    text-align: center;
+
+    &.Style1 {
+      background: #fbeded;
+      color: #ff3838;
+    }
+
+    &.Style2 {
+      background: #e1e1e1;
+      color: #a6a6a6;
+    }
+
+    &.Style3 {
+      background: #767676;
+      color: #ffffff;
+    }
+
+    &.Style4 {
+      background: #ff3838;
+      color: #ffffff;
+    }
+
+    &.Style5 {
+      background: #f2f5ff;
+      color: #4168f6;
+    }
+  }
+
+  .state1 {
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .state2 {
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .state3 {
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .brand_name {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .product_name {
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .price1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff3838;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .price2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+
+  .cupon_num {
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .date_txt {
+    color: #a6a6a6;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    > span {
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+}
+/**/
 .RadioGroup_2 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

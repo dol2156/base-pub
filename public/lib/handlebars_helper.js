@@ -286,7 +286,6 @@ Handlebars.registerHelper('SAFE2', function (ori_data, array_string, options) {
   });
 });
 
-
 /**
  * Partial 사용시에 경로를 동적으로 넣어야하는 경우가 있을때 사용
  * {{> (PATH obj.partial_path) }}
@@ -413,3 +412,27 @@ Handlebars.registerHelper('SAFE2', function (value, safeValue, options) {
   return out;
 });
 
+/**
+ * var_list_str (변수 리스트) 받아서 하나라도 true 이면 true 반환
+ */
+Handlebars.registerHelper('OR', function (var_list_str, options) {
+  if (arguments.length != 2) return false;
+  let reslut = false;
+  const var_list = var_list_str.split('|');
+  let i = 0;
+  let len_i = var_list.length;
+  while (i < len_i) {
+    const node_name = var_list[i];
+    const v = this[node_name];
+    if (typeof v !== 'undefined') {
+      reslut = true;
+      break;
+    }
+    ++i;
+  }
+  if (reslut) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
