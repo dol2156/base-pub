@@ -7,19 +7,19 @@
       <div class="HBox">
         <div class="Inner">
           <div>
-            {{> 'module/TitleBox_5-a' txt1='판매유형' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'판매유형'});</script>
             <div style="margin-top:8px;">
-              {{> 'module/RadioGroup_3-a' array='컬쳐랜드에 판매|개인판매' active=1 }}
+              <script>Include('/hbs/component/RadioGroup_3-a.hbs');</script>
             </div>
           </div>
           <div style="margin-top:20px;">
-            {{> 'module/TitleBox_5-a' txt1='브랜드' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'브랜드'});</script>
             <div style="margin-top:8px;" class="InputUi Style1 w-full ReadOnly" data-form-hei="Sm">
               <input type="text" value="스타벅스" placeholder="placeholder" readonly>
             </div>
           </div>
           <div style="margin-top:20px;">
-            {{> 'module/TitleBox_5-a' txt1='상품명' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'상품명'});</script>
             <div style="margin-top:8px;" class="InputUi Style1 w-full ReadOnly" data-form-hei="Sm">
               <input type="text" value="카페아메리카노T" placeholder="placeholder" readonly>
             </div>
@@ -32,29 +32,29 @@
       <div class="HBox">
         <div class="Inner">
           <div>
-            {{> 'module/TitleBox_5-a' txt1='쿠폰정가' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'쿠폰정가'});</script>
             <div style="margin-top:8px;" class="InputUi Style1 w-full ReadOnly" data-form-hei="Sm">
               <input type="text" value="4,500" placeholder="placeholder" readonly>
             </div>
           </div>
           <div style="margin-top:20px;">
-            {{> 'module/TitleBox_5-a' txt1='판매금액' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'판매금액'});</script>
             <div style="margin-top:8px;" class="InputUi Style1 w-full ReadOnly" data-form-hei="Sm">
               <input type="text" value="4,000" placeholder="placeholder" readonly>
             </div>
           </div>
           <div style="margin-top:20px;">
-            {{> 'module/TitleBox_5-a' txt1='유효기간' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'유효기간'});</script>
             <div style="margin-top:8px;" class="InputUi Style1 w-full Error" data-form-hei="Sm">
               <input type="text" value="2024-05-01" placeholder="placeholder" readonly>
               <button style="width:24px;">
                 <img src="/public/icon/2308031356.svg" alt=""/>
               </button>
             </div>
-            <div style="margin-top:10px; color:#FF3838; font-size:12px; font-weight:500;">유효기간이 7일 이상 남은 상품만 등록해주세요</div>
+            <div class="t-0085f43d" style="margin-top:10px;">유효기간이 7일 이상 남은 상품만 등록해주세요</div>
           </div>
           <div style="margin-top:20px;">
-            {{> 'module/TitleBox_5-a' txt1='바코드 번호' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'바코드 번호'});</script>
             <div style="margin-top:8px;" class="InputUi Style1 w-full" data-form-hei="Sm">
               <input type="text" placeholder="바코드 번호를 입력해주세요.">
             </div>
@@ -67,26 +67,26 @@
       <div class="HBox">
         <div class="Inner">
           <div>
-            {{> 'module/TitleBox_5-a' txt1='상품정보' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'상품정보'});</script>
             <div style="margin-top:8px;">
-              {{> 'module/AlertBox_2-a' }}
+              <script>Include('/hbs/component/AlertBox_2-a.hbs');</script>
             </div>
           </div>
           <div style="margin-top:20px;">
-            {{> 'module/TitleBox_5-a' txt1='이미지 등록' }}
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'이미지 등록'});</script>
             <div style="margin-top:15px;">
               <div style="width:96px">
                 <img src="/public/icon/2308031403.svg" alt=""/>
               </div>
-              <div style="margin-top:15px; color:#938E8E; font-size:12px; font-weight:400;">
+              <div class="C-b8a50423" style="margin-top:15px;">
                 사진당 최대 100MB의 용량제한이 있습니다.
               </div>
             </div>
             <div style="margin-top:15px;">
               <div style="width:96px">
-                {{> 'module/ImgBox_1-a' }}
+                <script>Include('/hbs/component/ImgBox_1-a.hbs');</script>
               </div>
-              <div style="margin-top:15px; color:#938E8E; font-size:12px; font-weight:400;">
+              <div class="C-b8a50423" style="margin-top:15px;">
                 사진당 최대 100MB의 용량제한이 있습니다.
               </div>
             </div>
@@ -96,4 +96,15 @@
     </section>
   </main>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='확인' disabled=true }}
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '확인',
+        style: 1,
+        disabled:true,
+      },
+    ],
+  });
+</script>
