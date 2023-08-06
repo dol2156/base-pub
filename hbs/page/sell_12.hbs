@@ -3,17 +3,27 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    <section data-seq="20230803133831368" style="margin-top:16px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/SearchBox_1-a' value='팥빙수' }}
+    <section data-seq='20230803133831368' style='margin-top:16px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/SearchBox_1-a.hbs');</script>
         </div>
       </div>
     </section>
-    <section data-seq="20230803134131432" style="margin-top:20px;">
-      <div class="HBox">
-        <div class="Inner">
-          {{> 'module/EmptyList_1-d' }}
+    <section data-seq='20230803134131432' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='EmptyList_1'>
+            <article class='CenterCenter' style='flex-direction:column'>
+              <div>
+                <img src='/public/icon/2308031351.svg' alt='' />
+              </div>
+              <div class='Txt1' style='margin-top:17px;'>
+                <div>판매중인 상품이 없습니다.</div>
+                <div>다시 검색해주세요.</div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
