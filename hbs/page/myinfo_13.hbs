@@ -6,17 +6,19 @@
     <section data-seq="20230803133831368" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/TitleBox_2-a' txt1='총' txt2='3건' }}
+          <script>Include('/hbs/component/TitleBox_2-a.hbs', {txt1:'총', txt2:'3건'});</script>
         </div>
       </div>
     </section>
     <section data-seq="20230803134131432" style="margin-top:20px;">
       <div class="HBox">
         <div class="Inner">
-          {{> 'module/ProductList_1-d' }}
+          <script>Include('/hbs/component/ProductList_1-d.hbs');</script>
         </div>
       </div>
     </section>
   </main>
+  <script>
+    Include('/hbs/layout/Footer_1-a.hbs');
+  </script>
 </div>
-{{> 'module/BottomBtnBox_1-b' btn='다음' }}

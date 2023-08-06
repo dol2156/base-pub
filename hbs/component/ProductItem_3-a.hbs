@@ -8,6 +8,11 @@
   {{SAFE 'txt7'}}
   {{SAFE 'txt8'}}
   {{SAFE 'txt9'}}
+
+  {{SAFE 'txt10'}}
+  {{SAFE 'txt11'}}
+  {{SAFE 'txt12'}}
+
   {{SAFE 'btn1'}}
   {{SAFE 'btn2'}}
   {{SAFE 'btn3'}}
@@ -68,6 +73,10 @@
           불가사유: 이미 등록된 상품
         </div>
       {{else}}
+        <article class="CenterLeft" style="margin-top:4px;">
+          <div class="C-fec8f720">26,400원</div>
+          <div class="C-9a791795" style="margin-left:6px;">4,500원</div>
+        </article>
         <div class="Txt3 Montserrat" style="margin-top:4px;">
           가격: 2,800원
         </div>
@@ -77,6 +86,21 @@
         <div class="Txt5" style="margin-top:10px;">
           <p>ㅇㅇㅇㅇ : <span class="Montserrat">2023-05-17</span></p>
           <p>ㅇㅇㅇㅇ : <span class="Montserrat">2023-05-17 12:45</span></p>
+        </div>
+      {{/if}}
+      {{#if txt10}}
+        <div class="Txt9" style="margin-top:14px;">
+          {{txt10}}
+        </div>
+      {{/if}}
+      {{#if txt11}}
+        <div class="Txt10" style="margin-top:14px;">
+          {{txt11}}
+        </div>
+      {{/if}}
+      {{#if txt12}}
+        <div class="Txt11" style="margin-top:14px;">
+          {{txt12}}
         </div>
       {{/if}}
     </div>

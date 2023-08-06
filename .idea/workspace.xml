@@ -7,15 +7,14 @@
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_3-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductItem_3-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_3-c.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_3-d.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_3-e.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_3-f.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-d.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductList_3-d.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-e.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductList_3-e.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_6-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductItem_6-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_1-d.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductList_1-d.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-c.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductList_3-c.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-f.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ProductList_3-f.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/myinfo_13.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/myinfo_13.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/myinfo_14.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/myinfo_14.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
