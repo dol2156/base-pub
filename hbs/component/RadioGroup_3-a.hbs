@@ -1,7 +1,11 @@
+{{#DV}}
+  {{!--{{SAFE 'txt1'}}--}}
+  {{SAFE 'len' 3}}
+{{/DV}}
 <div class='RadioGroup_3'>
-  {{#EACH (ARR '9,999원|9,999원|9,999원|9,999원')}}
+  {{#LOOP len}}
     <button class="ButtonUi Style4 {{ON 0 'On2'}}" data-form-hei="Sm">
-      {{obj}}
+      Button
     </button>
-  {{/EACH}}
+  {{/LOOP}}
 </div>
