@@ -16,13 +16,15 @@
     </article>
     <script>initInputUi();</script>
   </div>
-  <ul class='AutoCompleteList'>
-    {{#LOOP 4}}
-      <li>
-        <button>
-          Lorem Ipsum is simply
-        </button>
-      </li>
-    {{/LOOP}}
-  </ul>
+  {{#if autocomplete}}
+    <ul class='AutoCompleteList'>
+      {{#LOOP 4}}
+        <li>
+          <button>
+            Lorem Ipsum is simply
+          </button>
+        </li>
+      {{/LOOP}}
+    </ul>
+  {{/if}}
 </div>
