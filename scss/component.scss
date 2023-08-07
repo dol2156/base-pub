@@ -718,6 +718,7 @@
   color: #303030;
   font-size: 12px;
   font-weight: 600;
+
   th {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -729,6 +730,31 @@
     text-align: right;
   }
 }
+
+/**/
+.Table_6 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    text-align: left;
+    color: #767676;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+  }
+}
+
 /**/
 .Ol_1 {
   --p-left: 1em;
@@ -2059,29 +2085,6 @@
   }
 }
 /**/
-.Table_6 {
-  table-layout: fixed;
-  border-collapse: collapse;
-  width: 100%;
-
-  th {
-    text-align: left;
-    color: #767676;
-    font-size: 12px;
-    font-weight: 600;
-  }
-
-  td {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-family: 'Montserrat', sans-serif;
-    color: #303030;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: right;
-  }
-}
-/**/
 .InfoBox_3 {
   border-radius: 8px;
   border: 1px solid #ebebeb;
@@ -3065,4 +3068,48 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+}
+/**/
+.C-48a464fa {
+  color: #303030;
+  font-size: 12px;
+  font-weight: 400;
+}
+/**/
+.NotifyViewBox_1 {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--sub-border-1, #ebebeb);
+  background: var(--sub-white, #fff);
+}
+/**/
+.Table_7 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  color: #303030;
+  font-size: 12px;
+  font-weight: 400;
+
+  > tbody {
+    > tr {
+      border-bottom: 1px solid #ebebeb;
+
+      > * {
+        padding-top: 19px;
+        padding-bottom: 19px;
+      }
+
+      > th {
+        font-weight: 600;
+        text-align: left;
+      }
+    }
+  }
+}
+/**/
+.C-bc733ff4 {
+  color: #303030;
+  font-size: 12px;
+  font-weight: 700;
 }

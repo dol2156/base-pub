@@ -3,9 +3,40 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    {{!--CONTENTS--}}
+    <section data-seq='20230807151635476' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div class='AlertBox_1 Style1'>
+            <div class='CenterCenter'>
+              <div class='Txt1'>
+                신고 취소 사유를 기재해 주세요
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-seq="20230807151709053" style="margin-top:30px;">
+      <div class="HBox">
+        <div class="Inner">
+          <textarea class="TextAreaUi" placeholder="placeholder" style="height:200px;">다시 해보니 사용이 되었습니다.</textarea>
+        </div>
+      </div>
+    </section>
   </main>
   <script>
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '취소하기',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
