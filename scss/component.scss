@@ -1550,7 +1550,7 @@
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
-  
+
   > li {
     position: relative;
     display: flex;
@@ -2924,7 +2924,7 @@
   &.My {
     //padding-left: 20px;
     align-items: flex-end;
-    
+
     .ContentsArea {
       background: var(--sub-white, #fff);
       box-shadow: 0px 0px 6px 0px rgba(166, 166, 166, 0.6);
@@ -2939,5 +2939,17 @@
   .C-e906e752 {
     font-size: 14px;
     font-weight: 600;
+  }
+}
+/**/
+.ChatInputWrap {
+  background: var(--solid-white, #fff);
+  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  > .Inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
   }
 }

@@ -3,16 +3,32 @@
     Include('/hbs/layout/Header_2-d.hbs');
   </script>
   <main>
-    <div class='FixedBox'>
-      <div class='FixedShell'>
-        <script>Include('/hbs/component/ProductLink_1-a.hbs');</script>
-      </div>
-    </div>
     <section data-seq='20230807084634039'>
       <script>Include('/hbs/component/ChantBoxWrap_1-a.hbs');</script>
     </section>
   </main>
-  <script>
-    Include('/hbs/layout/Footer_1-a.hbs');
-  </script>
+</div>
+<div class='FixedBox'>
+  <div class='FixedShell' style='bottom:0;'>
+    <div class='ChatInputWrap'>
+      <article class='Inner'>
+        <div style="min-width:36px;">
+          <button>
+            <img src='/public/icon/2308070951.svg' alt='' />
+          </button>
+        </div>
+        <div style="flex:1; margin-left:8px; margin-right:2px;">
+          <div class='InputUi Style1 w-full' data-form-hei='Sm'>
+            <input placeholder='대화를 입력해 주세요.' />
+            <script>initInputUi();</script>
+          </div>
+        </div>
+        <div style="min-width:36px;">
+          <button>
+            <img src='/public/icon/2308070954.svg' alt='' />
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
 </div>
