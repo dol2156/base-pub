@@ -264,6 +264,10 @@
   &::placeholder {
     color: var(--form-placeholder-color);
   }
+
+  &.Error {
+    border-color: #ff3838;
+  }
 }
 /**/
 .SelectUi {
@@ -329,7 +333,7 @@ input[type='radio'] {
     &:checked {
       background-image: url(/public/icon/basic/chk_1_on.svg);
       + .LabalUi {
-        color: #ff3838!important;
+        color: #ff3838 !important;
       }
     }
     &[disabled] {
