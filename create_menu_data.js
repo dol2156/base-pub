@@ -1,5 +1,6 @@
+/* https://docs.google.com/spreadsheets/d/129_KRnvwnKwySm_wZ2t58vgrNMBEVG8JCksrxxbJLl4/edit#gid=1038524317 */
 const google_sheet_api =
-  'https://script.google.com/macros/s/AKfycbyRsrHPlyzuf5mX6Nfob5VJR3IBjbMIG3XxQYnk5iu7U04rmot7-MJ9xHGe5ls96SS_Jw/exec';
+  'https://script.google.com/macros/s/AKfycbyL5A1emq2Y514kZh74uxLLcSJ5Z7TKuU_oTUwmDS7sBm7QULPE-6L8DAqODsuqImid/exec';
 
 const fs = require('fs');
 const beautify = require('js-beautify').js;
