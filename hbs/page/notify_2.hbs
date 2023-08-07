@@ -3,9 +3,99 @@
     Include('/hbs/layout/Header_2-a.hbs');
   </script>
   <main>
-    {{!--CONTENTS--}}
+    <section data-seq='20230807142647090' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_1-a.hbs', {txt1: '<span class="Color1">타인 사용 및 취소</span>'});</script>
+          <ul class='Ul_1 C-d61e49df' style='margin-top:4px;'>
+            <li>다른사람이 이미 사용했습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section data-seq='20230807143112472' style='margin-top:30px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1: '아래 내용을 기재해 주세요.(필수)'});</script>
+          <div class='C-e54f26dc' style='margin-top:10px;'>
+            주문을 시도한 매장/지점 명 (예 : CU 컬쳐랜드점)
+          </div>
+          <div class='InputUi Style1 w-full' data-form-hei='Sm' style='margin-top:10px;'>
+            <input placeholder='placeholder' />
+            <script>initInputUi();</script>
+          </div>
+          <div class='C-3dfa1c16' style='margin-top:8px;'>
+            내용을 기재해 주세요.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-seq='20230807143112472' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1: '주문/사용을 시도한 일시 (예 : 2023-01-01)'});</script>
+          <div class='InputUi Style1 w-full' data-form-hei='Sm' style='margin-top:8px;'>
+            <input placeholder='placeholder' />
+            <script>initInputUi();</script>
+          </div>
+          <div class='C-3dfa1c16' style='margin-top:8px;'>
+            내용을 기재해 주세요.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-seq='20230807143112472' style='margin-top:20px;'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1: '이 외에 추가로 기재하실 내용이 있다면 기재해 주세요.(선택)'});</script>
+          <textarea class='TextAreaUi' placeholder='placeholder' style='margin-top:8px; height:135px;'></textarea>
+        </div>
+      </div>
+    </section>
+    <section data-seq='20230803123617918'>
+      <div class='HBox'>
+        <div class='Inner'>
+          <div style='margin-top:20px;'>
+            <script>Include('/hbs/component/TitleBox_5-a.hbs', {txt1:'사진 첨부'});</script>
+            <div style='margin-top:15px;'>
+              <article class='CenterLeft' style="gap:12px;">
+                <div style='width:96px'>
+                  <img src='/public/icon/2308031403.svg' alt='' />
+                </div>
+                <div style='width:96px'>
+                  <script>Include('/hbs/component/ImgBox_1-a.hbs');</script>
+                </div>
+              </article>
+              <div class='C-b8a50423' style='margin-top:15px;'>
+                <ul class='Ul_1'>
+                  <li>이미지는 최대 5개까지 등록 가능합니다.</li>
+                  <li>사진당 최대 100MB의 용량제한이 있습니다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <script>
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
+{{!--prettier-ignore--}}
+<script>
+  Include('/hbs/component/BottomBtnBox_1-a.hbs', {
+    btns: [
+      {
+        label: '취소하기',
+        style: 2,
+        disabled:false,
+      },
+      {
+        label: '신고하기',
+        style: 1,
+        disabled:false,
+      },
+    ],
+  });
+</script>
