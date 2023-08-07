@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/sell_14.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/sell_14.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/MENU_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/MENU_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/복사 예외 파일 또는 폴더.md" beforeDir="false" afterPath="$PROJECT_DIR$/복사 예외 파일 또는 폴더.md" afterDir="false" />
-    </list>
+    <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
