@@ -12,9 +12,10 @@
 page-title {
   display: none;
 }
-html{ min-height:100vh; }
-body{ min-height:100vh; }
-#page{ min-height:100vh; }
+html,
+body {
+  min-height: 100vh;
+}
 html,
 body,
 input,
@@ -40,11 +41,6 @@ textarea {
   z-index: 99;
   position: sticky;
   top: 0;
-}
-.FixedFooter {
-  z-index: 99;
-  position: sticky;
-  bottom: 0;
 }
 /**/
 body {
