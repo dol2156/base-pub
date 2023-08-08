@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run cmd\" \"npm run chd\" \"npm run wh\" \"npm run scss:global\" \"npm run scss:sitemap\" \"npm run twc\" \"npm run fs\"",
-    "cmd": "node create_menu_data.js",
+    "dev": "concurrently \"npm run chd\" \"npm run wh\" \"npm run scss:global\" \"npm run scss:sitemap\" \"npm run twc\" \"npm run fs\"",
     "chd": "node create_hbs_data.js",
     "wh": "node watch_hbs.js",
     "scss:sitemap": "sass --style=compressed -w scss/sitemap.scss public/css/sitemap.css",

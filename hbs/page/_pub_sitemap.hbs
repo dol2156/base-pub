@@ -5,6 +5,7 @@
       <div class='H1'>SiteMap</div>
       <br />
       <ul>
+        {{log '🔴 _pub_sitemap.hbs : 9 ==> ' window.MENU_DATA}}
         {{#each window.MENU_DATA}}
           <li data-key='{{@key}}'>
             {{#if this.PAGE}}

@@ -5,6 +5,7 @@ const fiveServer = new FiveServer();
 const option = {
   // port: 3000,
   open: true,
+  host: 'localhost',
   // watch: ['./index.html', './hbs/', './public/'],
   // ignore: [/\.s[ac]ss$/i, /\.tsx?$/i],
 };

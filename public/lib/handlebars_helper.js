@@ -1,27 +1,5 @@
 Handlebars.logger.level = 'debug';
 
-let PageName;
-(() => {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  PageName = urlParams.get('page');
-  if (!PageName) PageName = '_pub_sitemap';
-})();
-if (PageName) {
-  /**
-   * 문서 타이틀 지정
-   */
-  const setDocTitle = () => {
-    const current_page = window.location;
-    MENU_DATA_ORI.forEach((obj, idx) => {
-      if (PageName == obj.PAGE) {
-        document.title = obj.뎁스1 || obj.뎁스2 || obj.뎁스3;
-      }
-    });
-  };
-  setDocTitle();
-}
-
 /**
  *
  * @param path
@@ -452,10 +430,10 @@ Handlebars.registerHelper('OR', function (var_list_str, options) {
  */
 Handlebars.registerHelper('AND', function (var_list_str, options) {
   if (arguments.length != 2) return false;
-  
+
   let reslut = true;
   const var_list = var_list_str.split('|');
-  
+
   let i = 0;
   let len_i = var_list.length;
   while (i < len_i) {
@@ -468,7 +446,7 @@ Handlebars.registerHelper('AND', function (var_list_str, options) {
     ++i;
   }
   console.log(`reslut == `, reslut);
-  
+
   if (reslut) {
     return options.fn(this);
   } else {
