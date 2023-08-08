@@ -9,7 +9,7 @@
         {{#each window.MENU_DATA}}
           <li data-key='{{@key}}'>
             {{#if PAGE}}
-              <a class='label' href='/index.html?page={{PAGE}}&title={{뎁스1}}'><span style='color:orangered'>[ {{PAGE}} ]</span>
+              <a class='label' href='/index.html?title={{뎁스1}}&page={{PAGE}}'><span style='color:orangered'>[ {{PAGE}} ]</span>
                 {{뎁스1}}</a>
             {{else}}
               <div class='label'>{{뎁스1}}</div>
@@ -18,7 +18,7 @@
               {{#each child}}
                 <li data-key='{{@key}}'>
                   {{#if PAGE}}
-                    <a class='label' href='/index.html?page={{PAGE}}&title={{뎁스2}}'><span style='color:orangered'>[ {{PAGE}} ]</span>
+                    <a class='label' href='/index.html?title={{뎁스2}}&page={{PAGE}}'><span style='color:orangered'>[ {{PAGE}} ]</span>
                       {{뎁스2}}</a>
                   {{else}}
                     <div class='label'>{{뎁스2}}</div>
@@ -27,7 +27,7 @@
                     {{#each child}}
                       <li>
                         {{#if PAGE}}
-                          <a class='label' href='/index.html?page={{PAGE}}&title={{뎁스3}}'><span style='color:orangered'>[ {{PAGE}} ]</span> {{뎁스3}}</a>
+                          <a class='label' href='/index.html?title={{뎁스3}}&page={{PAGE}}'><span style='color:orangered'>[ {{PAGE}} ]</span> {{뎁스3}}</a>
                         {{else}}
                           <div class='label'>{{뎁스3}}</div>
                         {{/if}}

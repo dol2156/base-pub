@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-k.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layout/Footer_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/layout/Footer_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/wallet_3.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/wallet_3.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Diagram_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/Diagram_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/myinfo_9.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/myinfo_9.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/2308041346.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icon/2308041346.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/layer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +56,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/hbs/btn",
+    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/hbs/layer",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "editing.templates"
+    "settings.editor.selected.configurable": "liveEdit"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\btn" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\layer" />
+      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\btn" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\layout" />
