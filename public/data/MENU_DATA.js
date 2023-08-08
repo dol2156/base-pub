@@ -1,23 +1,19 @@
 /**
- * 사이트맵 데이터는 구글 시트 API 를 이용해서 가져옴
+ * MENU_DATA(사이트맵 데이터) 는 구글 시트 API 를 이용해서 가져옴
  * API Sheet URL : https://docs.google.com/spreadsheets/d/129_KRnvwnKwySm_wZ2t58vgrNMBEVG8JCksrxxbJLl4/edit#gid=1038524317
  * Sheet 권한 문의 : dol2156@gmail.com
  */
 const google_sheet_api = 'https://script.google.com/macros/s/AKfycbyL5A1emq2Y514kZh74uxLLcSJ5Z7TKuU_oTUwmDS7sBm7QULPE-6L8DAqODsuqImid/exec';
 
-let PageName;
+let PageName, DocTitle;
 (() => {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   PageName = urlParams.get('page');
-  if (!PageName) PageName = '_pub_sitemap';
+  if (!PageName) window.location = '/index.html?page=_pub_sitemap';
+  DocTitle = urlParams.get('title');
+  if (DocTitle) document.title = DocTitle;
 })();
-if (PageName) {
-  // 문서 타이틀 지정
-  let doc_title = window.localStorage.getItem(PageName);
-  if (!doc_title) doc_title = 'No Title';
-  document.title = doc_title;
-}
 
 (() => {
   // 사이트맵에서만 메뉴데이터 로드
@@ -93,11 +89,6 @@ if (PageName) {
 
         d3_el = el;
         d2_el.child.push(d3_el);
-      }
-
-      if (el.PAGE) {
-        const doc_title = el.뎁스1 || el.뎁스2 || el.뎁스3;
-        window.localStorage.setItem(el.PAGE, doc_title);
       }
     });
 

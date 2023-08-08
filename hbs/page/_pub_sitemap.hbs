@@ -1,3 +1,4 @@
+<title>사이트맵</title>
 <div id='page'>
   <main>
     <link href='/public/css/sitemap.css' rel='stylesheet' />
@@ -5,31 +6,30 @@
       <div class='H1'>SiteMap</div>
       <br />
       <ul>
-        {{log '🔴 _pub_sitemap.hbs : 9 ==> ' window.MENU_DATA}}
         {{#each window.MENU_DATA}}
           <li data-key='{{@key}}'>
-            {{#if this.PAGE}}
-              <a class='label' href='/index.html?page={{this.PAGE}}'><span style='color:orangered'>[ {{this.PAGE}} ]</span>
-                {{this.뎁스1}}</a>
+            {{#if PAGE}}
+              <a class='label' href='/index.html?page={{PAGE}}&title={{뎁스1}}'><span style='color:orangered'>[ {{PAGE}} ]</span>
+                {{뎁스1}}</a>
             {{else}}
-              <div class='label'>{{this.뎁스1}}</div>
+              <div class='label'>{{뎁스1}}</div>
             {{/if}}
             <ul>
-              {{#each this.child}}
+              {{#each child}}
                 <li data-key='{{@key}}'>
-                  {{#if this.PAGE}}
-                    <a class='label' href='/index.html?page={{this.PAGE}}'><span style='color:orangered'>[ {{this.PAGE}} ]</span>
-                      {{this.뎁스2}}</a>
+                  {{#if PAGE}}
+                    <a class='label' href='/index.html?page={{PAGE}}&title={{뎁스2}}'><span style='color:orangered'>[ {{PAGE}} ]</span>
+                      {{뎁스2}}</a>
                   {{else}}
-                    <div class='label'>{{this.뎁스2}}</div>
+                    <div class='label'>{{뎁스2}}</div>
                   {{/if}}
                   <ul>
-                    {{#each this.child}}
+                    {{#each child}}
                       <li>
-                        {{#if this.PAGE}}
-                          <a class='label' href='/index.html?page={{this.PAGE}}'><span style='color:orangered'>[ {{this.PAGE}} ]</span> {{this.뎁스3}}</a>
+                        {{#if PAGE}}
+                          <a class='label' href='/index.html?page={{PAGE}}&title={{뎁스3}}'><span style='color:orangered'>[ {{PAGE}} ]</span> {{뎁스3}}</a>
                         {{else}}
-                          <div class='label'>{{this.뎁스3}}</div>
+                          <div class='label'>{{뎁스3}}</div>
                         {{/if}}
                       </li>
                     {{/each}}

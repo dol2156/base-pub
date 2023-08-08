@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/five-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/five-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_menu_data.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/MENU_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/MENU_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lib/handlebars_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/handlebars_helper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
