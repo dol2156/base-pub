@@ -1,0 +1,93 @@
+{{DF this 'id' (UID)}}
+<div class='RR relative'>
+  <div id='FullPageSwiper-{{id}}' class='swiper FullPageSwiper'>
+    <div class='swiper-wrapper'>
+      {{#LOOP 3}}
+        <div class='RR swiper-slide' data-key='{{index}}'>
+          <section>
+            <img class='Bg' src='https://picsum.photos/1920/1080.jpg?random={{index}}' alt='' />
+            <div class='Inner'>
+              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
+              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
+              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
+            </div>
+          </section>
+        </div>
+      {{/LOOP}}
+    </div>
+  </div>
+  <div id='FullPageSwiper-{{id}}-Pagenation' class='RR FullPageSwiper-Pagenation'></div>
+  {{!--prettier-ignore--}}
+  <script>
+    (() => {
+      
+      const pagination_bullet = {
+        el: '#FullPageSwiper-{{id}}-Pagenation',
+        type: 'bullets',
+        clickable: true,
+        modifierClass: 'Pagenation-',
+        bulletClass: 'Dot',
+        bulletActiveClass: 'On',
+        renderBullet: function (index, className) {
+          const num = (index + 1).toString().padStart(2, '0');
+          return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+        },
+      };
+      
+      const swiper_option = {
+        direction: 'vertical',
+        mousewheel: true,
+        releaseOnEdges:true,
+        slidesPerView: 1, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
+        slidesPerGroup: 1,
+        loop: false,
+        pagination: pagination_bullet,
+        // pagination: pagination_progress,
+        // autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
+        init: false,
+        // grabCursor: true,
+      };
+      
+      let swiper = new Swiper('#FullPageSwiper-{{id}}', swiper_option);
+      
+      swiper.on('init', function (swiper) {
+        // console.log('init');
+      });
+      
+
+      swiper.on('slideChange', function (swiper) {
+        const el_slide = swiper.slides[swiper.activeIndex];
+        const el_target_list = [...el_slide.querySelectorAll(`.DelayTarget`)];
+
+        // 슬라이드 방향 체크해서
+        // 트렌지션 객체들 딜레이 각각 설정해주기
+        if(swiper.previousIndex - swiper.activeIndex > 0){
+          // console.log('PREV');
+          el_target_list.reverse();
+        }else{
+          // console.log('NEXT');
+        }
+
+        const k = 150;
+        el_target_list.forEach((el, idx) => {
+          const delay = idx * k + k;
+          el.style.setProperty('transition-delay', `${delay}ms`);
+        });
+
+      });
+
+      swiper.on('reachBeginning', function (swiper) {
+        // console.log('reachBeginning');
+      });
+
+      swiper.on('reachEnd', function (swiper) {
+        // console.log('reachEnd');
+      });
+      
+      swiper.init();
+    })();
+  </script>
+</div>
