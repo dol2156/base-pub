@@ -33,6 +33,16 @@ textarea {
     'Segoe UI Symbol',
     'Noto Color Emoji';
 }
+.FixedHeader {
+  z-index: 99;
+  position: sticky;
+  top: 0;
+}
+.FixedFooter {
+  z-index: 99;
+  position: sticky;
+  bottom: 0;
+}
 /**/
 body {
   position: relative;
@@ -46,7 +56,6 @@ body.PreventScroll {
 /**/
 main {
   position: relative;
-  overflow: auto;
   padding-bottom: 80px;
 }
 /**/
