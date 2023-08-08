@@ -12,6 +12,9 @@
 page-title {
   display: none;
 }
+html{ min-height:100vh; }
+body{ min-height:100vh; }
+#page{ min-height:100vh; }
 html,
 body,
 input,
