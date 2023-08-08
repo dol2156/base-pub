@@ -1,9 +1,9 @@
 /**
  * MENU_DATA(사이트맵 데이터) 는 구글 시트 API 를 이용해서 가져옴
- * API Sheet URL : https://docs.google.com/spreadsheets/d/129_KRnvwnKwySm_wZ2t58vgrNMBEVG8JCksrxxbJLl4/edit#gid=1038524317
+ * API Sheet URL : https://docs.google.com/spreadsheets/d/1oui5VZpSWpdrpYsHZ9Rwmrv5EVOq3suyndxp4RNDxW8/edit#gid=1038524317
  * Sheet 권한 문의 : dol2156@gmail.com
  */
-const google_sheet_api = 'https://script.google.com/macros/s/AKfycbyL5A1emq2Y514kZh74uxLLcSJ5Z7TKuU_oTUwmDS7sBm7QULPE-6L8DAqODsuqImid/exec';
+const google_sheet_api = 'https://script.google.com/macros/s/AKfycbyRsrHPlyzuf5mX6Nfob5VJR3IBjbMIG3XxQYnk5iu7U04rmot7-MJ9xHGe5ls96SS_Jw/exec';
 
 let PageName, DocTitle;
 (() => {
