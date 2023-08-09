@@ -210,7 +210,7 @@ img.LoadingBg {
   filter: grayscale(1) !important;
 }
 /**/
-.HScroll {
+.HScrollSnapBox {
   scroll-snap-type: x mandatory;
 
   > * {

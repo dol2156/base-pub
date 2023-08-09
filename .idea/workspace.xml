@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/create_page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_scss_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/AlertBox_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/AlertBox_2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/Badge_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/BannerList_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/BottomBtnBox_1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/BannerList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/BannerList_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/CardList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/CardList_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/HScrollBox_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/HScrollGradientBox_1.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ScrollTabBar_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ScrollTabBar_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ui_setter.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ui_setter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watch_hbs.js" beforeDir="false" afterPath="$PROJECT_DIR$/watch_hbs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

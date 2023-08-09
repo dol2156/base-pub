@@ -34,10 +34,10 @@ const initInputUi = (trigger) => {
 };
 
 /**
- * HScrollBox 가로 스크롤 쉐도우 초기 셋팅
+ * HScrollGradientBox 가로 스크롤 그라디언트 박스 초기 셋팅
  * @param trigger
  */
-const initHScrollBox = () => {
+const initHScrollGradientBox = () => {
   const el_target = document.currentScript.parentElement;
   const el_hsb = el_target;
   const el_track = el_hsb.querySelector(`.Track`);
