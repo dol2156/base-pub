@@ -1,10 +1,11 @@
-@use 'reset';
-@use 'var';
-@use 'component';
-@use 'swiper';
-@use 'form';
-@use 'btn';
-@use 'layer';
+@use 'scss/reset';
+@use 'scss/var';
+@use 'module';
+@use 'scss/swiper';
+@use 'scss/form';
+@use 'scss/btn';
+@use 'scss/layer';
+@use 'scss/component';
 /**/
 @import '/public/font/SUIT-Variable.css';
 //@import '/font/Pretendard.css';
