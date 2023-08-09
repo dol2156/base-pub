@@ -839,18 +839,9 @@
   background: #f4f4f4;
   padding: 12px 10px;
   font-weight: 400;
-  &.Style1 {
-    background-color: #f2f5ff;
-  }
-  &.Style2 {
-    background-color: #fbeded;
-  }
-
-  .Txt1 {
-    color: var(--text-color1);
-    font-size: 14px;
-    line-height: 20px;
-  }
+  color: var(--text-color1);
+  font-size: 14px;
+  line-height: 20px;
 }
 /**/
 .Badge_1 {
@@ -2003,7 +1994,7 @@
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    line-height:24px;
+    line-height: 24px;
   }
 
   .Wrap {
