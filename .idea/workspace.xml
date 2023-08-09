@@ -6,60 +6,86 @@
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/AlertBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/AlertBox_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/BannerList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/BannerList_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/BarcodeBox_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/BottomBtnBox_1-c.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/BottomBtnBox_2-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/BrandItem_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ButtonBox_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ButtonList_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ButtonList_2-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ButtonList_3-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/CardList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/CardList_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ChantBoxWrap_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ChantBoxWrap_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/CuponBox_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/CuponBox_1-b.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/DatePicker_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/EmptyList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/EmptyList_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ImgBox_3-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoBoxList_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoBox_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoBox_2-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoBox_2-b.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoBox_2-c.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoBox_3-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-b.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-c.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-d.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-e.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-f.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-g.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-h.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-i.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-j.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoList_1-k.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoTable_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/InfoTable_2-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ItemImgBox_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/Legend_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/PointBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/PointBox_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/PointBox_4-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/PointBox_4-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/Table_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/Table_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Diagram_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Diagram_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/HScrollBox_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/HScrollBox_1.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ListControlBox_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ListControlBox_1-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/NotWatchChk_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/NotiItemList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/NotiItemList_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/PictureList_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/PointBarcodeBox_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/PointBox_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/PointBox_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/PointBox_3-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/PointBox_3-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/PointBox_4-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductInfoBox_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductInfo_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductInfo_1-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductInfo_1-c.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductInfo_1-d.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductInfo_1-e.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductInfo_1-f.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_3-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_4-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_5-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_5-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_5-c.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_5-d.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_5-e.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductItem_6-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductLink_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_1-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_1-c.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_1-d.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-c.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-d.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-e.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_3-f.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_4-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProductList_5-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ProfileBox_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/RadioGroup_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/RadioGroup_3-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/RankingList_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/SearchBox_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/StepBox_1.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TabBar_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TableHead_1.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_1-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_2-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_3-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_3-b.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_4-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_5-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_6-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Table_7-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Text_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/Text_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Text_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TitleBox_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TitleBox_3-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TitleBox_4-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TitleBox_5-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Title_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Title_3-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ToastMsg_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ToastMsg_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TosBox_1-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/swiper/BrandSwiper_1-a.hbs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/output.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/2307292238.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/2308031505_1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/2308031505_2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/2308031505_3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/2308031505_4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/2308031505_5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icon/2308031505_6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/util.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/swiper.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,23 +118,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/hbs/page",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "editing.templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MyProjects/ksm-friends/base-include/hbs/page&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
