@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/**/
+.divide-x-solid > * + * {
+  border-left-style: solid;
+}
+/**/
+.divide-y-solid > * + * {
+  border-top-style: solid;
+}
+/**/
+.divide-x-dashed > * + * {
+  border-left-style: dashed;
+}
+/**/
+.divide-y-dashed > * + * {
+  border-top-style: dashed;
+}
