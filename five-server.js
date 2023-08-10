@@ -3,10 +3,12 @@
 const FiveServer = require('five-server').default;
 const fiveServer = new FiveServer();
 const option = {
+  useLocalIp: true,
   // port: 3000,
   open: true,
-  // host: 'localhost',
-  // watch: ['./index.html', './hbs/', './public/'],
+  watch: ['./hbs/', './public/'],
+  // wait:1000,
+  // injectCss:false,
   // ignore: [/\.s[ac]ss$/i, /\.tsx?$/i],
 };
 

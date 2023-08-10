@@ -54,8 +54,6 @@ function createHbsFile(menu_data) {
   });
 
   function createFile(page_name, page_title) {
-    console.log(`page_name == `, page_name);
-
     const file_path = `./hbs/page/${page_name}.hbs`;
 
     // 파일이 없는지 검사한 후

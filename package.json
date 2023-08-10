@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run cp\" \"npm run chd\" \"npm run csd\" \"npm run wh\" \"npm run scss:sitemap\" \"npm run scss:global\" \"npm run scss:cpnt\" \"npm run twc\" \"npm run fs\"",
+    "dev": "concurrently \"npm run cp\" \"npm run chd\" \"npm run csd\" \"npm run wh\" \"npm run scss:sitemap\" \"npm run scss:global\" \"npm run scss:cpnt\" \"npm run fs\"",
     "cp": "node create_page.js",
     "chd": "node create_hbs_data.js",
     "csd": "node create_scss_data.js",
@@ -12,7 +12,6 @@
     "scss:sitemap": "sass --style=compressed -w scss/sitemap.scss public/css/sitemap.css",
     "scss:global": "sass --style=compressed -w global.scss public/css/global.css",
     "scss:cpnt": "sass --style=compressed -w hbs/cpnt.scss public/css/cpnt.css",
-    "twc": "npx tailwindcss -i scss/input.css -o public/css/output.css --watch --minify",
     "fs": "node five-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,7 +32,6 @@
     "js-beautify": "^1.14.9",
     "lodash": "^4.17.21",
     "prettier": "^3.0.1",
-    "prettier-plugin-tailwindcss": "^0.4.1",
     "sass": "^1.64.0",
     "tailwindcss": "^3.3.3"
   }
