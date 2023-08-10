@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: ['./hbs/**/*.{html,js,hbs,scss}'],
   corePlugins: {
     preflight: false,

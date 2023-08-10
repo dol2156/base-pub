@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="" />
+    <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/NotiItemList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/NotiItemList_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
