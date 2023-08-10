@@ -1,0 +1,26 @@
+.TopActionBar_2 {
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+
+  .t-7ad84641 {
+    color: #ff3838;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  > .Inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    padding-left: 24px;
+    padding-right: 20px;
+    height: 56px;
+  }
+
+  .PageTitle {
+    color: var(--text-color1);
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
