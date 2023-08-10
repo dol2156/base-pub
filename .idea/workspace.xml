@@ -5,31 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/hbs/component/Ol_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/OptionBox_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/TabBar_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/Text_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/Title_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/ToastMsg_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/TopActionBar_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/TopActionBar_2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/TopActionBar_3.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/RadioGroup_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/Ul_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/Ul_2-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/Ul_2.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/PrdItem_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductBorderList_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductBorderList_1-b.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductBorderList_1-c.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductBorderList_1-d.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductBorderList_1-e.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductBorderList_1-f.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ProductBoxList_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ScrollTabBar_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/TopActionBar_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/TopActionBar_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ChatBoxWrap_1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ChatBoxWrap_1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Ol_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/Ol_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TopActionBar_2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/TopActionBar_2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Ul_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/Ul_1-a.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,30 +52,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MyProjects/ksm-friends/base-include/public/lib&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/hbs/component",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\lib" />
       <recent name="C:\MyProjects\ksm-friends\base-include" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\video" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\swiper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MyProjects\ksm-friends\base-include" />
