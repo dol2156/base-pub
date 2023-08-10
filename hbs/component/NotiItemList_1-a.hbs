@@ -1,25 +1,8 @@
 <div class='NotiItemList_1'>
-  <ul>
+  <ul class="space-y-[16px]">
     {{#LOOP 3}}
       <li>
-        <div class='NotiItem_1 {{ON 0}} {{ON 1}}'>
-          <article class='CenterBetween'>
-            <div style='flex:1; padding-right:15px;'>
-              <div class="Txt1">2023-05-07</div>
-              <div class="Txt2" style='margin-top:8px;'>Lorem Ipsum</div>
-              <div class="Txt3" style='margin-top:10px;'>
-                Lorem Ipsum is
-                <strong>simply dummy</strong>
-                text of the
-                <strong>printing and</strong>
-                typesetting industry.
-              </div>
-            </div>
-            <div style='min-width:40px;'>
-              <img src='/public/icon/2307251329.svg' alt='' />
-            </div>
-          </article>
-        </div>
+        <script>Include('/hbs/component/NotiItem_1-a.hbs');</script>
       </li>
     {{/LOOP}}
   </ul>

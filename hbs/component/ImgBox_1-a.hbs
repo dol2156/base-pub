@@ -1,3 +1,8 @@
+{{#DV}}
+  {{SAFE 'new'}}
+  {{SAFE 'rank' 1}}
+  {{SAFE 'like'}}
+{{/DV}}
 <div class='ImgBox_1'>
   {{#if new}}
     <div class='New'>
@@ -9,40 +14,11 @@
       {{rank}}
     </div>
   {{/if}}
-  {{#if grayscale}}
-    <img class='Grayscale' style='width: 100%;' src='https://gifpng.com/88x88/ffd4d4/ff4444' alt='' />
-  {{else}}
-    <img style='width: 100%;' src='https://gifpng.com/88x88/ffd4d4/ff4444' alt='' />
-  {{/if}}
+  <img style='width: 100%;' src='https://gifpng.com/88x88/ffd4d4/ff4444' alt='' />
   {{#if like}}
     <div class='Like'>
       {{!<img style="width: 100%" src="/public/icon/2307231115.svg" alt="" />}}
       <img style='width: 100%' src='/public/icon/2307231115_on.svg' alt='' />
     </div>
-  {{/if}}
-  {{#if dday}}
-    <div class='DDay'>
-      D-5
-    </div>
-  {{/if}}
-  {{#if (IF (IF c '==' true) '||' (IF p '==' true))}}
-    <article class='CenterRight' style='z-index:10; position:absolute; top:4px; right:4px;'>
-      {{#if c}}
-        <div>
-          <img src='/public/icon/2308022301.svg' alt='' />
-        </div>
-      {{/if}}
-      {{#if p}}
-        <div>
-          <img src='/public/icon/2308022302.svg' alt='' />
-        </div>
-      {{/if}}
-    </article>
-  {{/if}}
-  {{#if nosell}}
-    <article class='NoSellCover'>판매 불가</article>
-  {{/if}}
-  {{#if noadd}}
-    <article class='NoAddCover'>{{noadd}}</article>
   {{/if}}
 </div>

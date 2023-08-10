@@ -5,28 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/hbs/component/BottomNavi_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/CardList_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/ChatBoxWrap_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/ChatInputWrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/ChatRoomItem_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/ChipsList_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/Collapse_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/Divider_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/EmptyList_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/HScrollGradientBox_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/ImgBox_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/LinkList_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/NotiItemList_1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/NotiItem_1-a.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hbs/component/NotiItem_1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/Badge_2.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ChantBoxWrap_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ChatBoxWrap_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ChatRoomList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ChatRoomList_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/ChipsList_2-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/Collapse_2-a.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/#작명방법.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/#작명방법.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/Badge_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/Badge_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ChatInputWrap.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ChatInputWrap_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/FilterBtnBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/FilterBtnBox_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/HScrollGradientBox_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/HScrollGradientBox_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ImgBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ImgBox_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/NotiItemList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/NotiItemList_1-a.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/output.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +38,8 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="markdown" />
-        <option value="handlebars" />
         <option value="JavaScript File" />
+        <option value="handlebars" />
         <option value="SCSS File" />
       </list>
     </option>
