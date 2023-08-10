@@ -29,10 +29,14 @@
       {{/LOOP}}
     </div>
   </div>
+  <div class='CenterCenter bg-amber-300' style='height:var(--fullpage-footer-hei);'>
+    FOOTER
+  </div>
   <div id='FullPageSwiper-{{id}}-Pagenation' class='RR FullPageSwiper-Pagenation'></div>
   {{!--prettier-ignore--}}
   <script>
     (() => {
+      let isReachEnd = false;
       
       const pagination_bullet = {
         el: '#FullPageSwiper-{{id}}-Pagenation',
@@ -71,6 +75,7 @@
       });
       
       swiper.on('slideChange', function (swiper) {
+        
         const el_slide = swiper.slides[swiper.activeIndex];
         const el_target_list = [...el_slide.querySelectorAll(`.DelayTarget`)];
         
@@ -99,7 +104,26 @@
         // console.log('reachEnd');
       });
       
+      swiper.on('slideChangeTransitionEnd', function (swiper) {
+        // console.log('slideChangeTransitionEnd');
+        isReachEnd = swiper.isEnd;
+      });
+      
       swiper.init();
+      
+      window.addEventListener('wheel', function (evt) {
+        
+        if (isReachEnd) {
+          if (event.deltaY < 0) {
+            const el = swiper.el;
+            $(el).removeClass('MoveUp');
+          } else {
+            const el = swiper.el;
+            $(el).addClass('MoveUp');
+          }
+        }
+        
+      }, {pasiive: false});
     })();
   </script>
 </div>
