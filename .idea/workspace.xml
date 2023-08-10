@@ -5,41 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/hbs/btn/Btn_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/fullpage/FullPageSwiper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/layer/Alert_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/layer/BottomSheet_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/layer/SelectOption_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/layer/ToolTip_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/swiper/_BannerSwiper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/swiper/_BaseSwiper.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_2.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_3.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_4.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_5.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_6.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_7.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-c.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-d.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-e.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-f.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/layer/BottomSheet_1-j.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_fullpage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_fullpage.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/_test_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_test_1.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/swiper/BannerSwiper_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/swiper/FullPageSwiper.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/fullpage/FullPageSwiper.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/swiper/ProductSwiper_1-a.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/btn.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/swiper.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/BottomNavi_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/BottomNavi_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/CardList_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/CardList_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ChatBoxWrap_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ChatBoxWrap_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/ChatInputWrap_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/ChatInputWrap_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon/1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icon/empty.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_1_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_2_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_3_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_4_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307231112_5_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon2/2307281342.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +62,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/hbs/component",
+    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/public/icon",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,18 +73,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\public\icon" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\lib" />
       <recent name="C:\MyProjects\ksm-friends\base-include" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\public\video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\public\icon" />
+      <recent name="C:\MyProjects\ksm-friends\base-include\public\icon2" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\fullpage" />
       <recent name="C:\MyProjects\ksm-friends\base-include" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\layer" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
