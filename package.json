@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run cp\" \"npm run chd\" \"npm run csd\" \"npm run wh\" \"npm run scss:sitemap\" \"npm run scss:global\" \"npm run scss:cpnt\" \"npm run fs\"",
+    "dev": "concurrently \"npm run cp\" \"npm run chd\" \"npm run csd\" \"npm run wh\" \"npm run scss:sitemap\" \"npm run scss:global\" \"npm run fs\"",
     "cp": "node create_page.js",
     "chd": "node create_hbs_data.js",
     "csd": "node create_scss_data.js",
     "wh": "node watch_hbs.js",
     "scss:sitemap": "sass --style=compressed -w scss/sitemap.scss public/css/sitemap.css",
     "scss:global": "sass --style=compressed -w global.scss public/css/global.css",
-    "scss:cpnt": "sass --style=compressed -w hbs/cpnt.scss public/css/cpnt.css",
     "fs": "node five-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

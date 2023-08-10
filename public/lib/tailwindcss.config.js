@@ -1,8 +1,8 @@
 tailwind.config = {
   content: ['./**/*.{html,js,hbs}'],
-  corePlugins: {
-    preflight: false,
-  },
+  // corePlugins: {
+  //   preflight: false,
+  // },
   theme: {
     extend: {},
     screens: {
