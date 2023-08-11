@@ -32,14 +32,14 @@
   </div>
   {{!--prettier-ignore--}}
   <script>
-    (() => {
+    window.addEventListener('DOMContentLoaded', (evt) => {
       const navigation = {
         disabledClass: 'Disabled',
         hiddenClass: 'Hidden',
         prevEl: '#_BaseSwiper-{{id}}-Navigation > .PrevBtn',
         nextEl: '#_BaseSwiper-{{id}}-Navigation > .NextBtn',
       };
-
+      
       const pagination_bullet = {
         el: '#_BaseSwiper-{{id}}-Pagenation',
         type: 'bullets',
@@ -52,7 +52,7 @@
           return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
         },
       };
-
+      
       const pagination_progress = {
         el: '#_BaseSwiper-{{id}}-PagenationProgressbar',
         type: 'progressbar',
@@ -62,7 +62,7 @@
           return `<div class="${className}"></div>`;
         },
       };
-
+      
       const swiper_option = {
         slidesPerView: 3, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
         slidesPerGroup: 1,
@@ -78,45 +78,44 @@
         init: false,
         // grabCursor: true,
       };
-
+      
       const update_current_num = () => {
         const el_total = document.querySelector('#_BaseSwiper-{{id}}-PagenationFraction > .total');
-        if(!el_total) return;
+        if (!el_total) return;
         
         const slides = document.querySelectorAll('#_BaseSwiper-{{id}} .swiper-slide');
         const real_length = slides.length;
         el_total.textContent = real_length;
-
+        
         const el_current = document.querySelector('#_BaseSwiper-{{id}}-PagenationFraction > .current');
         el_current.textContent = swiper.realIndex + 1;
       };
-
+      
       let swiper = new Swiper('#_BaseSwiper-{{id}}', swiper_option);
-
+      
       swiper.on('init', function () {
         // console.log('init');
         update_current_num();
       });
-
+      
       swiper.on('slideChange', function () {
         // console.log('slideChange');
         update_current_num();
       });
-
+      
       swiper.on('slideChangeTransitionEnd', function () {
         // console.log('slideChangeTransitionEnd');
       });
-
+      
       swiper.on('reachBeginning', function () {
         // console.log('reachBeginning');
       });
-
+      
       swiper.on('reachEnd', function () {
         // console.log('reachEnd');
       });
-
-
+      
       swiper.init();
-    })();
+    });
   </script>
 </div>
