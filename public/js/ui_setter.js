@@ -67,6 +67,9 @@ const initHScrollGradientBox = () => {
 
 const initCollapse = () => {
   const el_target = document.currentScript.parentElement;
+  const $li_on = $('li.On', el_target);
+  $li_on.find('.A').show();
+  
   const $qbtn = $('.Q > button', el_target);
   $qbtn.on('click', (evt) => {
     const $li = $(evt.currentTarget).closest('li');

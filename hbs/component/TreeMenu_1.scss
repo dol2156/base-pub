@@ -13,7 +13,7 @@
   li.On {
     > ul {
     }
-    .Icon {
+    > button .Icon {
       transform: rotate(180deg);
     }
   }
@@ -44,7 +44,7 @@
         }
 
         .Icon1 {
-          width: 24px;
+          width: 30px;
         }
       }
 
@@ -67,7 +67,7 @@
             }
 
             .Icon2 {
-              width: 20px;
+              width: 26px;
             }
           }
 
@@ -89,7 +89,7 @@
                 }
 
                 .Icon3 {
-                  width: 16px;
+                  width: 22px;
                 }
               }
             }
