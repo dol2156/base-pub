@@ -5,8 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/builder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/builder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/PORT_NUMBER.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/beautify-css.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/beautify-html.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/beautify.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/beautify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/handlebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/HBS_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ base-include.iml" beforePathEscaped="$PROJECT_DIR$/.idea/🟢 base-include.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ base-include.iml" afterPathEscaped="$PROJECT_DIR$/.idea/🟢 base-include.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_hbs_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/create_hbs_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/five-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/five-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/btn/Btn_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/btn/Btn_1.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/component/TitleBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/TitleBox_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_componet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_guide_componet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_etc_button.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_guide_etc_button.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_guide_form.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_layer.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_guide_layer.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/output.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/sitemap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sitemap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/sitemap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sitemap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/DUMMY_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/DUMMY_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/HBS_DATA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/MENU_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/MENU_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/input.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sitemap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sitemap.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +82,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MyProjects/ksm-friends/base-include/public/icon&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MyProjects/ksm-friends/base-include/scss&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -58,18 +93,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\scss" />
+      <recent name="C:\MyProjects\ksm-friends\base-include" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\icon" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\page" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\public\lib" />
-      <recent name="C:\MyProjects\ksm-friends\base-include" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\ksm-friends\base-include\pub_tool" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\icon" />
       <recent name="C:\MyProjects\ksm-friends\base-include\public\icon2" />
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\fullpage" />
       <recent name="C:\MyProjects\ksm-friends\base-include" />
-      <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />

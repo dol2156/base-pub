@@ -10,6 +10,7 @@ const option = {
   // wait:1000,
   // injectCss:false,
   // ignore: [/\.s[ac]ss$/i, /\.tsx?$/i],
+  ignore: ['./dist'],
 };
 
 fiveServer.start(option);
