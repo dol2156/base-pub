@@ -64,3 +64,24 @@ const initHScrollGradientBox = () => {
     }
   }
 };
+
+const initCollapse = () => {
+  const el_target = document.currentScript.parentElement;
+  const $qbtn = $('.Q > button', el_target);
+  $qbtn.on('click', (evt) => {
+    const $li = $(evt.currentTarget).closest('li');
+
+    if (!$li.hasClass('On')) {
+      const $li_siblings = $li.siblings('li');
+
+      $li_siblings.removeClass('On');
+      $li_siblings.find('.A').slideUp();
+
+      $li.addClass('On');
+      $li.find('.A').slideDown();
+    } else {
+      $li.removeClass('On');
+      $li.find('.A').slideUp();
+    }
+  });
+};

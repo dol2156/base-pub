@@ -61,10 +61,12 @@
  * </div>
  */
 function updateFixedShell() {
-  const $fs = $('.FixedShell');
-  const $fb = $fs.parent();
-  const fs_hei = $fs.outerHeight();
-  $fb.height(fs_hei);
+  const el_fs = [...document.querySelectorAll('.FixedShell')];
+  el_fs.forEach((el, idx) => {
+    const el_parent = el.parentElement;
+    const fs_hei = el.offsetHeight;
+    el_parent.style.setProperty('height', `${fs_hei}px`);
+  });
 }
 
 /**
