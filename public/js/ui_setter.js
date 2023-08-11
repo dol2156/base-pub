@@ -85,3 +85,30 @@ const initCollapse = () => {
     }
   });
 };
+
+const initTreeMenu = () => {
+  const el_target = document.currentScript.parentElement;
+  const $li_on = $('li.On', el_target);
+  $li_on.find('> ul').show();
+  
+  const $button = $('button', el_target);
+  $button.on('click', (evt) => {
+    const $li = $(evt.currentTarget).closest('li');
+    
+    if (!$li.hasClass('On')) {
+      console.log('[ui_setter.js : 96]');
+      const $li_siblings = $li.siblings('li');
+
+      $li_siblings.removeClass('On');
+      $li_siblings.find('> ul').slideUp();
+
+      $li.addClass('On');
+      $li.find('> ul').slideDown();
+    } else {
+      console.log('[ui_setter.js : 105]');
+      $li.removeClass('On');
+      $li.find('> ul').slideUp();
+    }
+    
+  });
+}
