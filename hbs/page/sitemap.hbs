@@ -1,0 +1,45 @@
+<div id='page'>
+  <main>
+    <link href='/public/css/sitemap.css' rel='stylesheet'/>
+    <div id='Sitemap'>
+      <div class='H1'>SiteMap</div>
+      <br/>
+      <ul>
+        {{log '🔴 sitemap.hbs : 8 ==> ' this}}
+        {{#each window.MENU_DATA_FOR_GUEST}}
+          <li data-key='{{@key}}'>
+            {{#if PAGE}}
+              <a class='label' href='/html/{{PAGE}}.html'><span style='color:orangered'>[ {{PAGE}} ]</span>
+                {{뎁스1}}</a>
+            {{else}}
+              <div class='label'>{{뎁스1}}</div>
+            {{/if}}
+            <ul>
+              {{#each child}}
+                <li data-key='{{@key}}'>
+                  {{#if PAGE}}
+                    <a class='label' href='/html/{{PAGE}}.html'><span style='color:orangered'>[ {{PAGE}} ]</span>
+                      {{뎁스2}}</a>
+                  {{else}}
+                    <div class='label'>{{뎁스2}}</div>
+                  {{/if}}
+                  <ul>
+                    {{#each child}}
+                      <li>
+                        {{#if PAGE}}
+                          <a class='label' href='/html/{{PAGE}}.html'><span style='color:orangered'>[ {{PAGE}} ]</span> {{뎁스3}}</a>
+                        {{else}}
+                          <div class='label'>{{뎁스3}}</div>
+                        {{/if}}
+                      </li>
+                    {{/each}}
+                  </ul>
+                </li>
+              {{/each}}
+            </ul>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </main>
+</div>

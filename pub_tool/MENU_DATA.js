@@ -17,7 +17,7 @@ let PageName, DocTitle;
 
 (() => {
   // 사이트맵에서만 메뉴데이터 로드
-  if (PageName != '_pub_sitemap') return;
+  if (PageName != '_pub_sitemap' && PageName != 'sitemap') return;
 
   const loadJson = (path, convert) => {
     let result;
@@ -93,6 +93,15 @@ let PageName, DocTitle;
     });
 
     window.MENU_DATA = arr;
+
+    window.MENU_DATA_FOR_GUEST = window.MENU_DATA.filter((obj) => {
+      const { 뎁스1 } = obj;
+      if (뎁스1 == '퍼블전용') {
+        return false;
+      } else {
+        return true;
+      }
+    });
 
     /**
      * 특수문자 및 공백 제거

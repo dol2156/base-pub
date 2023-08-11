@@ -6,10 +6,11 @@ const option = {
   useLocalIp: true,
   // port: 3000,
   open: true,
-  watch: ['./hbs/', './public/'],
+  watch: ['./hbs', './public', './pub_tool'],
   // wait:1000,
   // injectCss:false,
   // ignore: [/\.s[ac]ss$/i, /\.tsx?$/i],
+  ignore: ['./dist'],
 };
 
 fiveServer.start(option);
