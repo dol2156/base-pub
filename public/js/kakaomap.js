@@ -1,5 +1,6 @@
 // 카카오개발자센터 - https://developers.kakao.com/
 // 카카오 지도 Web API - https://apis.map.kakao.com/web/guide/
+let KakaoMap;
 const KAKAO_DEV_Javascript_KEY = 'ddfce4b5a6c589f7cbf109cf57486914';
 const KAKAO_DEV_REST_API_KEY = '4531796c49d2ab4d025dc6ff13ab6cc3';
 const LOCATION_JSON_URL = '/public/json/kakaomap_location.json';
@@ -91,7 +92,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
     const firstLatLng = GetLatLng(LOCATION_LIST[0]);
 
     // 맵 생성
-    var map = creatMap(LOCATION_LIST[0]);
+    KakaoMap = creatMap(LOCATION_LIST[0]);
 
     // 마커 생성
     LOCATION_LIST.forEach((geo, idx) => {
@@ -101,7 +102,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
     /* 2023-08-11 :: START :: 중심이동 */
     window.addEventListener('resize', (evt) => {
       const latlng = GetLatLng(LOCATION_LIST[0]);
-      // map.setCenter(latlng);// 곧장 이동
+      KakaoMap.setCenter(latlng);// 곧장 이동
     });
 
     /* // 2023-08-11 :: END :: 중심이동 */
@@ -111,7 +112,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
      * https://apis.map.kakao.com/web/documentation/#Map
      */
     function creatMap(geo) {
-      var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+      var container = document.getElementById('KakaoMap'); //지도를 담을 영역의 DOM 레퍼런스
 
       var options = {
         //지도를 생성할 때 필요한 기본 옵션
@@ -145,7 +146,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       // 마커를 생성합니다
       var mk = new kakao.maps.Marker({
         position: markerPosition,
-        image: markerImage, // 마커이미지 설정
+        //image: markerImage, // 마커이미지 설정
       });
 
       const co = createCustomOverlay(geo);
@@ -157,7 +158,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       });
 
       // 마커가 지도 위에 표시되도록 설정합니다
-      mk.setMap(map);
+      mk.setMap(KakaoMap);
 
       // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
       // mk.setMap(null);
@@ -168,6 +169,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
     /**
      * 커스텀 오버레이 생성
      * https://apis.map.kakao.com/web/documentation/#CustomOverlay
+     * https://apis.map.kakao.com/web/guide/#mapurl
      */
     function createCustomOverlay(geo) {
       const { x, y, 장소명, 주소 } = geo;
@@ -175,7 +177,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
       const content = `
       <div class="customoverlay">
-        <a href="https://map.kakao.com/link/search/${주소}" target="_blank">
+        <a href="https://map.kakao.com/link/search/${장소명}" target="_blank">
           <span class="title">${장소명}</span>
         </a>
       </div>
@@ -186,12 +188,12 @@ window.addEventListener('DOMContentLoaded', (evt) => {
 
       // 커스텀 오버레이를 생성합니다
       var customOverlay = new kakao.maps.CustomOverlay({
-        map: map,
+        map: KakaoMap,
         position: position,
         content: content,
-        // xAnchor: 0.49,
-        // yAnchor: 0.3,
-        yAnchor: 1,
+        // yAnchor: 1,
+        xAnchor: 0.49,
+        yAnchor: 0.3,
         zIndex: 3,
       });
 
@@ -214,5 +216,5 @@ function MoveKakaoMapMarker(장소명) {
     return 장소명 == obj.장소명;
   })[0];
   const latlng = GetLatLng(geo);
-  map.panTo(latlng); // 부드럽게 이동
+  KakaoMap.panTo(latlng); // 부드럽게 이동
 }
