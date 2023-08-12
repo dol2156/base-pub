@@ -19,15 +19,21 @@
     <section data-seq='20230811170157698'>
       <div class='H2'>API</div>
       <br />
-      <article class='CenterCenter' style='gap:10px; margin-bottom:10px;'>
-        {{JSON 'LOCATION_DATA' '/public/json/kakaomap_location.json'}}
-        {{#EACH LOCATION_DATA.GEO_DATA}}
-          <button class='ButtonUi Style1' data-form-hei='Md' onclick="KakaoMapUtil.moveToMap('{{obj.PLACE_NAME}}')">{{obj.PLACE_NAME}}</button>
-        {{/EACH}}
+      <article class='CenterBetween' style='align-items:stretch; border:1px solid #333;'>
+        <div style='width:200px; border-right:1px solid #333;'>
+          <div style='height:100%; background-color:white; padding:10px;'>
+            {{JSON 'LOCATION_DATA' '/public/json/kakaomap_location.json'}}
+            {{#EACH LOCATION_DATA.GEO_DATA}}
+              <button style='margin-bottom:10px;' class='ButtonUi Style1 w-full' data-form-hei='Md' onclick="KakaoMapUtil.moveToMap('{{obj.PLACE_NAME}}')">{{obj.PLACE_NAME}}</button>
+            {{/EACH}}
+          </div>
+        </div>
+        <div style='flex:1;'>
+          <div class='KakaoMapBox'>
+            <div id='KakaoMap' style='width:100%; aspect-ratio:16/9;'></div>
+          </div>
+        </div>
       </article>
-      <div class='KakaoMapBox'>
-        <div id='KakaoMap' class='RR' style='width:100%; aspect-ratio:16/9;'></div>
-      </div>
       <script src='/public/js/kakaomap.js'></script>
     </section>
   </main>

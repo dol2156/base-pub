@@ -1,6 +1,8 @@
 // 카카오개발자센터 - https://developers.kakao.com/
 // 카카오 지도 Web API - https://apis.map.kakao.com/web/guide/
 const ADMIN_MAP_DATA_URL = '/public/json/kakaomap_location.json';
+let INIT_LAT = 37.3957122;
+let INIT_LNG = 127.1105181;
 let LOCATION_LIST, KakaoMap;
 const KakaoMapUtil = {};
 /**
@@ -104,10 +106,8 @@ KakaoMapUtil.loadGeoData = () => {
  *
  */
 KakaoMapUtil.drawMap = () => {
-  const firstLatLng = GetLatLng(LOCATION_LIST[0]);
-
   // 맵 생성
-  KakaoMap = creatMap(LOCATION_LIST[0]);
+  KakaoMap = creatMap();
 
   // 마커 생성
   LOCATION_LIST.forEach((geo, idx) => {
@@ -116,7 +116,7 @@ KakaoMapUtil.drawMap = () => {
 
   /* 2023-08-11 :: START :: 중심이동 */
   window.addEventListener('resize', (evt) => {
-    const latlng = GetLatLng(LOCATION_LIST[0]);
+    const latlng = new kakao.maps.LatLng(INIT_LAT, INIT_LNG);
     KakaoMap.setCenter(latlng); // 곧장 이동
   });
 
@@ -126,13 +126,13 @@ KakaoMapUtil.drawMap = () => {
    * 지도 생성
    * https://apis.map.kakao.com/web/documentation/#Map
    */
-  function creatMap(geo) {
+  function creatMap() {
     var container = document.getElementById('KakaoMap'); //지도를 담을 영역의 DOM 레퍼런스
 
     var options = {
       //지도를 생성할 때 필요한 기본 옵션
-      center: GetLatLng(geo), //지도의 중심좌표.
-      level: 3, //지도의 레벨(확대, 축소 정도)
+      center: new kakao.maps.LatLng(INIT_LAT, INIT_LNG), //지도의 중심좌표.
+      level: 4, //지도의 레벨(확대, 축소 정도)
     };
 
     return new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴;
@@ -227,6 +227,8 @@ KakaoMapUtil.moveToMap = (place_name) => {
     return place_name == obj.PLACE_NAME;
   })[0];
   const latlng = GetLatLng(geo);
+  INIT_LAT = geo.y;
+  INIT_LNG = geo.x;
   KakaoMap.panTo(latlng); // 부드럽게 이동
 };
 
