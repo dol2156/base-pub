@@ -19,13 +19,11 @@
     <section data-seq='20230811170157698'>
       <div class='H2'>API</div>
       <br />
-      {{#JSON '/public/json/kakaomap_location.json'}}
-        <article class='CenterCenter' style='gap:10px; margin-bottom:10px;'>
-          {{#EACH json}}
-            <button class='ButtonUi Style1' data-form-hei='Md' onclick="MoveKakaoMapMarker('{{obj.장소명}}')">{{obj.장소명}}</button>
-          {{/EACH}}
-        </article>
-      {{/JSON}}
+      <article class='CenterCenter' style='gap:10px; margin-bottom:10px;'>
+        {{#EACH json}}
+          <button class='ButtonUi Style1' data-form-hei='Md' onclick="MoveKakaoMapMarker('{{obj.장소명}}')">{{obj.장소명}}</button>
+        {{/EACH}}
+      </article>
       <div class='KakaoMapBox'>
         <div id='KakaoMap' class='RR' style='width:100%; aspect-ratio:16/9;'></div>
       </div>
