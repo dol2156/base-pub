@@ -526,15 +526,9 @@ Handlebars.registerHelper('AND', function (var_list_str, options) {
 });
 
 /**
- *
+ * 동기식으로 JSON 받아와서 node_name 에 할당 해줌
  */
-Handlebars.registerHelper('JSON', function (json_url, options) {
+Handlebars.registerHelper('JSON', function (node_name, json_url, options) {
   const json = JSON.parse(Handlebars.loadHtml(json_url));
-  this.json = json;
-  
-  if (json) {
-    return options.fn(this);
-  } else {
-    return options.inverse(this);
-  }
+  this[node_name] = json;
 });

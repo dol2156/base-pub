@@ -82,7 +82,6 @@ KakaoMapUtil.loadGeoData = () => {
           // Geocoder 를 통해 받아온 x y 값을 덮어 씌운다.
           geo.y = location_obj.위도;
           geo.x = location_obj.경도;
-          console.log(`geo == `, geo);
         }
 
         geo_list.push(geo);
@@ -220,6 +219,20 @@ KakaoMapUtil.drawMap = () => {
   }
 };
 
+/**
+ * 지도 이동
+ */
+KakaoMapUtil.moveToMap = (장소명) => {
+  const geo = LOCATION_LIST.filter((obj) => {
+    return 장소명 == obj.장소명;
+  })[0];
+  const latlng = GetLatLng(geo);
+  KakaoMap.panTo(latlng); // 부드럽게 이동
+};
+
+/**
+ * 지도 초기화
+ */
 KakaoMapUtil.init = () => {
   const json = KakaoMapUtil.loadJson();
   let { JAVASCRIPT_API_KEY, GEO_DATA } = json;
@@ -236,25 +249,8 @@ KakaoMapUtil.init = () => {
 
 KakaoMapUtil.init();
 
-window.addEventListener('DOMContentLoaded', (evt) => {});
-
-window.addEventListener('DOMContentLoaded', (evt) => {
-  return;
-  loadLocationJson((result) => {
-    LOCATION_LIST = result;
-  });
-});
-
 function GetLatLng(geo) {
   const lat = geo.y; // 위도
   const lng = geo.x; // 경도
   return new kakao.maps.LatLng(lat, lng);
-}
-
-function MoveKakaoMapMarker(장소명) {
-  const geo = LOCATION_LIST.filter((obj) => {
-    return 장소명 == obj.장소명;
-  })[0];
-  const latlng = GetLatLng(geo);
-  KakaoMap.panTo(latlng); // 부드럽게 이동
 }
