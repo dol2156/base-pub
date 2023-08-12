@@ -33,11 +33,10 @@ const LoadPage = () => {
 };
 
 const WritePageToFile = () => {
-  console.log(`'WritePageToFile' == `, 'WritePageToFile');
   document.currentScript.remove();
-  if(!PageName) return;
-  
-  if(PageName.indexOf('_pub_') > -1){
+  if (!PageName) return;
+
+  if (PageName.indexOf('_pub_') > -1) {
     //_pub 페이지는 빌드 하지 않음.
     return;
   }
@@ -119,6 +118,28 @@ Handlebars.loadHtml = (path, convert) => {
   if (convert) html_str = convert(html_str);
 
   return html_str;
+};
+
+/**
+ *
+ * @param json_url
+ * @param callback
+ */
+Handlebars.loadJson = (json_url, callback) => {
+  fetch(json_url)
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw Error(`${response.status} | ${response.statusText}`);
+      }
+    })
+    .then((data) => {
+      if (callback) callback(data);
+    })
+    .catch((reason) => {
+      console.log(reason);
+    });
 };
 
 /**
@@ -498,6 +519,20 @@ Handlebars.registerHelper('AND', function (var_list_str, options) {
   console.log(`reslut == `, reslut);
 
   if (reslut) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
+
+/**
+ *
+ */
+Handlebars.registerHelper('JSON', function (json_url, options) {
+  const json = JSON.parse(Handlebars.loadHtml(json_url));
+  this.json = json;
+  
+  if (json) {
     return options.fn(this);
   } else {
     return options.inverse(this);

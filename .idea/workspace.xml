@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb493a9-94b4-4962-b443-08af501fbeff" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/hbs/swiper/_BannerSwiper.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/swiper/_BannerSwiper.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/swiper/_BaseSwiper.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/swiper/_BaseSwiper.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/kakaomap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/json/kakaomap_location.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_map.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_map.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub_tool/DUMMY_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/DUMMY_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/global.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/handlebars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lib/handlebars_helper.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +29,9 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="markdown" />
-        <option value="JavaScript File" />
         <option value="handlebars" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>

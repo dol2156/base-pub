@@ -208,7 +208,6 @@ img.LoadingBg {
 /**/
 .HScrollSnapBox {
   scroll-snap-type: x mandatory;
-
   > * {
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -231,4 +230,54 @@ img.LoadingBg {
 }
 .plyr__control--overlaid > * {
   display: none;
+}
+/**/
+.KakaoMapBox {
+  .customoverlay {
+    position: relative;
+    bottom: 85px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    border-bottom: 2px solid #dddddd;
+    float: left;
+
+    &:nth-of-type(n) {
+      border: 0;
+      box-shadow: 0px 1px 2px #888888;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      margin-left: -12px;
+      left: 50%;
+      bottom: -12px;
+      width: 22px;
+      height: 12px;
+      background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      overflow: hidden;
+      background: var(--color1);
+      background: var(--color1) url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+    }
+
+    .title {
+      display: block;
+      text-align: center;
+      background: #ffffff;
+      margin-right: 35px;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
 }
