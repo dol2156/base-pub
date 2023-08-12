@@ -22,7 +22,7 @@
       <article class='CenterCenter' style='gap:10px; margin-bottom:10px;'>
         {{JSON 'LOCATION_DATA' '/public/json/kakaomap_location.json'}}
         {{#EACH LOCATION_DATA.GEO_DATA}}
-          <button class='ButtonUi Style1' data-form-hei='Md' onclick="KakaoMapUtil.moveToMap('{{obj.장소명}}')">{{obj.장소명}}</button>
+          <button class='ButtonUi Style1' data-form-hei='Md' onclick="KakaoMapUtil.moveToMap('{{obj.PLACE_NAME}}')">{{obj.PLACE_NAME}}</button>
         {{/EACH}}
       </article>
       <div class='KakaoMapBox'>

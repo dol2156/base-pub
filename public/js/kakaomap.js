@@ -66,13 +66,13 @@ KakaoMapUtil.loadGeoData = () => {
   function getGeo(location_obj) {
     if (typeof location_obj === 'undefined') return;
 
-    const { 주소 } = location_obj;
+    const { ADDRESS_NAME } = location_obj;
 
     // 주소-좌표 변환 객체를 생성합니다
     var geocoder = new kakao.maps.services.Geocoder();
 
     // 주소로 좌표를 검색합니다
-    geocoder.addressSearch(주소, function (result, status) {
+    geocoder.addressSearch(ADDRESS_NAME, function (result, status) {
       // 정상적으로 검색이 완료됐으면
       if (status === kakao.maps.services.Status.OK) {
         const geo = result[0];
@@ -187,13 +187,13 @@ KakaoMapUtil.drawMap = () => {
    * https://apis.map.kakao.com/web/guide/#mapurl
    */
   function createCustomOverlay(geo) {
-    const { 장소명, 주소 } = geo;
+    const { PLACE_NAME, ADDRESS_NAME } = geo;
 
     // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     const content = `
       <div class="customoverlay">
-        <a href="https://map.kakao.com/link/search/${주소}" target="_blank">
-          <span class="title">${장소명}</span>
+        <a href="https://map.kakao.com/link/search/${ADDRESS_NAME}" target="_blank">
+          <span class="title">${PLACE_NAME}</span>
         </a>
       </div>
       `;
@@ -222,9 +222,9 @@ KakaoMapUtil.drawMap = () => {
 /**
  * 지도 이동
  */
-KakaoMapUtil.moveToMap = (장소명) => {
+KakaoMapUtil.moveToMap = (place_name) => {
   const geo = LOCATION_LIST.filter((obj) => {
-    return 장소명 == obj.장소명;
+    return place_name == obj.PLACE_NAME;
   })[0];
   const latlng = GetLatLng(geo);
   KakaoMap.panTo(latlng); // 부드럽게 이동
