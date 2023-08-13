@@ -109,7 +109,6 @@ Handlebars.loadHtml = (path, convert) => {
         // error
         const msg = '404 Not Found';
         console.log(`%c${msg}%c${path}`, 'font-family:D2Coding; border:1px solid black; background:red; color:white; padding:5px; font-size:12px;', 'font-family:D2Coding; background-color:black; border:1px solid black; border-left:none; padding:5px; color:yellow; font-size:12px;');
-        html_str = msg + '<br/>' + path;
       }
     }
   };
