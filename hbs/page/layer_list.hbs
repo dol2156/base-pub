@@ -14,7 +14,7 @@
     {{#EACH window.HBS_DATA.layer}}
       <section>
         <div class='H3'>
-          <input style='display:inline-block; width:100%; outline:none; border:none;' readonly type='text' value='{{obj.path}}' onclick='this.select();' />
+          <input style='display:inline-block; width:100%; outline:none; border:none;' readonly type='text' value='{{obj.name}}' onclick='this.select();' />
         </div>
         <br />
         <script>Include('{{obj.path}}');</script>

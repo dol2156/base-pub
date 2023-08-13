@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="620ebd2c-0f32-44ce-9a3e-0f38644833a0" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_guide_componet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_componet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_guide_etc_button.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_etc_button.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_guide_form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_form.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_guide_layer.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/layer_list.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_test_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_1.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
