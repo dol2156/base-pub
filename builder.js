@@ -51,6 +51,8 @@ const createServer = (port) => {
           const save_path = `${bundle_folder}/${name}.html`;
           
           let build_frame_str = FileUtil.readFile('./builder.html');
+          let head_html = FileUtil.readFile('./head.html');
+          build_frame_str = build_frame_str.replace(/__헤드__/gi, head_html);
           build_frame_str = build_frame_str.replace(/__컨텐츠__/gi, body_str);
           
           const options = { indent_size: 2, space_in_empty_paren: true }
