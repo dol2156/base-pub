@@ -8,6 +8,7 @@ Handlebars.logger.level = 'debug';
  */
 const Include = (path, render_data) => {
   if (typeof render_data === 'undefined') render_data = {};
+  render_data = Object.assign({window}, render_data);
 
   const el_script = document.currentScript;
 
@@ -324,18 +325,6 @@ Handlebars.registerHelper('ADD', function (v1, v2, options) {
 });
 
 /**
- * 모듈 제작시에 전달 되지 않은 매개변수 값대신에 노드명을 넣어줌
- * {{SAFE2 this 'txt1|txt2|btn1|btn2'}}
- */
-Handlebars.registerHelper('SAFE2', function (ori_data, array_string, options) {
-  const node_arr = array_string.split('|');
-  node_arr.forEach((node_name, idx) => {
-    node_name = node_name.trim();
-    ori_data[node_name] = node_name;
-  });
-});
-
-/**
  * Partial 사용시에 경로를 동적으로 넣어야하는 경우가 있을때 사용
  * {{> (PATH obj.partial_path) }}
  */
@@ -390,15 +379,6 @@ Handlebars.registerHelper('CONATIN', function (p1, condition, options) {
   return is_contain;
 });
 
-/**
- * 변수 값이 있는지 체크 후 없으면 노드명을 값으로 할당
- * {{DV2 'txt1'}}
- */
-Handlebars.registerHelper('DV2', function (p1, options) {
-  const _this = options.data;
-  _this[p1] = p1;
-  console.log(options);
-});
 
 /**
  * 기본값 할당
@@ -425,8 +405,10 @@ Handlebars.registerHelper('DF', function (object, node_name, value, options) {
  */
 Handlebars.registerHelper('DV', function (options) {
   const root = this;
+  
   const len = Object.keys(root).length;
-  if (len == 0) {
+  
+  if (len == 1 && Object.keys(root)[0]=='window') {
     return options.fn(this);
     // return true;
   } else {
@@ -449,16 +431,6 @@ Handlebars.registerHelper('SAFE', function (node_name, value, options) {
       this[node_name] = value;
     }
   }
-});
-
-/**
- * value 가 undefined 일 경우 safeValue 반환
- * {{SAFE2 height 'auto'}}
- */
-Handlebars.registerHelper('SAFE2', function (value, safeValue, options) {
-  const out = value || safeValue;
-  // return new Handlebars.SafeString(out);
-  return out;
 });
 
 /**
