@@ -26,8 +26,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
       <div class="wid">wid</div>
       <div>x</div>
       <div class="hei">hei</div>
-      <div>|</div>
-      <div class="layout">hei</div>
     </a>
   </div>
   `;
