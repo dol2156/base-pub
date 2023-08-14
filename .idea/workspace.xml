@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="620ebd2c-0f32-44ce-9a3e-0f38644833a0" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/hbs/page/_layer_1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/layer_1.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/_layer_2.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/layer_2.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/_layer_3.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/layer_3.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MyProjects/ksm-friends/base-include/hbs/component&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/MyProjects/ksm-friends/base-include/hbs/component",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\ksm-friends\\base-include\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MyProjects\ksm-friends\base-include\hbs\component" />
