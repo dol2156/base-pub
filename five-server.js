@@ -4,7 +4,7 @@ const FiveServer = require('five-server').default;
 const fiveServer = new FiveServer();
 const option = {
   useLocalIp: true,
-  // port: 3000,
+  port: 5500,
   open: true,
   watch: ['./hbs', './public', './pub_tool'],
   // wait:1000,
