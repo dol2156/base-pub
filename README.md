@@ -3,13 +3,13 @@
 
 # 🚨 필독
 - 퍼블리싱 결과물은 dist 폴더에 있음.
-- 그 외 폴더 퍼블리싱 팀외 수정 불가.
+- 그 외 폴더 퍼블리싱 팀 외 수정 불가.
 
 
 # 🌈 퍼블리셔 필독
 
 ## 😀 Plan
-- Story board link
+- Plan Gitlab link
 
 
 ## 😀 Design
