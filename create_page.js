@@ -1,4 +1,3 @@
-// const google_sheet_api = 'https://script.google.com/macros/s/AKfycbyRsrHPlyzuf5mX6Nfob5VJR3IBjbMIG3XxQYnk5iu7U04rmot7-MJ9xHGe5ls96SS_Jw/exec';
 
 const fs = require('fs');
 const beautify = require('js-beautify').js;
