@@ -1,15 +1,17 @@
-const google_sheet_api = 'https://script.google.com/macros/s/AKfycbyRsrHPlyzuf5mX6Nfob5VJR3IBjbMIG3XxQYnk5iu7U04rmot7-MJ9xHGe5ls96SS_Jw/exec';
+// const google_sheet_api = 'https://script.google.com/macros/s/AKfycbyRsrHPlyzuf5mX6Nfob5VJR3IBjbMIG3XxQYnk5iu7U04rmot7-MJ9xHGe5ls96SS_Jw/exec';
 
 const fs = require('fs');
 const beautify = require('js-beautify').js;
 const FileUtil = require('./file_util.js');
+const API_URL = require('./API.js');
 
 let file_text = '';
 
 (async () => {
   try {
-    const response = await fetch(google_sheet_api);
+    const response = await fetch(API_URL);
     const json = await response.json();
+    console.log(`json == `, json);
     file_text += `var MENU_DATA_ORI = ${JSON.stringify(json)};\n`;
 
     createHbsFile(json);

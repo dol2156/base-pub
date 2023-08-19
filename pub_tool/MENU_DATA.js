@@ -1,5 +1,3 @@
-const google_sheet_api = 'https://script.google.com/macros/s/AKfycbyRsrHPlyzuf5mX6Nfob5VJR3IBjbMIG3XxQYnk5iu7U04rmot7-MJ9xHGe5ls96SS_Jw/exec';
-
 let PageName, DocTitle;
 (() => {
   const queryString = window.location.search;
@@ -30,6 +28,7 @@ let PageName, DocTitle;
         if (this.status == 200) {
           // success
           result = this.responseText;
+          console.log(`result == `, result);
         } else {
           // error
           const msg = '404 Not Found';
@@ -111,7 +110,7 @@ let PageName, DocTitle;
     }
   };
 
-  let json = loadJson(google_sheet_api);
+  let json = loadJson(API_URL);
   json = JSON.parse(json);
   saveLocalData(json);
 })();
