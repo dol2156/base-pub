@@ -8,6 +8,14 @@
 
 # 🌈 퍼블리셔 필독
 
+## 😀 Plan
+- Story board link
+
+
+## 😀 Design
+- Figma link
+
+
 ## 😀 GoogleSheet
 - https://docs.google.com/spreadsheets/d/1oui5VZpSWpdrpYsHZ9Rwmrv5EVOq3suyndxp4RNDxW8/edit#gid=1038524317
 
@@ -20,5 +28,6 @@
 - pub_tool/MENU_DATA.js
 - create_page.js
 
+
 ## 😀 작업기간
-- 
+- YYYY-MM-DD ~ YYYY-MM-DD 
