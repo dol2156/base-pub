@@ -6,4 +6,4 @@
 
 # Vercel 연동 유의사항
 - root 는 dist 입니다.
-- 연동 후 Settings > Advanced > Directory Listing > Enabled 를 ON 해주어야합니다.
+- 연동 후 Settings > Advanced > Directory Listing > Enabled ==> ON 필요합니다.
