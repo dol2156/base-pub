@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="525b9dc8-55b6-4a5a-9935-389c02a0e537" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/API_URL.js" beforeDir="false" afterPath="$PROJECT_DIR$/API_URL.js" afterDir="false" />
-    </list>
+    <list default="true" id="525b9dc8-55b6-4a5a-9935-389c02a0e537" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
