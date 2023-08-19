@@ -22,7 +22,7 @@
       <article class='CenterBetween' style='align-items:stretch; border:1px solid #333;'>
         <div style='width:200px; border-right:1px solid #333;'>
           <div style='height:100%; background-color:white; padding:10px;'>
-            {{JSON 'LOCATION_DATA' '/public/json/kakaomap_location.json'}}
+            {{JSON 'LOCATION_DATA' '/assets/json/kakaomap_location.json'}}
             {{#EACH LOCATION_DATA.GEO_DATA}}
               <button style='margin-bottom:10px;' class='ButtonUi Style1 w-full' data-form-hei='Md' onclick="KakaoMapUtil.moveToMap('{{obj.PLACE_NAME}}')">{{obj.PLACE_NAME}}</button>
             {{/EACH}}
@@ -34,7 +34,7 @@
           </div>
         </div>
       </article>
-      <script src='/public/js/kakaomap.js'></script>
+      <script src='/assets/js/kakaomap.js'></script>
     </section>
   </main>
 </div>

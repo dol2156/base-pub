@@ -1,6 +1,6 @@
 // 카카오개발자센터 - https://developers.kakao.com/
 // 카카오 지도 Web API - https://apis.map.kakao.com/web/guide/
-const ADMIN_MAP_DATA_URL = '/public/json/kakaomap_location.json';
+const ADMIN_MAP_DATA_URL = '/assets/json/kakaomap_location.json';
 let INIT_LAT = 37.3957122;
 let INIT_LNG = 127.1105181;
 let LOCATION_LIST, KakaoMap;

@@ -288,7 +288,7 @@
   &.Style1 {
     border: 1px solid var(--form-border-color);
     background-color: transparent;
-    background-image: url(/public/icon/2308011441.svg);
+    background-image: url(/assets/icon/2308011441.svg);
     background-position: right var(--arrow-padding) center;
     background-repeat: no-repeat;
     background-position: right 0.5em center;
@@ -329,27 +329,27 @@ input[type='radio'] {
     width: 24px;
   }
   &.Style1 {
-    background-image: url(/public/icon/basic/chk_1.svg);
+    background-image: url(/assets/icon/basic/chk_1.svg);
     &:checked {
-      background-image: url(/public/icon/basic/chk_1_on.svg);
+      background-image: url(/assets/icon/basic/chk_1_on.svg);
       + .LabalUi {
         color: #ff3838 !important;
       }
     }
     &[disabled] {
-      background-image: url(/public/icon/basic/chk_1_disabled.svg);
+      background-image: url(/assets/icon/basic/chk_1_disabled.svg);
     }
   }
   &.Style2 {
-    background-image: url(/public/icon/basic/chk_2.svg);
+    background-image: url(/assets/icon/basic/chk_2.svg);
     &:checked {
-      background-image: url(/public/icon/basic/chk_2_on.svg);
+      background-image: url(/assets/icon/basic/chk_2_on.svg);
       + .LabalUi {
         color: #ff3838;
       }
     }
     &[disabled] {
-      background-image: url(/public/icon/basic/chk_2_disabled.svg);
+      background-image: url(/assets/icon/basic/chk_2_disabled.svg);
     }
   }
 }
@@ -364,12 +364,12 @@ input[type='radio'] {
     width: 24px;
   }
   &.Style1 {
-    background-image: url(/public/icon/basic/rdo_1.svg);
+    background-image: url(/assets/icon/basic/rdo_1.svg);
     &:checked {
-      background-image: url(/public/icon/basic/rdo_1_on.svg);
+      background-image: url(/assets/icon/basic/rdo_1_on.svg);
     }
     &[disabled] {
-      background-image: url(/public/icon/basic/rdo_1_disabled.svg);
+      background-image: url(/assets/icon/basic/rdo_1_disabled.svg);
     }
   }
 }
@@ -386,9 +386,9 @@ input[type='radio'] {
     width: 24px;
   }
   &.Style1 {
-    background-image: url(/public/icon/basic/toggle_1.svg);
+    background-image: url(/assets/icon/basic/toggle_1.svg);
     &:checked {
-      background-image: url(/public/icon/basic/toggle_1_on.svg);
+      background-image: url(/assets/icon/basic/toggle_1_on.svg);
     }
     &[disabled] {
       opacity: 0.4;

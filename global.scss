@@ -3,9 +3,9 @@
 @use 'module';
 @use 'scss/form';
 /**/
-@import '/public/font/SUIT-Variable.css';
+@import '/assets/font/SUIT-Variable.css';
 //@import '/font/Pretendard.css';
-@import '/public/font/Montserrat.css';
+@import '/assets/font/Montserrat.css';
 page-title {
   display: none;
 }
@@ -223,7 +223,7 @@ img.LoadingBg {
 /**/
 .plyr__control--overlaid {
   border-radius: 0;
-  background-image: url(/public/icon/video_play.svg) !important;
+  background-image: url(/assets/icon/video_play.svg) !important;
   background-color: transparent !important;
   width: 50px !important;
   height: 50px;

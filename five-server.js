@@ -6,7 +6,7 @@ const option = {
   useLocalIp: true,
   port: 5500,
   open: true,
-  watch: ['./hbs', './public', './pub_tool'],
+  watch: ['./hbs', './assets', './pub_tool'],
   // wait:1000,
   // injectCss:false,
   // ignore: [/\.s[ac]ss$/i, /\.tsx?$/i],

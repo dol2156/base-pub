@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**/
-@import '/public/font/SUIT-Variable.css';
-@import '/public/font/Montserrat.css';
+@import '/assets/font/SUIT-Variable.css';
+@import '/assets/font/Montserrat.css';
 :root {
   --color1: #ff3838;
   --color2: #4168f6;
@@ -1154,7 +1154,7 @@ strong {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-image: url(/public/icon/basic/noimage.svg);
+  background-image: url(/assets/icon/basic/noimage.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100px;
@@ -1833,7 +1833,7 @@ strong {
 .SelectUi.Style1 {
   border: 1px solid var(--form-border-color);
   background-color: transparent;
-  background-image: url(/public/icon/2308011441.svg);
+  background-image: url(/assets/icon/2308011441.svg);
   background-position: right var(--arrow-padding) center;
   background-repeat: no-repeat;
   background-position: right 0.5em center;
@@ -1869,28 +1869,28 @@ input[type=radio][data-size=Lg] + .LabalUi {
   width: 24px;
 }
 .CheckBoxUi.Style1 {
-  background-image: url(/public/icon/basic/chk_1.svg);
+  background-image: url(/assets/icon/basic/chk_1.svg);
 }
 .CheckBoxUi.Style1:checked {
-  background-image: url(/public/icon/basic/chk_1_on.svg);
+  background-image: url(/assets/icon/basic/chk_1_on.svg);
 }
 .CheckBoxUi.Style1:checked + .LabalUi {
   color: #ff3838 !important;
 }
 .CheckBoxUi.Style1[disabled] {
-  background-image: url(/public/icon/basic/chk_1_disabled.svg);
+  background-image: url(/assets/icon/basic/chk_1_disabled.svg);
 }
 .CheckBoxUi.Style2 {
-  background-image: url(/public/icon/basic/chk_2.svg);
+  background-image: url(/assets/icon/basic/chk_2.svg);
 }
 .CheckBoxUi.Style2:checked {
-  background-image: url(/public/icon/basic/chk_2_on.svg);
+  background-image: url(/assets/icon/basic/chk_2_on.svg);
 }
 .CheckBoxUi.Style2:checked + .LabalUi {
   color: #ff3838;
 }
 .CheckBoxUi.Style2[disabled] {
-  background-image: url(/public/icon/basic/chk_2_disabled.svg);
+  background-image: url(/assets/icon/basic/chk_2_disabled.svg);
 }
 
 .RadioUi {
@@ -1905,13 +1905,13 @@ input[type=radio][data-size=Lg] + .LabalUi {
   width: 24px;
 }
 .RadioUi.Style1 {
-  background-image: url(/public/icon/basic/rdo_1.svg);
+  background-image: url(/assets/icon/basic/rdo_1.svg);
 }
 .RadioUi.Style1:checked {
-  background-image: url(/public/icon/basic/rdo_1_on.svg);
+  background-image: url(/assets/icon/basic/rdo_1_on.svg);
 }
 .RadioUi.Style1[disabled] {
-  background-image: url(/public/icon/basic/rdo_1_disabled.svg);
+  background-image: url(/assets/icon/basic/rdo_1_disabled.svg);
 }
 
 .ToggleUi {
@@ -1928,10 +1928,10 @@ input[type=radio][data-size=Lg] + .LabalUi {
   width: 24px;
 }
 .ToggleUi.Style1 {
-  background-image: url(/public/icon/basic/toggle_1.svg);
+  background-image: url(/assets/icon/basic/toggle_1.svg);
 }
 .ToggleUi.Style1:checked {
-  background-image: url(/public/icon/basic/toggle_1_on.svg);
+  background-image: url(/assets/icon/basic/toggle_1_on.svg);
 }
 .ToggleUi.Style1[disabled] {
   opacity: 0.4;
@@ -2169,7 +2169,7 @@ img.LoadingBg {
 /**/
 .plyr__control--overlaid {
   border-radius: 0;
-  background-image: url(/public/icon/video_play.svg) !important;
+  background-image: url(/assets/icon/video_play.svg) !important;
   background-color: transparent !important;
   width: 50px !important;
   height: 50px;

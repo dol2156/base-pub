@@ -9,11 +9,11 @@
     "chd": "node create_hbs_data.js",
     "csd": "node create_scss_data.js",
     "wh": "node watch_hbs.js",
-    "scss:sitemap": "sass -w scss/sitemap.scss public/css/sitemap.css",
-    "scss:global": "sass -w global.scss public/css/global.css",
+    "scss:sitemap":"sass -w scss/sitemap.scss assets/css/sitemap.css",
+    "scss:global":"sass -w global.scss assets/css/global.css",
     "fs": "node five-server.js",
     "builder": "node builder.js",
-    "sync": "syncdir ./public ./dist/public --quiet",
+    "sync":"syncdir ./assets ./dist/assets --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
