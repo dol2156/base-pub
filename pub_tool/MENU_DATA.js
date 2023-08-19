@@ -28,7 +28,6 @@ let PageName, DocTitle;
         if (this.status == 200) {
           // success
           result = this.responseText;
-          console.log(`result == `, result);
         } else {
           // error
           const msg = '404 Not Found';
