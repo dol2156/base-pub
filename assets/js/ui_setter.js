@@ -3,32 +3,35 @@
  * @param trigger
  */
 const initInputUi = (trigger) => {
-  const el_target = document.currentScript.parentElement;
-  const el_inp = el_target.querySelector(`:scope > input`);
-
-  el_inp.addEventListener('keyup', (evt) => {
+  if(typeof trigger === "undefined" ) return;
+  const $target = $(trigger).parent();
+  
+  const $inp = $target.find(`> input`);
+  
+  $inp.on('keyup', (evt) => {
     updateDisplay();
   });
-
-  el_inp.addEventListener('focus', (evt) => {
-    el_target.classList.add('Focus');
-    el_target.focus();
+  
+  $inp.on('focus', (evt) => {
+    $target.addClass('Focus');
+    $target.focus();
+  });
+  
+  $inp.on('blur', (evt) => {
+    $target.removeClass('Focus');
+    $target.blur();
   });
 
-  el_inp.addEventListener('blur', (evt) => {
-    el_target.classList.remove('Focus');
-    el_target.blur();
-  });
 
   updateDisplay();
 
   function updateDisplay() {
-    const value = el_inp.value;
+    const value = $inp.val();
 
     if (!value) {
-      el_target.classList.remove('HasValue');
+      $target.removeClass('HasValue');
     } else {
-      el_target.classList.add('HasValue');
+      $target.addClass('HasValue');
     }
   }
 };
@@ -37,7 +40,11 @@ const initInputUi = (trigger) => {
  * HScrollGradientBox 가로 스크롤 그라디언트 박스 초기 셋팅
  * @param trigger
  */
-const initHScrollGradientBox = () => {
+const initHScrollGradientBox = (trigger) => {
+  if(typeof trigger === "undefined" ) return;
+  const $target = $(trigger).parent();
+  console.log(`$target == `, $target);
+  
   const el_target = document.currentScript.parentElement;
   const el_hsb = el_target;
   const el_track = el_hsb.querySelector(`.Track`);
