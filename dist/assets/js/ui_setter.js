@@ -3,32 +3,35 @@
  * @param trigger
  */
 const initInputUi = (trigger) => {
-  const el_target = document.currentScript.parentElement;
-  const el_inp = el_target.querySelector(`:scope > input`);
-
-  el_inp.addEventListener('keyup', (evt) => {
+  if(typeof trigger === "undefined" ) return;
+  const $target = $(trigger).parent();
+  
+  const $inp = $target.find(`> input`);
+  
+  $inp.on('keyup', (evt) => {
     updateDisplay();
   });
-
-  el_inp.addEventListener('focus', (evt) => {
-    el_target.classList.add('Focus');
-    el_target.focus();
+  
+  $inp.on('focus', (evt) => {
+    $target.addClass('Focus');
+    $target.focus();
+  });
+  
+  $inp.on('blur', (evt) => {
+    $target.removeClass('Focus');
+    $target.blur();
   });
 
-  el_inp.addEventListener('blur', (evt) => {
-    el_target.classList.remove('Focus');
-    el_target.blur();
-  });
 
   updateDisplay();
 
   function updateDisplay() {
-    const value = el_inp.value;
+    const value = $inp.val();
 
     if (!value) {
-      el_target.classList.remove('HasValue');
+      $target.removeClass('HasValue');
     } else {
-      el_target.classList.add('HasValue');
+      $target.addClass('HasValue');
     }
   }
 };
@@ -37,9 +40,11 @@ const initInputUi = (trigger) => {
  * HScrollGradientBox 가로 스크롤 그라디언트 박스 초기 셋팅
  * @param trigger
  */
-const initHScrollGradientBox = () => {
-  const el_target = document.currentScript.parentElement;
-  const el_hsb = el_target;
+const initHScrollGradientBox = (trigger) => {
+  if(typeof trigger === "undefined" ) return;
+  const $target = $(trigger).parent();
+  
+  const el_hsb = $target[0];
   const el_track = el_hsb.querySelector(`.Track`);
   el_track.addEventListener('scroll', (evt) => {
     updateDisplay();
@@ -65,12 +70,14 @@ const initHScrollGradientBox = () => {
   }
 };
 
-const initCollapse = () => {
-  const el_target = document.currentScript.parentElement;
-  const $li_on = $('li.On', el_target);
+const initCollapse = (trigger) => {
+  if(typeof trigger === "undefined" ) return;
+  const $target = $(trigger).parent();
+  
+  const $li_on = $('li.On', $target);
   $li_on.find('.A').show();
   
-  const $qbtn = $('.Q > button', el_target);
+  const $qbtn = $('.Q > button', $target);
   $qbtn.on('click', (evt) => {
     const $li = $(evt.currentTarget).closest('li');
 
@@ -89,13 +96,14 @@ const initCollapse = () => {
   });
 };
 
-const initTreeMenu = () => {
-  const el_target = document.currentScript.parentElement;
+const initTreeMenu = (trigger) => {
+  if(typeof trigger === "undefined" ) return;
+  const $target = $(trigger).parent();
   
-  const $li_on = $('li.On', el_target);
+  const $li_on = $('li.On', $target);
   $li_on.find('> ul').show();
   
-  const $button = $('button', el_target);
+  const $button = $('button', $target);
   $button.on('click', (evt) => {
     const $li = $(evt.currentTarget).closest('li');
     

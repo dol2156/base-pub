@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525b9dc8-55b6-4a5a-9935-389c02a0e537" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ base-include.iml" beforePathEscaped="$PROJECT_DIR$/.idea/🟢 base-include.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ base-include.iml" afterPathEscaped="$PROJECT_DIR$/.idea/🟢 base-include.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/ui_setter.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/ui_setter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/Collapse_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/Collapse_1-a.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/component/HScrollGradientBox_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/HScrollGradientBox_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hbs/component/TreeMenu_1-a.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/component/TreeMenu_1-a.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\dol2156\\base-include\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />

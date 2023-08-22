@@ -34,6 +34,8 @@ const initInputUi = (trigger) => {
       $target.addClass('HasValue');
     }
   }
+  
+  trigger.remove();
 };
 
 /**
@@ -68,8 +70,14 @@ const initHScrollGradientBox = (trigger) => {
       el_hsb.classList.remove('End');
     }
   }
+  
+  trigger.remove();
 };
 
+/**
+ * Collapse_1
+ * @param trigger
+ */
 const initCollapse = (trigger) => {
   if(typeof trigger === "undefined" ) return;
   const $target = $(trigger).parent();
@@ -94,8 +102,14 @@ const initCollapse = (trigger) => {
       $li.find('.A').slideUp();
     }
   });
+  
+  trigger.remove();
 };
 
+/**
+ * TreeMenu_1
+ * @param trigger
+ */
 const initTreeMenu = (trigger) => {
   if(typeof trigger === "undefined" ) return;
   const $target = $(trigger).parent();
@@ -121,4 +135,6 @@ const initTreeMenu = (trigger) => {
     }
     
   });
+  
+  trigger.remove();
 }

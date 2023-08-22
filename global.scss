@@ -55,7 +55,7 @@ main {
   padding-bottom: 80px;
 }
 /**/
-.Trigger {
+img[src=''] {
   display: none;
 }
 /**/
@@ -245,7 +245,7 @@ img.LoadingBg {
       border: 0;
       box-shadow: 0px 1px 2px #888888;
     }
-    
+
     &:after {
       content: '';
       position: absolute;
