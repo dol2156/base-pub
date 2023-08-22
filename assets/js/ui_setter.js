@@ -35,7 +35,6 @@ const initInputUi = (trigger) => {
     }
   }
   
-  trigger.remove();
 };
 
 /**
@@ -71,7 +70,6 @@ const initHScrollGradientBox = (trigger) => {
     }
   }
   
-  trigger.remove();
 };
 
 /**
@@ -103,7 +101,6 @@ const initCollapse = (trigger) => {
     }
   });
   
-  trigger.remove();
 };
 
 /**
@@ -136,5 +133,4 @@ const initTreeMenu = (trigger) => {
     
   });
   
-  trigger.remove();
 }
