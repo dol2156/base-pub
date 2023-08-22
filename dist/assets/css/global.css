@@ -1979,7 +1979,7 @@ main {
 }
 
 /**/
-.Trigger {
+img[src=""] {
   display: none;
 }
 

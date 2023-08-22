@@ -192,6 +192,7 @@ KakaoMapUtil.drawMap = () => {
     // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     const content = `
       <div class="customoverlay">
+        <img src="https://newsimg.sedaily.com/2020/04/29/1Z1NWYX4JP_1.jpg" alt="" />
         <a href="https://map.kakao.com/link/search/${ADDRESS_NAME}" target="_blank">
           <span class="title">${PLACE_NAME}</span>
         </a>
