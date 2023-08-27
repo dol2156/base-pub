@@ -1,65 +1,129 @@
 {{DF this 'id' (UID)}}
-<div class='RR relative'>
+<div class='relative'>
   <div id='FullPageSwiper-{{id}}' class='swiper FullPageSwiper'>
     <div class='swiper-wrapper'>
-      {{#LOOP 2}}
-        <div class='RR swiper-slide' data-key='1'>
-          <section>
-            <video class='Bg' controlsList='nodownload' loop='loop' autoplay muted='muted' playsinline>
+      <div class='swiper-slide'>
+        <section>
+          <div class='Bg'>
+            <video controlsList='nodownload' loop='loop' autoplay muted='muted' playsinline>
               <source src='/assets/video/01.mp4' type='video/mp4' />
-              인터넷익스플로러8 이하는 비디오가 나오지 않습니다. 인터넷익스플로러 버전을 업데이트 하시길 바랍니다.
             </video>
-            <div class='Inner'>
-              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
-              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
-              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
+          </div>
+          <div class='Inner'>
+            <div class='text-center' data-only-view='MO'>
+              <div class='AnimateTarget'>
+                <div class='text-[#ffffff] text-[34px] font-[700] leading-[40px]'>
+                  당신의 DNA에
+                  <br />
+                  로그인하세요.
+                </div>
+              </div>
+              <div class='AnimateTarget mt-[22px]'>
+                <div class='text-[#ffffff] text-[16px] font-[400] leading-[24px]'>
+                  제노플랜에서 당신의 세계를
+                  <br />
+                  더 깊고, 더 넓게 탐험할 수 있습니다
+                </div>
+              </div>
             </div>
-          </section>
-        </div>
-        <div class='RR swiper-slide' data-key='2'>
-          <section>
-            <img class='Bg' src='https://picsum.photos/1920/1080.jpg?random={{index}}' alt='' />
-            <div class='Inner'>
-              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
-              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
-              <div class='Text DelayTarget'>Lorem Ipsum is simply dummy text.</div>
+            <div class='text-center' data-only-view='PC'>
+              <div class='AnimateTarget'>
+                <div class='text-[#ffffff] text-[60px] font-[700] leading-[60px]'>
+                  당신의 DNA에 로그인하세요.
+                </div>
+              </div>
+              <div class='AnimateTarget mt-[30px]'>
+                <div class='text-[#ffffff] text-[20px] font-[400] leading-[30px]'>
+                  엠허브제노플랜에서 당신의 세계를 더 깊고, 더 넓게 탐험할 수 있습니다
+                </div>
+              </div>
             </div>
-          </section>
+            <div class='MouseIcon hidden lg:block'>
+              <script>Include('/hbs/component/DungDung_1-a.hbs');</script>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class='swiper-slide'>
+        <section>
+          <div class='Bg'>
+            <img src='https://picsum.photos/1920/1080.jpg?random=cd192e57' alt='' />
+          </div>
+          <div class='Inner'>
+            <div data-only-view='MO'>
+              <article>
+                <div class='AnimateTarget'>
+                  <div class='text-[#ffffff] text-[30px] font-[600] leading-[38px]'>
+                    엠허브제너플랜이
+                    <br />
+                    든든한 동반자가
+                    <br />
+                    되겠습니다.
+                  </div>
+                </div>
+                <div class='AnimateTarget mt-[22px]'>
+                  <div class='text-[#ffffff] text-[16px] font-[400] leading-[24px]'>
+                    제노플랜의
+                    <br />
+                    새로운 소식을 전해드립니다.
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div data-only-view='PC'>
+              <article class='w-[640px]'>
+                <div class='AnimateTarget'>
+                  <div class='text-[#ffffff] text-[50px] font-[600] leading-[62px]'>
+                    엠허브제너플랜이
+                    <br />
+                    든든한 동반자가 되겠습니다.
+                  </div>
+                </div>
+                <div class='AnimateTarget mt-[30px]'>
+                  <div class='text-[#ffffff] text-[20px] font-[400] leading-[30px]'>
+                    언제나 사람과 건강을 우선으로 생각하는 기업으로
+                    <br />
+                    책임을 다 할 것을 약속합니다.
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class='MouseIcon hidden lg:block'>
+              <script>Include('/hbs/component/DungDung_1-a.hbs');</script>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class='swiper-slide FooterSlide'>
+        <div class='CenterCenter bg-amber-300' style='height:var(--fullpage-footer-hei);'>
+          FOOTER
         </div>
-      {{/LOOP}}
+      </div>
     </div>
   </div>
-  <div class='CenterCenter bg-amber-300' style='height:var(--fullpage-footer-hei);'>
-    FOOTER
-  </div>
-  <div id='FullPageSwiper-{{id}}-Pagenation' class='RR FullPageSwiper-Pagenation'></div>
+  <div id='FullPageSwiper-{{id}}-PagenationProgressbar' class='FullPageSwiper-PagenationProgressbar hidden lg:block'></div>
   {{!--prettier-ignore--}}
   <script>
     (() => {
-      let isReachEnd = false;
-      
-      const pagination_bullet = {
-        el: '#FullPageSwiper-{{id}}-Pagenation',
-        type: 'bullets',
-        clickable: true,
+      const pagination_progress = {
+        el: '#FullPageSwiper-{{id}}-PagenationProgressbar',
+        type: 'progressbar',
         modifierClass: 'Pagenation-',
-        bulletClass: 'Dot',
-        bulletActiveClass: 'On',
-        renderBullet: function (index, className) {
-          const num = (index + 1).toString().padStart(2, '0');
-          return `<div class="${className}"> <div class="Num">${num}</div> <div class="Circle"></div> </div>`;
+        progressbarFillClass: 'FillBar',
+        renderProgressbar: function (className) {
+          return `<div class="${className}"></div>`;
         },
       };
-      
+
       const swiper_option = {
+        // initialSlide : 3,
         direction: 'vertical',
         mousewheel: true,
         releaseOnEdges: true,
         slidesPerView: 1, // 슬라이드의 수가 slidesPerView의 값 2배 이상이어야함. slidesPerView, slidesPerGroup 함께 설정 필요.
         slidesPerGroup: 1,
         loop: false,
-        pagination: pagination_bullet,
-        // pagination: pagination_progress,
+        pagination: pagination_progress,
         // autoplay: {
         //   delay: 1000,
         //   disableOnInteraction: false,
@@ -67,63 +131,76 @@
         init: false,
         // grabCursor: true,
       };
-      
-      let swiper = new Swiper('#FullPageSwiper-{{id}}', swiper_option);
-      
-      swiper.on('init', function (swiper) {
-        // console.log('init');
-      });
-      
-      swiper.on('slideChange', function (swiper) {
 
-        const el_slide = swiper.slides[swiper.activeIndex];
-        const el_target_list = [...el_slide.querySelectorAll(`.DelayTarget`)];
-        
+      let swiper = new Swiper('#FullPageSwiper-{{id}}', swiper_option);
+
+      swiper.on('init', function (swiper) {
+        setCurrentSectionIdx();
+        setAnimateDealy();
+
+        // 첫화면 진입때만 애니메이션 작동 안하게
+        const $first_active_slide = $(swiper.slides[0]);
+        if ($first_active_slide.hasClass('swiper-slide-active')) {
+          $first_active_slide.addClass('FirstPlay');
+          setTimeout(() => {
+            $first_active_slide.removeClass('FirstPlay');
+          }, 1000);
+        }
+      });
+
+      swiper.on('slideChange', function (swiper) {
+        setCurrentSectionIdx();
+        setAnimateDealy();
+      });
+
+      swiper.on('resize', function (swiper) {
+        setFooterSnap(swiper);
+      });
+
+      swiper.on('beforeTransitionStart', function (swiper) {
+        setFooterSnap(swiper);
+      });
+
+      function setFooterSnap(swiper) {
+        // 슬라이드가 2개도 안되면 풀페이지 스크롤을 할 이유가 없지 리턴 시켜
+        if (swiper.slides.length < 2) return;
+
+        const last_idx = swiper.slides.length - 1;
+        const $last_slide = $(swiper.slides[last_idx]);
+        const ls_hei = $last_slide.outerHeight();
+        const second_last_snap = swiper.snapGrid[last_idx - 1];
+        const cal_last_snap = second_last_snap + ls_hei;
+        swiper.snapGrid[last_idx] = cal_last_snap;
+      }
+
+      swiper.init();
+
+      function setAnimateDealy() {
+        const $el = $(swiper.el);
+
         // 슬라이드 방향 체크해서
         // 트렌지션 객체들 딜레이 각각 설정해주기
         if (swiper.previousIndex - swiper.activeIndex > 0) {
-          // console.log('PREV');
-          el_target_list.reverse();
+          $el.css('--ori-top', `-50px`);
         } else {
-          // console.log('NEXT');
+          $el.css('--ori-top', `50px`);
         }
-        
-        const k = 150;
-        el_target_list.forEach((el, idx) => {
-          const delay = idx * k + k;
-          el.style.setProperty('transition-delay', `${delay}ms`);
+
+        const el_slide = swiper.slides[swiper.activeIndex];
+        const $dov = $(el_slide).find('[data-only-view]');
+        $dov.each(function (i) {
+          const $at = $('.AnimateTarget', this);
+          $at.each(function (j) {
+            const k = 2;
+            $(this).css('animation-delay', `${j * k}00ms`);
+          });
         });
-        
-      });
-      
-      swiper.on('reachBeginning', function (swiper) {
-        // console.log('reachBeginning');
-      });
-      
-      swiper.on('reachEnd', function (swiper) {
-        // console.log('reachEnd');
-      });
-      
-      swiper.on('slideChangeTransitionEnd', function (swiper) {
-        // console.log('slideChangeTransitionEnd');
-        isReachEnd = swiper.isEnd;
-      });
-      
-      swiper.init();
-      
-      window.addEventListener('wheel', function (evt) {
-        
-        if (isReachEnd) {
-          if (event.deltaY < 0) {
-            const el = swiper.el;
-            $(el).removeClass('MoveUp');
-          } else {
-            const el = swiper.el;
-            $(el).addClass('MoveUp');
-          }
-        }
-        
-      }, {pasiive: false});
+      }
+
+      function setCurrentSectionIdx() {
+        const {realIndex} = swiper;
+        $('html').attr('data-current-section-idx', realIndex);
+      }
     })();
   </script>
 </div>
