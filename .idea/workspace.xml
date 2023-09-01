@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525b9dc8-55b6-4a5a-9935-389c02a0e537" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/icon/mouse_up_down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/DungDung_1-a.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/component/DungDung_1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbs/fullpage/FullPageSwiper.hbs.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/fullpage/FullPageSwiper.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/fullpage/FullPageSwiper.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/fullpage/FullPageSwiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/fullpage/FullPageSwiper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub_tool/PORT_NUMBER.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/PORT_NUMBER.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2UCHmmrmdA93shmsqPng8INgF5W" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,7 +52,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\dol2156\\base-include\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier"
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
   <component name="RecentsManager">

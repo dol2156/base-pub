@@ -9,7 +9,8 @@ Handlebars.logger.level = 'debug';
 const Include = (path, render_data) => {
   if (typeof render_data === 'undefined') render_data = {};
   render_data = Object.assign({window}, render_data);
-
+  const filename = path.replace(/^.*[\\\/]/, '').replace(/\.[^/.]+$/, '');
+  
   const el_script = document.currentScript;
 
   const html_str = Handlebars.loadHtml(path);
@@ -18,8 +19,9 @@ const Include = (path, render_data) => {
   const compiled_template = Handlebars.compile(html_str);
 
   //Render the data into the template
-  const rendered = compiled_template(render_data);
-
+  let rendered = compiled_template(render_data);
+  rendered = `<!-- ${filename} :: START ::  -->` + rendered +`<!-- // ${filename} :: END ::  -->`;
+  
   document.write(rendered);
 
   el_script.remove();
