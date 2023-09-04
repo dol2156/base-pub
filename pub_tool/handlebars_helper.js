@@ -500,8 +500,21 @@ Handlebars.registerHelper('AND', function (var_list_str, options) {
 
 /**
  * 동기식으로 JSON 받아와서 node_name 에 할당 해줌
+ * {{JSON 'LOCATION_DATA' '/assets/json/kakaomap_location.json'}}
  */
 Handlebars.registerHelper('JSON', function (node_name, json_url, options) {
   const json = JSON.parse(Handlebars.loadHtml(json_url));
   this[node_name] = json;
+});
+
+/**
+ * sitemap 에서 사용되는 URL
+ */
+Handlebars.registerHelper('SITEMAP_URL', function (page_title, page_value, options) {
+  if(page_value.indexOf(`http`) > -1){
+    return page_value;
+  }else{
+    return `/index.html?title=${page_title}&page=${page_value}`;
+  }
+  
 });
