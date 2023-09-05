@@ -2,7 +2,7 @@
 const fs = require('fs');
 const beautify = require('js-beautify').js;
 const FileUtil = require('./file_util.js');
-const API_URL = require('./API.js');
+const API_URL = require('./API_URL.js');
 
 let file_text = '';
 
@@ -10,7 +10,6 @@ let file_text = '';
   try {
     const response = await fetch(API_URL);
     const json = await response.json();
-    console.log(`json == `, json);
     file_text += `var MENU_DATA_ORI = ${JSON.stringify(json)};\n`;
 
     createHbsFile(json);
@@ -32,8 +31,6 @@ function reaplceStr(string) {
 }
 
 function createHbsFile(menu_data) {
-  console.log('createHbsFile');
-
   const arr = [];
   // 진행 단계가 완료가 아닌것 필터
   menu_data.forEach((obj, idx) => {

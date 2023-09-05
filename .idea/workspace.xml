@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525b9dc8-55b6-4a5a-9935-389c02a0e537" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/autoComplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/autoComplete.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/css/autoComplete.01.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/css/autoComplete.02.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/css/autoComplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/css/autoComplete_custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/css/images/magnifier.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/autoComplete/css/images/search.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/html/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/html/sitemap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_sitemap.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub_tool/PORT_NUMBER.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/PORT_NUMBER.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/handlebars_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_URL.js" beforeDir="false" afterPath="$PROJECT_DIR$/API_URL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/create_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_map.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_map.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_scroll_snap.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_scroll_snap.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/_pub_swiper.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/_pub_swiper.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/guide_componet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/guide_componet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/guide_etc_button.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/guide_etc_button.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/guide_form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/guide_form.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbs/page/guide_layer.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/hbs/page/guide_layer.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/pub_tool/HBS_DATA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +35,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -41,24 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MyProjects/dol2156/base-include/assets/icon&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\MyProjects\\dol2156\\base-include\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/MyProjects/dol2156/base-include/assets/lib/autoComplete",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\MyProjects\\dol2156\\base-include\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "editing.templates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProjects\dol2156\base-include\assets\lib\autoComplete" />
       <recent name="C:\MyProjects\dol2156\base-include\assets\icon" />
       <recent name="C:\MyProjects\dol2156\base-include\hbs\component" />
       <recent name="C:\MyProjects\dol2156\base-include\hbs\fullpage" />
