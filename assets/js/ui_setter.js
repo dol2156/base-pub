@@ -136,12 +136,22 @@ const initTreeMenu = (trigger) => {
 const initAutoCompleteBox = (id) => {
   // https://tarekraafat.github.io/autoComplete.js/#/
   // https://codepen.io/tarekraafat/pen/rQopdW
-  
+
   const config = {
     selector: id,
     placeHolder: `검색어를 입력하세요.`,
     data: {
-      src: ['스타벅스', '설빙', 'GS25', '맥도날드', '버거킹', 'CU', 'CGV', '이디야', '요기요', '롯데시네마', '빨강색1', '주황색2', '노랑색3', '초록색4', '파랑색5', '남색6', '보라색7', '빨강색8', '주황색9', '노랑색10', '초록색11', '파랑색12', '남색13', '보라색14', '빨강색15', '주황색16', '노랑색17', '초록색18', '파랑색19', '남색20', '보라색21', '빨강색22', '주황색23', '노랑색24', '초록색25', '파랑색26', '남색27', '보라색28', '빨강색29', '주황색30', '노랑색31', '초록색32', '파랑색33', '남색34', '보라색35', '빨강색36', '주황색37', '노랑색38', '초록색39', '파랑색40', '남색41', '보라색42'],
+      src: async () => {
+        try {
+          const json_url = `https://tarekraafat.github.io/autoComplete.js/demo/db/generic.json`;
+          const source = await fetch(json_url);
+          const data = await source.json();
+          return data;
+        } catch (error) {
+          return error;
+        }
+      },
+      keys: ['food', 'cities', 'animals'],
     },
     resultsList: {
       element: (list, data) => {
@@ -169,6 +179,18 @@ const initAutoCompleteBox = (id) => {
     },
     submit: true,
     resultItem: {
+      element: (item, data) => {
+        // Modify Results Item Style
+        item.style = 'display: flex; justify-content: space-between;';
+        // Modify Results Item Content
+        item.innerHTML = `
+      <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+        ${data.match}
+      </span>
+      <span style="display: flex; align-items: center; font-size: 13px; font-weight: 100; text-transform: uppercase; color: rgba(0,0,0,.2);">
+        ${data.key}
+      </span>`;
+      },
       highlight: true,
     },
     events: {
@@ -186,41 +208,38 @@ const initAutoCompleteBox = (id) => {
   const el_acb = el_ac.closest('.AutoCompleteBox');
   const el_btn_remove_value = el_acb.querySelector(`.BtnRemoveInputValue`);
   const el_btn_search = el_acb.querySelector(`.BtnGoSearch`);
-  
+
   // 검색 결과 리스트 아이템 선택
   el_ac.addEventListener('selection', function (event) {
     // console.log(event.detail);
     const value = event.detail.selection.value;
-     el_ac.value = value;
+    el_ac.value = value;
   });
-  
+
   el_ac.addEventListener('keyup', (evt) => {
     updateDisplay();
   });
-  
+
   // 검색어 삭제 버튼 클릭
   el_btn_remove_value.addEventListener('click', (evt) => {
     // 검색 인풋 값 삭제
     el_ac.value = '';
     updateDisplay();
   });
-  
+
   // 검색 돋보기 버튼 클릭
   el_btn_search.addEventListener('click', (evt) => {
     console.log(`el_ac.value == `, el_ac.value);
   });
-  
+
   updateDisplay();
-  function updateDisplay(){
+  function updateDisplay() {
     console.log(`el_ac.value.length == `, el_ac.value.length);
-    
-    if(el_ac.value.length > 0){
+
+    if (el_ac.value.length > 0) {
       el_acb.classList.add('HasValue');
-    }else{
+    } else {
       el_acb.classList.remove('HasValue');
     }
   }
-  
-  
 };
-

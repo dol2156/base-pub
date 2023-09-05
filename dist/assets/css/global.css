@@ -294,6 +294,7 @@ strong {
 }
 
 .AutoCompleteBox_1 {
+  position: relative;
   border: 1px solid #ebebeb;
   border-radius: 8px;
   background-color: white;
@@ -311,6 +312,7 @@ strong {
   /*transform:none!important;*/
 }
 .AutoCompleteBox_1 .autoComplete_wrapper {
+  position: static;
   outline: 1px dashed red;
   flex: 1;
 }
