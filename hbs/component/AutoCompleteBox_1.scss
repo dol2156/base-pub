@@ -1,4 +1,5 @@
 .AutoCompleteBox_1 {
+  position:relative;
   border: 1px solid #ebebeb;
   border-radius: 8px;
   background-color: white;
@@ -18,6 +19,7 @@
   }
   /* // 2023-09-05 :: END :: TEST */
   .autoComplete_wrapper {
+    position:static;
     outline: 1px dashed red;
 
     flex: 1;

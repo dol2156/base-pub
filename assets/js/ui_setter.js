@@ -129,6 +129,10 @@ const initTreeMenu = (trigger) => {
   });
 };
 
+/**
+ * <img onerror='initAutoCompleteBox(`#autoComplete`)' src=''/>
+ * @param id
+ */
 const initAutoCompleteBox = (id) => {
   // https://tarekraafat.github.io/autoComplete.js/#/
   // https://codepen.io/tarekraafat/pen/rQopdW
@@ -182,9 +186,6 @@ const initAutoCompleteBox = (id) => {
   const el_acb = el_ac.closest('.AutoCompleteBox');
   const el_btn_remove_value = el_acb.querySelector(`.BtnRemoveInputValue`);
   const el_btn_search = el_acb.querySelector(`.BtnGoSearch`);
-  
-  console.log(`el_ac == `, el_ac);
-  console.log(`el_btn_remove_value == `, el_btn_remove_value);
   
   // 검색 결과 리스트 아이템 선택
   el_ac.addEventListener('selection', function (event) {
