@@ -3,8 +3,8 @@
 const FiveServer = require('five-server').default;
 const fiveServer = new FiveServer();
 const option = {
-  // useLocalIp: true,
-  host :'localhost',
+  useLocalIp: true,
+  // host :'localhost',
   port: 9999,
   open: true,
   watch: ['./hbs', './assets', './pub_tool'],

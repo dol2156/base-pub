@@ -1,61 +1,3 @@
-{{!-- https://tarekraafat.github.io/autoComplete.js/#/ --}}
-{{!-- https://codepen.io/tarekraafat/pen/rQopdW --}}
-<link href='/assets/lib/autoComplete/css/autoComplete.css' rel='stylesheet'/>
-<link href="/assets/lib/autoComplete/css/autoComplete_custom.css" rel="stylesheet">
-<script src='/assets/lib/autoComplete/autoComplete.js'></script>
-{{!--prettier-ignore--}}
-<script>
-  $(function () {
-
-    // https://tarekraafat.github.io/autoComplete.js/#/configuration
-    const config = {
-      selector: `#autoComplete-b328ae7a`,
-      placeHolder: "검색어를 입력하세요.",
-      data: {
-        src: [
-          "빨강색1",
-          "주황색2",
-          "노랑색3",
-          "초록색4",
-          "파랑색5",
-          "남색6",
-          "보라색7",
-        ]
-      },
-      resultsList: {
-        element: (list, data) => {
-          if (!data.results.length) {
-            // Create "No Results" message element
-            const message = document.createElement("div");
-            // Add class to the created element
-            message.setAttribute("class", "no_result");
-            // Add message text content
-            message.innerHTML = `<span>Found No Results for "${data.query}"</span>`;
-            // Append message element to the results list
-            list.prepend(message);
-          } else {
-            const info = document.createElement("p");
-            if (data.results.length > 0) {
-              info.innerHTML = `Displaying <strong>${data.results.length}</strong> out of <strong>${data.matches.length}</strong> results`;
-            } else {
-              info.innerHTML = `Found <strong>${data.matches.length}</strong> matching results for <strong>"${data.query}"</strong>`;
-            }
-            list.prepend(info);
-          }
-        },
-        noResults: true,
-        maxResults: 15,
-        tabSelect: true,
-      },
-      resultItem: {
-        highlight: true,
-      }
-    }
-
-    const autoCompleteJS = new autoComplete(config);
-    console.log(`autoCompleteJS == `, autoCompleteJS);
-  });
-</script>
 <div id='page'>
   <main>
     {{!--prettier-ignore--}}
@@ -67,8 +9,11 @@
     </style>
     <div class='H1'>autoComplete.js Guide</div>
     <section>
-      <input id='autoComplete-b328ae7a' type='search' dir='ltr' spellcheck='false' autocorrect='off' autocomplete='off' autocapitalize='off' maxlength='2048' tabindex='1'/>
-      {{!<textarea id='autoComplete' rows='4' cols='50' maxlength='2048' tabindex='1'></textarea>}}
+      <div class='HBox'>
+        <div class='Inner'>
+          <script>Include('/hbs/component/AutoCompleteBox_1-a.hbs');</script>
+        </div>
+      </div>
     </section>
   </main>
 </div>
