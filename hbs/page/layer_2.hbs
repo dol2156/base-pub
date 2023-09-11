@@ -1,15 +1,21 @@
-<div class="Modal"></div>
 <div id='page'>
   <script>
     Include('/hbs/layout/Header_1-a.hbs');
   </script>
   <main>
-    {{!--CONTENTS--}}
+    <br/>
+    <section>
+      <div class='HBox'>
+        <div class='Inner'>
+          <button class='ButtonUi Style1 w-full' data-form-hei='Md' onclick="LayerControl.On(`#LayerPopup-5a23a745`);">ButtonUi</button>
+        </div>
+      </div>
+    </section>
   </main>
   <script>
     Include('/hbs/layout/Footer_1-a.hbs');
   </script>
 </div>
-<div class='LayerPopup Bottom On'>
+<div id="LayerPopup-5a23a745" class='LayerPopup Bottom'>
   <script>Include('/hbs/layer/BottomSheet_1-a.hbs');</script>
 </div>

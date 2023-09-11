@@ -17,6 +17,8 @@
   <script src="/assets/lib/jquery-3.7.0.min.js"></script>
   <link href="/assets/lib/swiper-bundle.min.css" rel="stylesheet" />
   <script src="/assets/lib/swiper-bundle.min.js"></script>
+  <link href='/assets/lib/autoComplete/css/autoComplete.css' rel='stylesheet' />
+  <script src='/assets/lib/autoComplete/autoComplete.js'></script>
   <!--Core-->
   <script src="/assets/lib/tailwindcss_3.3.3.min.js"></script>
   <script src="/assets/lib/tailwindcss.config.js"></script>
@@ -32,10 +34,13 @@
 
 <body>
 
-  <div class="Modal"></div>
+  <div id="Modal"></div>
+  <!-- layer_3 :: START ::  -->
   <div id="page">
+    <!-- Header_1-a :: START ::  -->
     <header class="Header_1-a FixedHeader">
       <section data-seq="20230808134613154">
+        <!-- TopActionBar_1-a :: START ::  -->
         <div class="TopActionBar_1">
           <div class="Sec0">
             <div class="LeftArea">
@@ -57,7 +62,8 @@
           <div class="PageTitle CenterCenter">
             TITLE
           </div>
-        </div>
+        </div><!-- // TopActionBar_1-a :: END ::  -->
+        <!-- TabBar_1-a :: START ::  -->
         <div class="TabBar_1">
           <button class="On New">
             <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
@@ -79,16 +85,26 @@
             <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
             마감임박
           </button>
-        </div>
+        </div><!-- // TabBar_1-a :: END ::  -->
       </section>
     </header>
-
+    <!-- // Header_1-a :: END ::  -->
     <main>
+      <br>
+      <section>
+        <div class="HBox">
+          <div class="Inner">
+            <button class="ButtonUi Style1 w-full" data-form-hei="Md" onclick="LayerControl.On(`#LayerPopup-f2129943`);">ButtonUi</button>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Footer_1-a :: START ::  -->
     <div class="FixedBox">
       <div class="FixedShell Bottom">
         <footer class="Footer_1-a">
           <section data-seq="20230808135355418">
+            <!-- BottomNavi_1-a :: START ::  -->
             <article class="BottomNavi_1">
               <button class="On">
                 <div class="Icon CenterCenter">
@@ -120,14 +136,15 @@
                 </div>
                 <div class="Label" style="margin-top:5px;">내정보</div>
               </button>
-            </article>
+            </article><!-- // BottomNavi_1-a :: END ::  -->
           </section>
         </footer>
       </div>
     </div>
-
+    <!-- // Footer_1-a :: END ::  -->
   </div>
-  <div class="LayerPopup On">
+  <div id="LayerPopup-f2129943" class="LayerPopup">
+    <!-- SelectOption_1-a :: START ::  -->
     <div class="SelectOption_1" style="width: 302px">
       <div class="Body">
         <div class="Title">프로필 사진 설정</div>
@@ -136,8 +153,8 @@
         <button class="Button">기본 이미지로 변경 </button>
         <button class="Button">취소</button>
       </div>
-    </div>
-  </div>
+    </div><!-- // SelectOption_1-a :: END ::  -->
+  </div><!-- // layer_3 :: END ::  -->
 
 </body>
 

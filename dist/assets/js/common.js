@@ -1,3 +1,42 @@
+const LayerControl = {};
+
+/**
+ *
+ * @param layer_id
+ * @constructor
+ */
+LayerControl.On = (layer_id, callback) => {
+  const el_modal = document.querySelector(`#Modal`);
+  el_modal.classList.add(`On`);
+  
+  const el_layer_id = document.querySelector(layer_id);
+  el_layer_id.classList.add(`On`);
+}
+
+/**
+ * @param layer_id
+ * @constructor
+ */
+LayerControl.Off = () => {
+  const el_modal = document.querySelector(`#Modal`);
+  el_modal.classList.remove(`On`);
+  
+  const el_layer_list = document.querySelectorAll(`.LayerPopup`);
+  el_layer_list.forEach((obj, idx) => {
+    console.log(obj);
+  });
+}
+
+/**
+ * Modal 셋팅
+ */
+const initModal = () => {
+  const el_modal = document.querySelector(`#Modal`);
+  el_modal.addEventListener('click', (evt) => {
+    LayerControl.Off();
+  });
+}
+
 /**
  * 스크롤 동작이 끝나면
  * scroll_end 커스텀 이벤트 발생
@@ -108,6 +147,7 @@ const UpdateDisplay = () => {
 };
 
 window.addEventListener('DOMContentLoaded', (event) => {
+  initModal();
   UpdateDisplay();
 });
 

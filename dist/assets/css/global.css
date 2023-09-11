@@ -2218,7 +2218,7 @@ img.LoadingBg {
 }
 
 /**/
-.Modal {
+#Modal {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
   position: fixed;
@@ -2226,6 +2226,10 @@ img.LoadingBg {
   left: 0px;
   width: 100%;
   height: 100%;
+  display: none;
+}
+#Modal.On {
+  display: block;
 }
 
 /**/
