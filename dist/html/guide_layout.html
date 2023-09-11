@@ -36,103 +36,286 @@
 
   <!-- guide_layout :: START ::  -->
   <div id="page">
-    <!-- Header_1-a :: START ::  -->
-    <header class="Header_1-a FixedHeader">
-      <section data-seq="20230808134613154">
-        <!-- TopActionBar_1-a :: START ::  -->
-        <div class="TopActionBar_1">
-          <div class="Sec0">
-            <div class="LeftArea">
-              <button>
-                <img src="/assets/icon/2307180855.svg" alt="">
-              </button>
-            </div>
-            <div class="RightArea">
-              <article class="CenterCenter" style="gap: 10px">
-                <button>
-                  <img src="/assets/icon/2307101050.svg" alt="">
-                </button>
-                <button>
-                  <img src="/assets/icon/2307181349.svg" alt="">
-                </button>
-              </article>
-            </div>
-          </div>
-          <div class="PageTitle CenterCenter">
-            TITLE
-          </div>
-        </div><!-- // TopActionBar_1-a :: END ::  -->
-        <!-- TabBar_1-a :: START ::  -->
-        <div class="TabBar_1">
-          <button class="On New">
-            <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
-            신규
-          </button>
-          <button class=" ">
-            <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
-            랭킹
-          </button>
-          <button class=" ">
-            <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
-            추천
-          </button>
-          <button class=" ">
-            <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
-            특가
-          </button>
-          <button class=" ">
-            <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
-            마감임박
-          </button>
-        </div><!-- // TabBar_1-a :: END ::  -->
-      </section>
-    </header>
-    <!-- // Header_1-a :: END ::  -->
     <main>
-    </main>
-    <!-- Footer_1-a :: START ::  -->
-    <div class="FixedBox">
-      <div class="FixedShell Bottom">
-        <footer class="Footer_1-a">
-          <section data-seq="20230808135355418">
-            <!-- BottomNavi_1-a :: START ::  -->
-            <article class="BottomNavi_1">
-              <button class="On">
-                <div class="Icon CenterCenter">
-                  <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+      <style>
+        html {
+          background-color: #ffffd4;
+        }
+
+        main>section {
+          position: relative;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+
+        main section .FixedShell {
+          position: relative !important;
+        }
+      </style>
+      <div class="H1">Layout Guide</div>
+      <br>
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly="" type="text" value="hbs/layout/Footer_1-a.hbs" onclick="this.select();">
+        </div>
+        <br>
+        <!-- Footer_1-a :: START ::  -->
+        <div class="FixedBox">
+          <div class="FixedShell Bottom">
+            <footer class="Footer_1-a">
+              <section data-seq="20230808135355418">
+                <!-- BottomNavi_1-a :: START ::  -->
+                <article class="BottomNavi_1">
+                  <button class="On">
+                    <div class="Icon CenterCenter">
+                      <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+                    </div>
+                    <div class="Label" style="margin-top:5px;">거래소 홈</div>
+                  </button>
+                  <button class="">
+                    <div class="Icon CenterCenter">
+                      <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+                    </div>
+                    <div class="Label" style="margin-top:5px;">쿠폰함</div>
+                  </button>
+                  <button class="">
+                    <div class="Icon CenterCenter">
+                      <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+                    </div>
+                    <div class="Label" style="margin-top:5px;">판매</div>
+                  </button>
+                  <button class="">
+                    <div class="Icon CenterCenter">
+                      <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+                    </div>
+                    <div class="Label" style="margin-top:5px;">지갑</div>
+                  </button>
+                  <button class="">
+                    <div class="Icon CenterCenter">
+                      <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+                    </div>
+                    <div class="Label" style="margin-top:5px;">내정보</div>
+                  </button>
+                </article><!-- // BottomNavi_1-a :: END ::  -->
+              </section>
+            </footer>
+          </div>
+        </div>
+        <!-- // Footer_1-a :: END ::  -->
+      </section>
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly="" type="text" value="hbs/layout/Header_1-a.hbs" onclick="this.select();">
+        </div>
+        <br>
+        <!-- Header_1-a :: START ::  -->
+        <header class="Header_1-a FixedHeader">
+          <section data-seq="20230808134613154">
+            <!-- TopActionBar_1-a :: START ::  -->
+            <div class="TopActionBar_1">
+              <div class="Sec0">
+                <div class="LeftArea">
+                  <button>
+                    <img src="/assets/icon/2307180855.svg" alt="">
+                  </button>
                 </div>
-                <div class="Label" style="margin-top:5px;">거래소 홈</div>
-              </button>
-              <button class="">
-                <div class="Icon CenterCenter">
-                  <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+                <div class="RightArea">
+                  <article class="CenterCenter" style="gap: 10px">
+                    <button>
+                      <img src="/assets/icon/2307101050.svg" alt="">
+                    </button>
+                    <button>
+                      <img src="/assets/icon/2307181349.svg" alt="">
+                    </button>
+                  </article>
                 </div>
-                <div class="Label" style="margin-top:5px;">쿠폰함</div>
+              </div>
+              <div class="PageTitle CenterCenter">
+                TITLE
+              </div>
+            </div><!-- // TopActionBar_1-a :: END ::  -->
+            <!-- TabBar_1-a :: START ::  -->
+            <div class="TabBar_1">
+              <button class="On New">
+                <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
+                신규
               </button>
-              <button class="">
-                <div class="Icon CenterCenter">
-                  <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
-                </div>
-                <div class="Label" style="margin-top:5px;">판매</div>
+              <button class=" ">
+                <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
+                랭킹
               </button>
-              <button class="">
-                <div class="Icon CenterCenter">
-                  <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
-                </div>
-                <div class="Label" style="margin-top:5px;">지갑</div>
+              <button class=" ">
+                <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
+                추천
               </button>
-              <button class="">
-                <div class="Icon CenterCenter">
-                  <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
-                </div>
-                <div class="Label" style="margin-top:5px;">내정보</div>
+              <button class=" ">
+                <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
+                특가
               </button>
-            </article><!-- // BottomNavi_1-a :: END ::  -->
+              <button class=" ">
+                <img class="hidden [.New>&amp;]:block" src="/assets/icon/2307170959.svg" alt="">
+                마감임박
+              </button>
+            </div><!-- // TabBar_1-a :: END ::  -->
           </section>
-        </footer>
-      </div>
-    </div>
-    <!-- // Footer_1-a :: END ::  -->
+        </header>
+        <!-- // Header_1-a :: END ::  -->
+      </section>
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly="" type="text" value="hbs/layout/Header_2-a.hbs" onclick="this.select();">
+        </div>
+        <br>
+        <!-- Header_2-a :: START ::  -->
+        <header class="Header_2-a FixedHeader">
+          <section data-seq="20230808134835779">
+            <!-- TopActionBar_2-a :: START ::  -->
+            <div class="TopActionBar_2">
+              <article class="Inner">
+                <div>
+                  <article style="display: flex; align-items: center; gap: 0px">
+                    <button>
+                      <img src="/assets/icon/2307091813.svg" alt="">
+                    </button>
+                    <div class="PageTitle" style="margin-left: 8px;">
+                      TITLE
+                    </div>
+                  </article>
+                </div>
+                <div>
+                </div>
+              </article>
+            </div><!-- // TopActionBar_2-a :: END ::  -->
+          </section>
+        </header><!-- // Header_2-a :: END ::  -->
+      </section>
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly="" type="text" value="hbs/layout/Header_2-b.hbs" onclick="this.select();">
+        </div>
+        <br>
+        <!-- Header_2-b :: START ::  -->
+        <header class="Header_2-b FixedHeader">
+          <section data-seq="20230808134956135">
+            <!-- TopActionBar_2-b :: START ::  -->
+            <div class="TopActionBar_2">
+              <article class="Inner">
+                <div>
+                  <article style="display: flex; align-items: center; gap: 0px">
+                    <button>
+                      <img src="/assets/icon/2307091813.svg" alt="">
+                    </button>
+                    <div class="PageTitle" style="margin-left: 8px;">
+                      TITLE
+                    </div>
+                  </article>
+                </div>
+                <div>
+                  <button>
+                    <img src="/assets/icon/2307091814.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div><!-- // TopActionBar_2-b :: END ::  -->
+          </section>
+        </header><!-- // Header_2-b :: END ::  -->
+      </section>
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly="" type="text" value="hbs/layout/Header_2-c.hbs" onclick="this.select();">
+        </div>
+        <br>
+        <!-- Header_2-c :: START ::  -->
+        <header class="Header_2-c FixedHeader">
+          <section data-seq="20230808135127924">
+            <!-- TopActionBar_2-c :: START ::  -->
+            <div class="TopActionBar_2">
+              <article class="Inner">
+                <div>
+                  <article style="display: flex; align-items: center; gap: 0px">
+                    <button>
+                      <img src="/assets/icon/2307091813.svg" alt="">
+                    </button>
+                    <div class="PageTitle" style="margin-left: 8px;">
+                      TITLE
+                    </div>
+                  </article>
+                </div>
+                <div>
+                  <button>
+                    <span class="t-7ad84641">추가</span>
+                  </button>
+                </div>
+              </article>
+            </div><!-- // TopActionBar_2-c :: END ::  -->
+          </section>
+        </header><!-- // Header_2-c :: END ::  -->
+      </section>
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly="" type="text" value="hbs/layout/Header_2-d.hbs" onclick="this.select();">
+        </div>
+        <br>
+        <!-- Header_2-d :: START ::  -->
+        <header class="Header_2-d FixedHeader">
+          <section data-seq="20230808135037170">
+            <!-- TopActionBar_2-d :: START ::  -->
+            <div class="TopActionBar_2">
+              <article class="Inner">
+                <div>
+                  <article style="display: flex; align-items: center; gap: 0px">
+                    <button>
+                      <img src="/assets/icon/2307091813.svg" alt="">
+                    </button>
+                    <div class="PageTitle" style="margin-left: 8px;">
+                      TITLE
+                    </div>
+                    <div class="C-54342972" style="margin-left:5px;">판매자</div>
+                    <div class="C-00822b2f" style="margin-left:5px;">구매자</div>
+                  </article>
+                </div>
+                <div>
+                  <button>
+                    <img style="width:24px;" src="/assets/icon/empty.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div><!-- // TopActionBar_2-d :: END ::  -->
+            <script>
+              Include('/hbs/component/ProductLink_1-a.hbs');
+            </script>
+          </section>
+        </header><!-- // Header_2-d :: END ::  -->
+      </section>
+      <section>
+        <div class="H3">
+          <input style="display:inline-block; width:100%; outline:none; border:none;" readonly="" type="text" value="hbs/layout/Header_3-a.hbs" onclick="this.select();">
+        </div>
+        <br>
+        <!-- Header_3-a :: START ::  -->
+        <header class="Header_3-a FixedHeader">
+          <section data-seq="20230808135029141">
+            <!-- TopActionBar_3-a :: START ::  -->
+            <div class="TopActionBar_3">
+              <article class="Inner">
+                <div>
+                  <article class="PageTitle">
+                    TITLE
+                  </article>
+                </div>
+                <div>
+                  <button>
+                    <div style="width: 24px;">
+                      <img src="/assets/icon/2307251357.svg" alt="">
+                    </div>
+                  </button>
+                </div>
+              </article>
+            </div><!-- // TopActionBar_3-a :: END ::  -->
+          </section>
+        </header><!-- // Header_3-a :: END ::  -->
+      </section>
+    </main>
   </div><!-- // guide_layout :: END ::  -->
 
 </body>
