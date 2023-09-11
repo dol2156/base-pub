@@ -19,3 +19,14 @@ HTMLElement.prototype.removeClass = function(className) {
   // 예시로 classList.remove를 사용하여 클래스 이름 제거
   this.classList.remove(className);
 };
+
+/**
+ * addEventListener 메서드 정의
+ * @param event
+ * @param func
+ */
+NodeList.prototype.addEventListener = function(event, func) {
+  this.forEach(function(node) {
+    node.addEventListener(event, func);
+  });
+};

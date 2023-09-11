@@ -133,10 +133,12 @@
     };
   </script>
   <script>
-    $(function () {
-      $(`#Sitemap > ul > li a[href]`).on(`click`, (evt) => {
-        const $ct = $(evt.currentTarget);
-        $ct.addClass('On');
+    window.addEventListener('DOMContentLoaded', (evt) => {
+      const el_a_list = document.querySelectorAll(`#Sitemap > ul > li a[href]`);
+      el_a_list.addEventListener('click', (evt) => {
+        console.log('[_pub_sitemap.hbs : 139]');
+        const ct = evt.currentTarget;
+        ct.addClass('On');
       });
     });
   </script>
