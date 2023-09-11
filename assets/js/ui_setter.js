@@ -4,33 +4,33 @@
  */
 const initInputUi = (trigger) => {
   if (typeof trigger === 'undefined') return;
-  const $target = $(trigger).parent();
+  const el_target = trigger.parentElement;
+  
+  const el_inp = el_target.querySelector(`:scope > input`);
 
-  const $inp = $target.find(`> input`);
-
-  $inp.on('keyup', (evt) => {
+  el_inp.addEventListener('keyup', (evt) => {
     updateDisplay();
   });
 
-  $inp.on('focus', (evt) => {
-    $target.addClass('Focus');
-    $target.focus();
+  el_inp.addEventListener('focus', (evt) => {
+    el_target.addClass('Focus');
+    el_target.focus();
   });
 
-  $inp.on('blur', (evt) => {
-    $target.removeClass('Focus');
-    $target.blur();
+  el_inp.addEventListener('blur', (evt) => {
+    el_target.removeClass('Focus');
+    el_target.blur();
   });
 
   updateDisplay();
 
   function updateDisplay() {
-    const value = $inp.val();
+    const value = el_inp.value;
 
     if (!value) {
-      $target.removeClass('HasValue');
+      el_target.removeClass('HasValue');
     } else {
-      $target.addClass('HasValue');
+      el_target.addClass('HasValue');
     }
   }
 };

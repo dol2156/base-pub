@@ -22,8 +22,8 @@ LayerControl.Off = () => {
   el_modal.classList.remove(`On`);
   
   const el_layer_list = document.querySelectorAll(`.LayerPopup`);
-  el_layer_list.forEach((obj, idx) => {
-    console.log(obj);
+  el_layer_list.forEach((el_layer, idx) => {
+    el_layer.classList.remove(`On`);
   });
 }
 
