@@ -132,4 +132,12 @@
 
     };
   </script>
+  <script>
+    $(function () {
+      $(`#Sitemap > ul > li a[href]`).on(`click`, (evt) => {
+        const $ct = $(evt.currentTarget);
+        $ct.addClass('On');
+      });
+    });
+  </script>
 </div>

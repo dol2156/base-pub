@@ -63,6 +63,10 @@ html {
   background-color: gold;
 }
 
+#Sitemap > ul > li a[href].On {
+  background-color: pink;
+}
+
 /* 768px 이상 화면*/
 @media screen and (min-width: 768px) {
   #Sitemap > ul {
