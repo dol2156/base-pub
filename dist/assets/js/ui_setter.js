@@ -181,9 +181,9 @@ const initAutoCompleteBox = (id) => {
   }
 };
 
-const initFullPage = (swiper_id) => {
+const initFullPageSwiper = (swiper_id) => {
   const pagination_progress = {
-    el: '#FullPageSwiper-{{id}}-PagenationProgressbar',
+    el: `${swiper_id}-PagenationProgressbar`,
     type: 'progressbar',
     modifierClass: 'Pagenation-',
     progressbarFillClass: 'FillBar',
@@ -209,7 +209,7 @@ const initFullPage = (swiper_id) => {
     // grabCursor: true,
   };
 
-  let swiper = new Swiper('#FullPageSwiper-{{id}}', swiper_option);
+  let swiper = new Swiper(swiper_id, swiper_option);
 
   swiper.on('init', function (swiper) {
     setCurrentSectionIdx();
