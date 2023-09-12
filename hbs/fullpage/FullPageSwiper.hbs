@@ -199,6 +199,7 @@
 
       function setCurrentSectionIdx() {
         const {realIndex} = swiper;
+        const html = document.documentElement;
         $('html').attr('data-current-section-idx', realIndex);
       }
     })();
