@@ -43,10 +43,7 @@ const initHScrollGradientBox = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
   
-  const $target = $(trigger).parent();
-
-  const el_hsb = $target[0];
-  const el_track = el_hsb.querySelector(`.Track`);
+  const el_track = el_target.querySelector(`.Track`);
   el_track.addEventListener('scroll', (evt) => {
     updateDisplay();
   });
@@ -58,15 +55,15 @@ const initHScrollGradientBox = (trigger) => {
     const k = sw - sl;
 
     if (k == sw) {
-      el_hsb.classList.add('Start');
+      el_target.classList.add('Start');
     } else {
-      el_hsb.classList.remove('Start');
+      el_target.classList.remove('Start');
     }
 
     if (k <= el_track.clientWidth) {
-      el_hsb.classList.add('End');
+      el_target.classList.add('End');
     } else {
-      el_hsb.classList.remove('End');
+      el_target.classList.remove('End');
     }
   }
 };
