@@ -206,5 +206,52 @@ HTMLElement.prototype.html = function(newHtml) {
     }
 };
 
+/**
+ *
+ * @param newHtml
+ */
+HTMLElement.prototype.appendHTML = function(newHtml) {
+    // 새로운 HTML을 파싱하여 일시적인 div에 저장합니다.
+    var temp = document.createElement('div');
+    temp.innerHTML = newHtml;
+
+    // 파싱된 노드들을 현재 요소에 추가합니다.
+    while (temp.firstChild) {
+        this.appendChild(temp.firstChild);
+    }
+
+    // <script> 태그가 포함되어 있다면 재실행합니다.
+    Array.from(this.getElementsByTagName('script')).forEach(oldScript => {
+        const newScript = document.createElement('script');
+        Array.from(oldScript.attributes)
+            .forEach(attr => newScript.setAttribute(attr.name, attr.value));
+        newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
+};
+
+/**
+ *
+ * @param newHtml
+ */
+HTMLElement.prototype.prependHTML = function(newHtml) {
+    // 새로운 HTML을 파싱하여 일시적인 div에 저장합니다.
+    var temp = document.createElement('div');
+    temp.innerHTML = newHtml;
+
+    // 파싱된 노드들을 현재 요소의 시작 부분에 추가합니다.
+    while (temp.firstChild) {
+        this.insertBefore(temp.firstChild, this.firstChild);
+    }
+
+    // <script> 태그가 포함되어 있다면 재실행합니다.
+    Array.from(this.getElementsByTagName('script')).forEach(oldScript => {
+        const newScript = document.createElement('script');
+        Array.from(oldScript.attributes)
+            .forEach(attr => newScript.setAttribute(attr.name, attr.value));
+        newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
+};
 
 

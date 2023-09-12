@@ -8,10 +8,10 @@ const LayerControl = {};
 LayerControl.On = (layer_id, callback) => {
   const el_modal = document.querySelector(`#Modal`);
   el_modal.classList.add(`On`);
-  
+
   const el_layer_id = document.querySelector(layer_id);
   el_layer_id.classList.add(`On`);
-}
+};
 
 /**
  * @param layer_id
@@ -20,12 +20,12 @@ LayerControl.On = (layer_id, callback) => {
 LayerControl.Off = () => {
   const el_modal = document.querySelector(`#Modal`);
   el_modal.classList.remove(`On`);
-  
+
   const el_layer_list = document.querySelectorAll(`.LayerPopup`);
   el_layer_list.forEach((el_layer, idx) => {
     el_layer.classList.remove(`On`);
   });
-}
+};
 
 /**
  * Modal 셋팅
@@ -35,7 +35,7 @@ const initModal = () => {
   el_modal.addEventListener('click', (evt) => {
     LayerControl.Off();
   });
-}
+};
 
 /**
  * 스크롤 동작이 끝나면
