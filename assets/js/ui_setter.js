@@ -42,7 +42,7 @@ const initInputUi = (trigger) => {
 const initHScrollGradientBox = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
-  
+
   const el_track = el_target.querySelector(`.Track`);
   el_track.addEventListener('scroll', (evt) => {
     updateDisplay();
@@ -111,27 +111,31 @@ const initCollapse = (trigger) => {
  */
 const initTreeMenu = (trigger) => {
   if (typeof trigger === 'undefined') return;
-  const $target = $(trigger).parent();
+  const el_target = trigger.parentElement;
+  const el_li = el_target.querySelector(`:scope > ul > li.On`);
+  // const el_ul = el_li.querySelector(`:scope > ul`);
+  // el_ul.show();
 
-  const $li_on = $('li.On', $target);
-  $li_on.find('> ul').show();
+  const el_btn_list = el_target.querySelectorAll(`button`);
+  el_btn_list.forEach((el_btn, idx) => {
+    el_btn.addEventListener('click', (evt) => {
+      const ct = evt.currentTarget;
+      const el_li = ct.closest(`li`);
 
-  const $button = $('button', $target);
-  $button.on('click', (evt) => {
-    const $li = $(evt.currentTarget).closest('li');
+      if (!el_li.hasClass('On')) {
+        const el_sb_list = el_li.siblings('li');
+        el_sb_list.forEach((el_sb, idx) => {
+          el_sb.removeClass('On');
+          el_sb.querySelector(`:scope > ul`).slideUp();
+        });
 
-    if (!$li.hasClass('On')) {
-      const $li_siblings = $li.siblings('li');
-
-      $li_siblings.removeClass('On');
-      $li_siblings.find('> ul').slideUp();
-
-      $li.addClass('On');
-      $li.find('> ul').slideDown();
-    } else {
-      $li.removeClass('On');
-      $li.find('> ul').slideUp();
-    }
+        el_li.addClass('On');
+        el_li.querySelector(':scope > ul').slideDown();
+      } else {
+        el_li.removeClass('On');
+        el_li.querySelector(`:scope > ul`).slideUp();
+      }
+    });
   });
 };
 

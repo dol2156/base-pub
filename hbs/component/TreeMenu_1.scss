@@ -12,6 +12,8 @@
 
   li.On {
     > ul {
+      display:block;
+      background-color:yellow;
     }
     > button .Icon {
       transform: rotate(180deg);

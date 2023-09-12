@@ -72,27 +72,17 @@ HTMLElement.prototype.hide = function () {
  * @param duration
  */
 HTMLElement.prototype.slideDown = function (duration = 400) {
-  var element = this;
-  
-  element.style.transitionProperty = 'height, margin, padding';
-  element.style.transitionDuration = duration + 'ms';
-  element.style.display = 'block';
-  element.style.overflow = 'hidden';
-  
-  // offsetHeight을 사용하여 최종 높이 계산
-  var height = element.scrollHeight;
-
-  // 초기 높이 설정 후 애니메이션 효과 적용
-  element.style.height = '0';
-
-  // setTimeout을 사용하여 다음 프레임에서 최종 높이로 애니메이션 효과 적용
-  setTimeout(function () {
-    element.style.height = height + 'px';
-    // 애니메이션 완료 후 초기 스타일 복원 (선택 사항)
-    // setTimeout(function () {
-    //   element.removeAttribute('style');
-    // }, duration);
-  }, 0);
+  // var element = this;
+  //
+  // element.style.display = 'block';
+  // var height = element.scrollHeight + 'px'; // Get it's height
+  // element.style.height = '0px'; // Reset to zero
+  //
+  // setTimeout(function () {
+  //   element.style.transitionProperty = 'height';
+  //   element.style.transitionDuration = duration + 'ms';
+  //   element.style.height = height;
+  // }, 0);
 };
 
 /**
@@ -100,24 +90,15 @@ HTMLElement.prototype.slideDown = function (duration = 400) {
  * @param duration
  */
 HTMLElement.prototype.slideUp = function (duration = 400) {
-  var element = this;
-  element.style.transitionProperty = 'height, margin, padding';
-  element.style.transitionDuration = duration + 'ms';
-  element.style.display = 'block';
-  element.style.overflow = 'hidden';
-  
-  // 현재 높이를 가져옴
-  var height = element.scrollHeight;
-
-  // 현재 높이에서 애니메이션 효과 적용하여 숨김 처리
-  requestAnimationFrame(function () {
-    element.style.height = height + 'px';
-    setTimeout(function () {
-      element.style.height = '0';
-      // setTimeout(function () {
-      //   // 초기 스타일 복원 (선택 사항)
-      //   element.removeAttribute('style');
-      // }, duration);
-    }, 0);
-  });
+  // var element = this;
+  // setTimeout(function () {
+  //   element.style.transitionProperty = 'height';
+  //   element.style.transitionDuration = duration + 'ms';
+  //   element.style.height = '0px';
+  // }, 0);
+  //
+  // setTimeout(function () {
+  //   // when transition finished hide it all
+  //   element.style.display = 'none';
+  // }, duration);
 };
