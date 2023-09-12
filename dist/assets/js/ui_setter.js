@@ -4,33 +4,33 @@
  */
 const initInputUi = (trigger) => {
   if (typeof trigger === 'undefined') return;
-  const $target = $(trigger).parent();
+  const el_target = trigger.parentElement;
 
-  const $inp = $target.find(`> input`);
+  const el_inp = el_target.querySelector(`:scope > input`);
 
-  $inp.on('keyup', (evt) => {
+  el_inp.addEventListener('keyup', (evt) => {
     updateDisplay();
   });
 
-  $inp.on('focus', (evt) => {
-    $target.addClass('Focus');
-    $target.focus();
+  el_inp.addEventListener('focus', (evt) => {
+    el_target.addClass('Focus');
+    el_target.focus();
   });
 
-  $inp.on('blur', (evt) => {
-    $target.removeClass('Focus');
-    $target.blur();
+  el_inp.addEventListener('blur', (evt) => {
+    el_target.removeClass('Focus');
+    el_target.blur();
   });
 
   updateDisplay();
 
   function updateDisplay() {
-    const value = $inp.val();
+    const value = el_inp.value;
 
     if (!value) {
-      $target.removeClass('HasValue');
+      el_target.removeClass('HasValue');
     } else {
-      $target.addClass('HasValue');
+      el_target.addClass('HasValue');
     }
   }
 };
@@ -41,10 +41,9 @@ const initInputUi = (trigger) => {
  */
 const initHScrollGradientBox = (trigger) => {
   if (typeof trigger === 'undefined') return;
-  const $target = $(trigger).parent();
+  const el_target = trigger.parentElement;
 
-  const el_hsb = $target[0];
-  const el_track = el_hsb.querySelector(`.Track`);
+  const el_track = el_target.querySelector(`.Track`);
   el_track.addEventListener('scroll', (evt) => {
     updateDisplay();
   });
@@ -56,78 +55,19 @@ const initHScrollGradientBox = (trigger) => {
     const k = sw - sl;
 
     if (k == sw) {
-      el_hsb.classList.add('Start');
+      el_target.classList.add('Start');
     } else {
-      el_hsb.classList.remove('Start');
+      el_target.classList.remove('Start');
     }
 
     if (k <= el_track.clientWidth) {
-      el_hsb.classList.add('End');
+      el_target.classList.add('End');
     } else {
-      el_hsb.classList.remove('End');
+      el_target.classList.remove('End');
     }
   }
 };
 
-/**
- * Collapse_1
- * @param trigger
- */
-const initCollapse = (trigger) => {
-  if (typeof trigger === 'undefined') return;
-  const $target = $(trigger).parent();
-
-  const $li_on = $('li.On', $target);
-  $li_on.find('.A').show();
-
-  const $qbtn = $('.Q > button', $target);
-  $qbtn.on('click', (evt) => {
-    const $li = $(evt.currentTarget).closest('li');
-
-    if (!$li.hasClass('On')) {
-      const $li_siblings = $li.siblings('li');
-
-      $li_siblings.removeClass('On');
-      $li_siblings.find('.A').slideUp();
-
-      $li.addClass('On');
-      $li.find('.A').slideDown();
-    } else {
-      $li.removeClass('On');
-      $li.find('.A').slideUp();
-    }
-  });
-};
-
-/**
- * TreeMenu_1
- * @param trigger
- */
-const initTreeMenu = (trigger) => {
-  if (typeof trigger === 'undefined') return;
-  const $target = $(trigger).parent();
-
-  const $li_on = $('li.On', $target);
-  $li_on.find('> ul').show();
-
-  const $button = $('button', $target);
-  $button.on('click', (evt) => {
-    const $li = $(evt.currentTarget).closest('li');
-
-    if (!$li.hasClass('On')) {
-      const $li_siblings = $li.siblings('li');
-
-      $li_siblings.removeClass('On');
-      $li_siblings.find('> ul').slideUp();
-
-      $li.addClass('On');
-      $li.find('> ul').slideDown();
-    } else {
-      $li.removeClass('On');
-      $li.find('> ul').slideUp();
-    }
-  });
-};
 
 /**
  * <img onerror='initAutoCompleteBox(`#autoComplete`)' src=''/>
@@ -234,8 +174,6 @@ const initAutoCompleteBox = (id) => {
 
   updateDisplay();
   function updateDisplay() {
-    console.log(`el_ac.value.length == `, el_ac.value.length);
-
     if (el_ac.value.length > 0) {
       el_acb.classList.add('HasValue');
     } else {

@@ -15,7 +15,7 @@ Util.getUid = () => {
 /**
  * 오늘날짜 문자열반환
  */
-Util.getToday = (betweenStr) => {
+Util.getTodayString = (betweenStr) => {
   if (typeof betweenStr === 'undefined') betweenStr = '';
   var today = new Date();
   var dd = today.getDate();

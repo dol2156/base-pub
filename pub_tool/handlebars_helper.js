@@ -389,6 +389,7 @@ Handlebars.registerHelper('DF', function (object, node_name, value, options) {
   if (value.name !== 'DF') {
     if (typeof object === 'object') {
       if (typeof object[node_name] === 'undefined') {
+        console.warn(`Handlebars : DF : ${node_name} = ${value}`);
         object[node_name] = value;
       } else {
         // console.warn(`Handlebars : DF : ${node_name}에 이미 값이 할당 되어 있습니다.`);
@@ -397,7 +398,7 @@ Handlebars.registerHelper('DF', function (object, node_name, value, options) {
     }
   } else {
     // value 가 할당 되지 않았을 경우 경고
-    console.error('Handlebars : DF : value 가 필요합니다.');
+    console.warn('Handlebars : DF : value 가 필요합니다.');
   }
 });
 
