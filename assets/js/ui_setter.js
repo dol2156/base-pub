@@ -5,7 +5,7 @@
 const initInputUi = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
-  
+
   const el_inp = el_target.querySelector(`:scope > input`);
 
   el_inp.addEventListener('keyup', (evt) => {
@@ -41,6 +41,8 @@ const initInputUi = (trigger) => {
  */
 const initHScrollGradientBox = (trigger) => {
   if (typeof trigger === 'undefined') return;
+  const el_target = trigger.parentElement;
+  
   const $target = $(trigger).parent();
 
   const el_hsb = $target[0];
@@ -75,27 +77,34 @@ const initHScrollGradientBox = (trigger) => {
  */
 const initCollapse = (trigger) => {
   if (typeof trigger === 'undefined') return;
-  const $target = $(trigger).parent();
+  const el_target = trigger.parentElement;
+  const el_li = el_target.querySelectorAll(`:scope > li.On`);
 
-  const $li_on = $('li.On', $target);
-  $li_on.find('.A').show();
+  el_li.forEach((obj, idx) => {
+    const el_A = obj.querySelector(`.A`);
+    el_A.show();
+  });
 
-  const $qbtn = $('.Q > button', $target);
-  $qbtn.on('click', (evt) => {
-    const $li = $(evt.currentTarget).closest('li');
+  const el_Q_btn = el_target.querySelectorAll(`.Q > button`);
+  el_Q_btn.forEach((el_q, idx) => {
+    el_q.addEventListener('click', (evt) => {
+      const ct = evt.currentTarget;
+      const el_li = ct.closest(`li`);
 
-    if (!$li.hasClass('On')) {
-      const $li_siblings = $li.siblings('li');
+      if (!el_li.hasClass('On')) {
+        const el_sb_list = el_li.siblings(`li`);
+        el_sb_list.forEach((el_sb, idx) => {
+          el_sb.removeClass('On');
+          el_sb.querySelector(`.A`).slideUp();
+        });
 
-      $li_siblings.removeClass('On');
-      $li_siblings.find('.A').slideUp();
-
-      $li.addClass('On');
-      $li.find('.A').slideDown();
-    } else {
-      $li.removeClass('On');
-      $li.find('.A').slideUp();
-    }
+        el_li.addClass('On');
+        el_li.querySelector(`.A`).slideDown();
+      } else {
+        el_li.removeClass('On');
+        el_li.querySelector(`.A`).slideUp();
+      }
+    });
   });
 };
 
@@ -234,8 +243,6 @@ const initAutoCompleteBox = (id) => {
 
   updateDisplay();
   function updateDisplay() {
-    console.log(`el_ac.value.length == `, el_ac.value.length);
-
     if (el_ac.value.length > 0) {
       el_acb.classList.add('HasValue');
     } else {
