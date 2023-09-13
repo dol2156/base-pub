@@ -294,30 +294,6 @@ Handlebars.registerHelper('VAR', function (object, node_name, value, options) {
 });
 
 /**
- * 고유 ID 문자열 반환
- * ex) {{UUID}}
- */
-Handlebars.registerHelper('UUID', function () {
-  return Handlebars.uuid();
-});
-
-/**
- * 고유 ID 문자열 반환
- * ex) {{UID}}
- */
-Handlebars.registerHelper('UID', function () {
-  return Handlebars.uid();
-});
-
-/**
- * 고유 ID 숫자 반환
- * ex) {{UNUM}}
- */
-Handlebars.registerHelper('UNUM', function () {
-  return Math.ceil(Date.now() * Math.random());
-});
-
-/**
  * 값 합치기
  * ex) {{ADD this 'NAME' (ADD 'ksm_' @key) }}
  */
