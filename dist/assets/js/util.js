@@ -1,33 +1,6 @@
 const Util = {};
 
 /**
- * uid 반환
- * @returns {string}
- */
-Util.getUid = () => {
-  var firstPart = (Math.random() * 46656) | 0;
-  var secondPart = (Math.random() * 46656) | 0;
-  firstPart = ('000' + firstPart.toString(36)).slice(-3);
-  secondPart = ('000' + secondPart.toString(36)).slice(-3);
-  return firstPart + secondPart;
-};
-
-/**
- * 오늘날짜 문자열반환
- */
-Util.getTodayString = (betweenStr) => {
-  if (typeof betweenStr === 'undefined') betweenStr = '';
-  var today = new Date();
-  var dd = today.getDate();
-  var mm = today.getMonth() + 1;
-  var yyyy = today.getFullYear();
-  if (dd < 10) dd = '0' + dd;
-  if (mm < 10) mm = '0' + mm;
-  today = yyyy + betweenStr + mm + betweenStr + dd;
-  return today;
-};
-
-/**
  * 입력되는 컬러와 대비되어 잘 보이는 색상 반환
  * @param color_hex
  * @returns {string}
@@ -46,14 +19,4 @@ Util.getGoodColor = (color_hex) => {
   return luma < 127.5 ? 'white' : 'black';
 };
 
-/**
- * URL 에서 파라메터 추출
- * @param key
- * @returns {string}
- */
-Util.getParam = (key) => {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const result = urlParams.get(key);
-  return result;
-};
+
