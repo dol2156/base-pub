@@ -38,13 +38,13 @@
   /**/
   --header-hei: 50px;
   --footer-hei: 50px;
-  --fullpage-footer-hei:100px;
+  --fullpage-footer-hei: 100px;
 }
 [data-env='development'] {
   --sab: 20px;
 }
-/* lg - 1024px 이상*/
-@media screen and (min-width: 1024px) {
+/* 1280px 이상 화면*/
+@media screen and (min-width: 1280px) {
   :root {
     --contents-side-padding: 60px; /* 컨텐츠 좌우 안쪽 여백 */
   }
@@ -125,8 +125,8 @@
     display: block;
   }
 }
-/* 1024px 이상 화면*/
-@media screen and (min-width: 1024px) {
+/* 1280px 이상 화면*/
+@media screen and (min-width: 1280px) {
   [data-only-view='PC'] {
     display: block;
   }

@@ -27,23 +27,25 @@
 /* 모바일 터치시 영역 색상  */
 /*:root{-webkit-tap-highlight-color:transparent;}*/
 /* 스크롤바 */
-/* 1024px 이상 화면*/
-@media screen and (min-width: 1024px) {
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-  }
-  ::-webkit-scrollbar-button:start:decrement,
-  ::-webkit-scrollbar-button:end:increment {
-    display: block;
-    width: 0px;
-    height: 0px;
-  }
-  ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.3);
+/* 1280px 이상 화면*/
+@media screen and (min-width: 1280px) {
+  .CustomScrollBar {
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    &::-webkit-scrollbar-button:start:decrement,
+    &::-webkit-scrollbar-button:end:increment {
+      display: block;
+      width: 0px;
+      height: 0px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 /**/
@@ -99,6 +101,6 @@ body {
 [disabled] {
   pointer-events: none;
 }
-strong{
-  font-weight:700;
+strong {
+  font-weight: 700;
 }
