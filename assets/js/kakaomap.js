@@ -184,7 +184,7 @@ KakaoMapUtil.drawMap = () => {
    */
   function createCustomOverlay(geo) {
     console.log(`geo == `, geo);
-    const { PLACE_NAME, ADDRESS_NAME } = geo;
+    const { PLACE_NAME, ADDRESS_NAME, OVERLAY_IMG } = geo;
 
     // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     // const content = `
@@ -197,7 +197,7 @@ KakaoMapUtil.drawMap = () => {
     //   `;
     const content = `
       <div class="customoverlay">
-        <img src="https://gifpng.com/250x200/ffd4d4/ff4444" alt="" />
+        <img style="max-width:none;" src="https://gifpng.com/250x200/ffd4d4/ff4444" alt="" />
       </div>
       `;
 
