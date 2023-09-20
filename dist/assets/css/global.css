@@ -48,15 +48,15 @@
   /**/
   --header-hei: 50px;
   --footer-hei: 50px;
-  --fullpage-footer-hei:100px;
+  --fullpage-footer-hei: 100px;
 }
 
 [data-env=development] {
   --sab: 20px;
 }
 
-/* lg - 1024px 이상*/
-@media screen and (min-width: 1024px) {
+/* 1280px 이상 화면*/
+@media screen and (min-width: 1280px) {
   :root {
     --contents-side-padding: 60px; /* 컨텐츠 좌우 안쪽 여백 */
   }
@@ -136,8 +136,8 @@
     display: block;
   }
 }
-/* 1024px 이상 화면*/
-@media screen and (min-width: 1024px) {
+/* 1280px 이상 화면*/
+@media screen and (min-width: 1280px) {
   [data-only-view=PC] {
     display: block;
   }
@@ -174,22 +174,21 @@
 /* 모바일 터치시 영역 색상  */
 /*:root{-webkit-tap-highlight-color:transparent;}*/
 /* 스크롤바 */
-/* 1024px 이상 화면*/
-@media screen and (min-width: 1024px) {
-  ::-webkit-scrollbar {
+/* 1280px 이상 화면*/
+@media screen and (min-width: 1280px) {
+  .CustomScrollBar::-webkit-scrollbar {
     width: 4px;
     height: 4px;
   }
-  ::-webkit-scrollbar-button:start:decrement,
-  ::-webkit-scrollbar-button:end:increment {
+  .CustomScrollBar::-webkit-scrollbar-button:start:decrement, .CustomScrollBar::-webkit-scrollbar-button:end:increment {
     display: block;
     width: 0px;
     height: 0px;
   }
-  ::-webkit-scrollbar-track {
+  .CustomScrollBar::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.1);
   }
-  ::-webkit-scrollbar-thumb {
+  .CustomScrollBar::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.3);
   }
 }
@@ -1729,7 +1728,7 @@ strong {
 .SelectUi.Style1 {
   border: 1px solid var(--form-border-color);
   background-color: transparent;
-  background-image: url(/assets/icon/2308011441.svg);
+  background-image: url(/assets/icon/basic/sel_1.svg);
   background-position: right var(--arrow-padding) center;
   background-repeat: no-repeat;
   background-position: right 0.5em center;
