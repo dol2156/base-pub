@@ -34,8 +34,13 @@
           </div>
         </div>
       </article>
-      <script src='/assets/js/kakaomap.js'></script>
       <script src='//dapi.kakao.com/v2/maps/sdk.js?appkey=ddfce4b5a6c589f7cbf109cf57486914&libraries=services'></script>
+      <script src='/assets/js/kakaomap.js'></script>
+      <script>
+        window.addEventListener('DOMContentLoaded', (evt) => {
+          KakaoMapUtil.init('/assets/json/kakaomap_location.json');
+        });
+      </script>
     </section>
   </main>
 </div>

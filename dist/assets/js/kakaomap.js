@@ -40,17 +40,6 @@ KakaoMapUtil.loadJson = () => {
 };
 
 /**
- * 맵 스크립트 import
- */
-KakaoMapUtil.importMapScript = (api_key) => {
-  const script = document.createElement('script');
-  // https://apis.map.kakao.com/web/guide/#loadlibrary
-  // services 라이브러리도 포함하여 불러오기
-  script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${api_key}&libraries=services`;
-  document.write(script.outerHTML);
-};
-
-/**
  * 주소 기반으로 위도 경도 등 좌표 데이터 수신
  * https://developers.kakao.com/docs/latest/ko/local/dev-guide#address-coord
  */
@@ -106,6 +95,12 @@ KakaoMapUtil.loadGeoData = () => {
  *
  */
 KakaoMapUtil.drawMap = () => {
+  const first_location = LOCATION_LIST[0];
+  if (first_location) {
+    INIT_LAT = first_location.위도 || first_location.y;
+    INIT_LNG = first_location.경도 || first_location.x;
+  }
+
   // 맵 생성
   KakaoMap = creatMap();
 
@@ -169,8 +164,9 @@ KakaoMapUtil.drawMap = () => {
     // 마커에 클릭이벤트를 등록합니다
     kakao.maps.event.addListener(mk, 'click', function () {
       // 커스텀 오버레이 띄우기
-      co.setVisible(true);
+      if(co) co.setVisible(true);
     });
+    if(co) co.setVisible(true);
 
     // 마커가 지도 위에 표시되도록 설정합니다
     mk.setMap(KakaoMap);
@@ -187,36 +183,46 @@ KakaoMapUtil.drawMap = () => {
    * https://apis.map.kakao.com/web/guide/#mapurl
    */
   function createCustomOverlay(geo) {
-    const { PLACE_NAME, ADDRESS_NAME } = geo;
-
+    const { PLACE_NAME, ADDRESS_NAME, OVERLAY_LINK, OVERLAY_IMG } = geo;
+    
     // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-    const content = `
+    // const content = `
+    //   <div class="customoverlay">
+    //     <img src="https://newsimg.sedaily.com/2020/04/29/1Z1NWYX4JP_1.jpg" alt="" />
+    //     <a href="https://map.kakao.com/link/search/${ADDRESS_NAME}" target="_blank">
+    //       <span class="title">${PLACE_NAME}</span>
+    //     </a>
+    //   </div>
+    //   `;
+    if (OVERLAY_IMG) {
+      const content = `
       <div class="customoverlay">
-        <img src="https://newsimg.sedaily.com/2020/04/29/1Z1NWYX4JP_1.jpg" alt="" />
-        <a href="https://map.kakao.com/link/search/${ADDRESS_NAME}" target="_blank">
-          <span class="title">${PLACE_NAME}</span>
+        <a href="${OVERLAY_LINK}" target="_blank">
+          <img style="max-width:none;" src="${OVERLAY_IMG}" alt="" />
         </a>
       </div>
       `;
+      // 커스텀 오버레이가 표시될 위치입니다
+      var position = GetLatLng(geo);
 
-    // 커스텀 오버레이가 표시될 위치입니다
-    var position = GetLatLng(geo);
+      // 커스텀 오버레이를 생성합니다
+      var customOverlay = new kakao.maps.CustomOverlay({
+        map: KakaoMap,
+        position: position,
+        content: content,
+        // yAnchor: 1,
+        xAnchor: 0,
+        yAnchor: 0,
+        zIndex: 3,
+      });
 
-    // 커스텀 오버레이를 생성합니다
-    var customOverlay = new kakao.maps.CustomOverlay({
-      map: KakaoMap,
-      position: position,
-      content: content,
-      // yAnchor: 1,
-      xAnchor: 0.49,
-      yAnchor: 0.3,
-      zIndex: 3,
-    });
+      // 가려두기
+      customOverlay.setVisible(false);
 
-    // 가려두기
-    customOverlay.setVisible(false);
-
-    return customOverlay;
+      return customOverlay;
+    } else {
+      return false;
+    }
   }
 };
 
@@ -241,19 +247,16 @@ KakaoMapUtil.init = () => {
   let { JAVASCRIPT_API_KEY, GEO_DATA } = json;
   LOCATION_LIST = GEO_DATA;
 
-  // 카카오맵 스크립트 임포트
-  KakaoMapUtil.importMapScript(JAVASCRIPT_API_KEY);
-
-  window.addEventListener('DOMContentLoaded', (evt) => {
-    // 임포트 끝나면 지도 셋팅 시작
-    KakaoMapUtil.loadGeoData();
-  });
+  // 지도 셋팅 시작
+  KakaoMapUtil.loadGeoData();
 };
-
-KakaoMapUtil.init();
 
 function GetLatLng(geo) {
   const lat = geo.y; // 위도
   const lng = geo.x; // 경도
   return new kakao.maps.LatLng(lat, lng);
 }
+
+window.addEventListener('DOMContentLoaded', (evt) => {
+  KakaoMapUtil.init();
+});

@@ -1,15 +1,14 @@
 // 카카오개발자센터 - https://developers.kakao.com/
 // 카카오 지도 Web API - https://apis.map.kakao.com/web/guide/
-const ADMIN_MAP_DATA_URL = '/assets/json/kakaomap_location.json';
 let INIT_LAT = 37.3957122;
 let INIT_LNG = 127.1105181;
 let LOCATION_LIST, KakaoMap;
 const KakaoMapUtil = {};
 /**
  * 장소 데이터 수신
- * @param callback
+ * @returns {any}
  */
-KakaoMapUtil.loadJson = () => {
+KakaoMapUtil.loadJson = (map_json_url) => {
   let json;
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -33,72 +32,21 @@ KakaoMapUtil.loadJson = () => {
       }
     }
   };
-  xhttp.open('GET', ADMIN_MAP_DATA_URL, false);
+  xhttp.open('GET', map_json_url, false);
   xhttp.send();
 
   return JSON.parse(json);
 };
 
 /**
- * 주소 기반으로 위도 경도 등 좌표 데이터 수신
- * https://developers.kakao.com/docs/latest/ko/local/dev-guide#address-coord
- */
-KakaoMapUtil.loadGeoData = () => {
-  console.log(`LOCATION_LIST == `, LOCATION_LIST);
-
-  const geo_list = [];
-
-  getGeo(LOCATION_LIST[0]);
-
-  /**
-   * Geo Data 로드
-   * @param location_obj
-   */
-  function getGeo(location_obj) {
-    if (typeof location_obj === 'undefined') return;
-
-    const { ADDRESS_NAME } = location_obj;
-
-    // 주소-좌표 변환 객체를 생성합니다
-    var geocoder = new kakao.maps.services.Geocoder();
-
-    // 주소로 좌표를 검색합니다
-    geocoder.addressSearch(ADDRESS_NAME, function (result, status) {
-      // 정상적으로 검색이 완료됐으면
-      if (status === kakao.maps.services.Status.OK) {
-        const geo = result[0];
-
-        // ADMIN 에서 위도와 경도를 수동으로 입력했다면
-        if (location_obj.위도 && location_obj.경도) {
-          // Geocoder 를 통해 받아온 x y 값을 덮어 씌운다.
-          geo.y = location_obj.위도;
-          geo.x = location_obj.경도;
-        }
-
-        geo_list.push(geo);
-        Object.assign(location_obj, geo);
-
-        const next_idx = geo_list.length;
-        if (next_idx == LOCATION_LIST.length) {
-          // 끝
-          KakaoMapUtil.drawMap();
-        } else {
-          // 다음 Geo 로드
-          getGeo(LOCATION_LIST[next_idx]);
-        }
-      }
-    });
-  }
-};
-
-/**
  *
  */
 KakaoMapUtil.drawMap = () => {
+  
   const first_location = LOCATION_LIST[0];
   if (first_location) {
-    INIT_LAT = first_location.위도 || first_location.y;
-    INIT_LNG = first_location.경도 || first_location.x;
+    INIT_LAT = first_location.위도;
+    INIT_LNG = first_location.경도;
   }
 
   // 맵 생성
@@ -164,14 +112,19 @@ KakaoMapUtil.drawMap = () => {
     // 마커에 클릭이벤트를 등록합니다
     kakao.maps.event.addListener(mk, 'click', function () {
       // 커스텀 오버레이 띄우기
-      if(co) co.setVisible(true);
+      if(co){
+        if(co.getVisible()){
+          co.setVisible(false);
+        }else{
+          co.setVisible(true);
+        }
+      }
     });
-    if(co) co.setVisible(true);
 
-    // 마커가 지도 위에 표시되도록 설정합니다
+    // 마커가 지도 위에 표시되도록 설정합니다.
     mk.setMap(KakaoMap);
 
-    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // 아래 코드는 지도 위의 마커 안보이게 설정합니다.
     // mk.setMap(null);
 
     return mk;
@@ -198,7 +151,7 @@ KakaoMapUtil.drawMap = () => {
       const content = `
       <div class="customoverlay">
         <a href="${OVERLAY_LINK}" target="_blank">
-          <img style="max-width:none;" src="${OVERLAY_IMG}" alt="" />
+          <img class="w-[200px] pc:w-[400px]" style="max-width:none;" src="${OVERLAY_IMG}" alt="" />
         </a>
       </div>
       `;
@@ -234,29 +187,27 @@ KakaoMapUtil.moveToMap = (place_name) => {
     return place_name == obj.PLACE_NAME;
   })[0];
   const latlng = GetLatLng(geo);
-  INIT_LAT = geo.y;
-  INIT_LNG = geo.x;
+  INIT_LAT = geo.위도;
+  INIT_LNG = geo.경도;
   KakaoMap.panTo(latlng); // 부드럽게 이동
 };
 
 /**
  * 지도 초기화
  */
-KakaoMapUtil.init = () => {
-  const json = KakaoMapUtil.loadJson();
+KakaoMapUtil.init = (map_json_url) => {
+  const json = KakaoMapUtil.loadJson(map_json_url);
   let { JAVASCRIPT_API_KEY, GEO_DATA } = json;
   LOCATION_LIST = GEO_DATA;
 
   // 지도 셋팅 시작
-  KakaoMapUtil.loadGeoData();
+  // KakaoMapUtil.loadGeoData();
+  KakaoMapUtil.drawMap();
 };
 
 function GetLatLng(geo) {
-  const lat = geo.y; // 위도
-  const lng = geo.x; // 경도
+  const lat = geo.위도;
+  const lng = geo.경도;
   return new kakao.maps.LatLng(lat, lng);
 }
 
-window.addEventListener('DOMContentLoaded', (evt) => {
-  KakaoMapUtil.init();
-});
