@@ -164,9 +164,9 @@ KakaoMapUtil.drawMap = () => {
     // 마커에 클릭이벤트를 등록합니다
     kakao.maps.event.addListener(mk, 'click', function () {
       // 커스텀 오버레이 띄우기
-      co.setVisible(true);
+      if(co) co.setVisible(true);
     });
-    co.setVisible(true);
+    if(co) co.setVisible(true);
 
     // 마커가 지도 위에 표시되도록 설정합니다
     mk.setMap(KakaoMap);
@@ -183,9 +183,8 @@ KakaoMapUtil.drawMap = () => {
    * https://apis.map.kakao.com/web/guide/#mapurl
    */
   function createCustomOverlay(geo) {
-    console.log(`geo == `, geo);
-    const { PLACE_NAME, ADDRESS_NAME, OVERLAY_IMG } = geo;
-
+    const { PLACE_NAME, ADDRESS_NAME, OVERLAY_LINK, OVERLAY_IMG } = geo;
+    
     // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     // const content = `
     //   <div class="customoverlay">
@@ -195,30 +194,35 @@ KakaoMapUtil.drawMap = () => {
     //     </a>
     //   </div>
     //   `;
-    const content = `
+    if (OVERLAY_IMG) {
+      const content = `
       <div class="customoverlay">
-        <img style="max-width:none;" src="https://gifpng.com/250x200/ffd4d4/ff4444" alt="" />
+        <a href="${OVERLAY_LINK}" target="_blank">
+          <img style="max-width:none;" src="${OVERLAY_IMG}" alt="" />
+        </a>
       </div>
       `;
+      // 커스텀 오버레이가 표시될 위치입니다
+      var position = GetLatLng(geo);
 
-    // 커스텀 오버레이가 표시될 위치입니다
-    var position = GetLatLng(geo);
+      // 커스텀 오버레이를 생성합니다
+      var customOverlay = new kakao.maps.CustomOverlay({
+        map: KakaoMap,
+        position: position,
+        content: content,
+        // yAnchor: 1,
+        xAnchor: 0,
+        yAnchor: 0,
+        zIndex: 3,
+      });
 
-    // 커스텀 오버레이를 생성합니다
-    var customOverlay = new kakao.maps.CustomOverlay({
-      map: KakaoMap,
-      position: position,
-      content: content,
-      // yAnchor: 1,
-      xAnchor: 0,
-      yAnchor: 0,
-      zIndex: 3,
-    });
+      // 가려두기
+      customOverlay.setVisible(false);
 
-    // 가려두기
-    customOverlay.setVisible(false);
-
-    return customOverlay;
+      return customOverlay;
+    } else {
+      return false;
+    }
   }
 };
 
