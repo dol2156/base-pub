@@ -33,20 +33,20 @@ const createServer = (port) => {
     if (request.method == 'POST') {
       if (url == '/save') {
         // url = '/index.html';
-        let body = '';
-        request.on('data', (data) => {
+        
+        let body = [];
+        
+        request.on('data', (chunk) => {
           // console.log('데이터 수신 시작');
-          body += data;
-
-          // 큰 파일 방어 장치
-          if (body.length > 1e6) request.connection.destroy();
+          body.push(chunk);
         });
 
         request.on('end', () => {
-          // const post = qs.parse(body);
-          // console.log(post);
-
           // console.log('데이터 수신 완료');
+          
+          // Buffer 객체로 병합 및 문자열 변환
+          body = Buffer.concat(body).toString();
+
           const { name, body_str } = JSON.parse(body);
           const save_path = `${bundle_folder}/${name}.html`;
           

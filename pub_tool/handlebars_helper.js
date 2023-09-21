@@ -496,10 +496,10 @@ Handlebars.registerHelper('SITEMAP_URL', function (page_title, page_value, optio
 
 /**
  */
-Handlebars.registerHelper('SITEMAP_ITEM', function (page_title, page_value, options) {
+Handlebars.registerHelper('SITEMAP_ITEM', function (for_pub, options) {
   const MENU_NAME = this.뎁스1 || this.뎁스2 || this.뎁스3;
-  const {PAGE, 진행단계} = this;
-  
+  const { PAGE, 진행단계 } = this;
+
   let str;
   if (PAGE) {
     str = `
@@ -515,10 +515,14 @@ Handlebars.registerHelper('SITEMAP_ITEM', function (page_title, page_value, opti
   function getHref() {
     if (PAGE.indexOf(`http`) > -1) {
       return `href="${PAGE}"`;
-    }else if(진행단계 != '완료'){
+    } else if (진행단계 != '완료') {
       return '';
     } else {
-      return `href="/index.html?title=${MENU_NAME}&page=${PAGE}"`;
+      if (for_pub == 'for_pub') {
+        return `href="/index.html?title=${MENU_NAME}&page=${PAGE}"`;
+      } else {
+        return `href='/html/${PAGE}.html'`;
+      }
     }
   }
 

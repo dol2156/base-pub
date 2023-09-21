@@ -24,15 +24,15 @@
 
         {{#each window.MENU_DATA}}
           <li data-key='{{@key}}'>
-            {{{SITEMAP_ITEM}}}
+            {{{SITEMAP_ITEM 'for_pub'}}}
             <ul>
               {{#each child}}
                 <li data-key='{{@key}}'>
-                  {{{SITEMAP_ITEM}}}
+                  {{{SITEMAP_ITEM 'for_pub'}}}
                   <ul>
                     {{#each child}}
                       <li>
-                        {{{SITEMAP_ITEM}}}
+                        {{{SITEMAP_ITEM 'for_pub'}}}
                       </li>
                     {{/each}}
                   </ul>

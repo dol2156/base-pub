@@ -51,7 +51,8 @@ FileUtil.writeFile = function (write_file_path, contents, cb) {
     if (err) return cb(err);
 
     try {
-      fs.writeFileSync(write_file_path, contents, cb);
+      // fs.writeFileSync(write_file_path, contents, cb);
+      fs.writeFileSync(write_file_path, contents, { encoding: 'utf8' });
       // https://github.com/shiena/ansicolor/blob/master/README.md
       console.log('\x1b[94m%s\x1b[0m', `=============================== Write Complete : ${write_file_path} `);
     } catch (err) {
