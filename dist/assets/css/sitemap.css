@@ -39,11 +39,6 @@ html {
   border: 2px solid black;
 }
 
-#Sitemap > ul > li > *:not(ul) {
-  font-weight: 600;
-  font-size: 20px;
-}
-
 #Sitemap > ul > li * {
   padding: 2px;
 }
@@ -53,7 +48,6 @@ html {
 }
 
 #Sitemap > ul > li a[href] {
-  padding: 5px 10px;
   color: dodgerblue;
   display: block;
   border-radius: 5px;
@@ -67,16 +61,10 @@ html {
   background-color: pink;
 }
 
-/* 768px 이상 화면*/
-@media screen and (min-width: 768px) {
-  #Sitemap > ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 /* 1280px 이상 화면*/
 @media screen and (min-width: 1280px) {
   #Sitemap > ul {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 #ProgressBarBox {

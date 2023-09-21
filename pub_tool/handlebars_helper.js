@@ -8,9 +8,9 @@ Handlebars.logger.level = 'debug';
  */
 const Include = (path, render_data) => {
   if (typeof render_data === 'undefined') render_data = {};
-  render_data = Object.assign({window}, render_data);
+  render_data = Object.assign({ window }, render_data);
   const filename = path.replace(/^.*[\\\/]/, '').replace(/\.[^/.]+$/, '');
-  
+
   const el_script = document.currentScript;
 
   const html_str = Handlebars.loadHtml(path);
@@ -20,8 +20,8 @@ const Include = (path, render_data) => {
 
   //Render the data into the template
   let rendered = compiled_template(render_data);
-  rendered = `<!-- ${filename} :: START ::  -->` + rendered +`<!-- // ${filename} :: END ::  -->`;
-  
+  rendered = `<!-- ${filename} :: START ::  -->` + rendered + `<!-- // ${filename} :: END ::  -->`;
+
   document.write(rendered);
 
   el_script.remove();
@@ -356,7 +356,6 @@ Handlebars.registerHelper('CONATIN', function (p1, condition, options) {
   return is_contain;
 });
 
-
 /**
  * 기본값 할당
  * {{DF this 'array' '1|2|3'}}
@@ -383,10 +382,10 @@ Handlebars.registerHelper('DF', function (object, node_name, value, options) {
  */
 Handlebars.registerHelper('DV', function (options) {
   const root = this;
-  
+
   const len = Object.keys(root).length;
-  
-  if (len == 1 && Object.keys(root)[0]=='window') {
+
+  if (len == 1 && Object.keys(root)[0] == 'window') {
     return options.fn(this);
     // return true;
   } else {
@@ -488,10 +487,40 @@ Handlebars.registerHelper('JSON', function (node_name, json_url, options) {
  * sitemap 에서 사용되는 URL
  */
 Handlebars.registerHelper('SITEMAP_URL', function (page_title, page_value, options) {
-  if(page_value.indexOf(`http`) > -1){
+  if (page_value.indexOf(`http`) > -1) {
     return page_value;
-  }else{
+  } else {
     return `/index.html?title=${page_title}&page=${page_value}`;
   }
+});
+
+/**
+ */
+Handlebars.registerHelper('SITEMAP_ITEM', function (page_title, page_value, options) {
+  const MENU_NAME = this.뎁스1 || this.뎁스2 || this.뎁스3;
+  const {PAGE, 진행단계} = this;
   
+  let str;
+  if (PAGE) {
+    str = `
+    <a class='label' ${getHref()} target='_blank'>
+      <span style='color:orangered'>[ ${PAGE} ]</span>
+      ${MENU_NAME}
+    </a>
+    `;
+  } else {
+    str = `<div class='label'>${MENU_NAME}</div>`;
+  }
+
+  function getHref() {
+    if (PAGE.indexOf(`http`) > -1) {
+      return `href="${PAGE}"`;
+    }else if(진행단계 != '완료'){
+      return '';
+    } else {
+      return `href="/index.html?title=${MENU_NAME}&page=${PAGE}"`;
+    }
+  }
+
+  return str;
 });
