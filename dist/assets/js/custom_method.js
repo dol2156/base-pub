@@ -293,4 +293,24 @@ HTMLElement.prototype.prependHTML = function (newHtml) {
     oldScript.parentNode.replaceChild(newScript, oldScript);
   });
 };
+
+/**
+ *
+ * @returns {{top: number, left: number}}
+ */
+HTMLElement.prototype.offset = function() {
+    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    return { top: this.offsetTop - scrollTop, left: this.offsetLeft - scrollLeft };
+}
+
+/**
+ *
+ * @returns {{top: number, left: number}}
+ */
+HTMLElement.prototype.position = function() {
+    return { top: this.offsetTop, left: this.offsetLeft };
+}
+
 /* // 2023-09-13 :: END :: HTMLElement */

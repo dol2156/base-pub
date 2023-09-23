@@ -1,3 +1,7 @@
+{{!--prettier-ignore--}}
+<style>
+  header{opacity:0.3;}
+</style>
 <div id='page'>
   <script>
     Include('/hbs/layout/Header_1-a.hbs');
@@ -9,9 +13,9 @@
     <section class='WheelDownHScrollWrap'>
       {{!      <article class="Inner" style="opacity:0.3; z-index:10; position:fixed; top:0px; left:0px; width:100%;">}}
       <article class='Inner' style='position:sticky; top:0;'>
-        <div style='font-size:50px; color:white; display:flex; align-items:center; justify-content:center; gap:0px; width:100vw; height:100vh; background-color:red;'>First Div</div>
-        <div style='font-size:50px; color:white; display:flex; align-items:center; justify-content:center; gap:0px; width:100vw; height:100vh; background-color:green;'>Second Div</div>
-        <div style='font-size:50px; color:white; display:flex; align-items:center; justify-content:center; gap:0px; width:100vw; height:100vh; background-color:blue;'>Third Div</div>
+        <div>First Div</div>
+        <div>Second Div</div>
+        <div>Third Div</div>
       </article>
       <img onerror='initWheelDownHScrollWrap(this)' src='' />
     </section>
@@ -20,7 +24,4 @@
     </section>
     {{!CONTENTS}}
   </main>
-  <script>
-    Include('/hbs/layout/Footer_1-a.hbs');
-  </script>
 </div>

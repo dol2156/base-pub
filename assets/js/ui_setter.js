@@ -181,29 +181,52 @@ const initAutoCompleteBox = (id) => {
   }
 };
 
+/**
+ *
+ * @param trigger
+ */
 const initWheelDownHScrollWrap = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
   const el_inner = el_target.querySelector(`:scope > .Inner`);
-  const { scrollWidth, clientWidth, clientHeight } = el_inner;
-  const wrapHeight = scrollWidth + clientHeight;
-  const scrollRange = scrollWidth - clientWidth;
+  const el_inner_child = el_inner.querySelectorAll(`:scope > div`);
 
-  el_target.height(wrapHeight);
+  window.addEventListener('resize', (evt) => {
+    updateDisplay();
+  });
 
   window.addEventListener('scroll', (evt) => {
     updateDisplay();
   });
 
+  el_inner.addEventListener('scroll', (evt) => {
+    checkHScrollActive();
+  });
+
   updateDisplay();
   function updateDisplay() {
+    const { scrollWidth, clientWidth, clientHeight } = el_inner;
+    const wrapHeight = scrollWidth + clientHeight - clientWidth;
+    const scrollRange = scrollWidth - clientWidth;
+
+    el_target.height(wrapHeight);
+
     const top = el_target.offset().top;
+
     const k = -1 * top;
-    let hScrollPercent = (k / scrollWidth) * 100;
-    if (hScrollPercent <= 0) hScrollPercent = 0;
-    if (100 <= hScrollPercent) hScrollPercent = 100;
-    
-    const hscrollPx = scrollRange * ( hScrollPercent / 100 );
-    el_inner.scrollLeft = hscrollPx;
+    el_inner.scrollLeft = k;
+  }
+
+  function checkHScrollActive() {
+    el_inner_child.forEach((el_child, idx) => {
+      const left = el_child.getBoundingClientRect().left;
+      const k = left;
+
+      if (k <= 0) {
+        el_child.addClass('On');
+      } else {
+        el_child.removeClass('On');
+      }
+    });
   }
 };

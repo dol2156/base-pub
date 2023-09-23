@@ -426,9 +426,23 @@ img.LoadingBg {
     }
     -ms-overflow-style: none;
 
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: hidden;
     display: flex;
     gap: 0px;
+
+    > div {
+      outline: 1px dashed red;
+      width: 100vw;
+      height: 100vh;
+      font-size: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0px;
+
+      &.On {
+        background-color: pink;
+      }
+    }
   }
 }

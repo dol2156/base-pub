@@ -181,4 +181,33 @@ const initAutoCompleteBox = (id) => {
   }
 };
 
+/**
+ *
+ * @param trigger
+ */
+const initWheelDownHScrollWrap = (trigger) => {
+  if (typeof trigger === 'undefined') return;
+  const el_target = trigger.parentElement;
+  const el_inner = el_target.querySelector(`:scope > .Inner`);
+  const { scrollWidth, clientWidth, clientHeight } = el_inner;
+  const wrapHeight = scrollWidth + clientHeight;
+  const scrollRange = scrollWidth - clientWidth;
 
+  el_target.height(wrapHeight);
+
+  window.addEventListener('scroll', (evt) => {
+    updateDisplay();
+  });
+
+  updateDisplay();
+  function updateDisplay() {
+    const top = el_target.offset().top;
+    const k = -1 * top;
+    let hScrollPercent = (k / scrollWidth) * 100;
+    if (hScrollPercent <= 0) hScrollPercent = 0;
+    if (100 <= hScrollPercent) hScrollPercent = 100;
+    
+    const hscrollPx = scrollRange * ( hScrollPercent / 100 );
+    el_inner.scrollLeft = hscrollPx;
+  }
+};
