@@ -358,13 +358,15 @@ Handlebars.registerHelper('CONATIN', function (p1, condition, options) {
 
 /**
  * 기본값 할당
- * {{DF this 'array' '1|2|3'}}
+ * {{DF 'array' '1|2|3'}}
  */
-Handlebars.registerHelper('DF', function (object, node_name, value, options) {
+Handlebars.registerHelper('DF', function (node_name, value, options) {
+  const object = this;
+  
   if (value.name !== 'DF') {
     if (typeof object === 'object') {
       if (typeof object[node_name] === 'undefined') {
-        console.warn(`Handlebars : DF : ${node_name} = ${value}`);
+        console.warn(`Handlebars : DF : ${node_name} : ${value}`);
         object[node_name] = value;
       } else {
         // console.warn(`Handlebars : DF : ${node_name}에 이미 값이 할당 되어 있습니다.`);
@@ -373,9 +375,21 @@ Handlebars.registerHelper('DF', function (object, node_name, value, options) {
     }
   } else {
     // value 가 할당 되지 않았을 경우 경고
-    console.warn('Handlebars : DF : value 가 필요합니다.');
+    console.error('Handlebars : DF : value 가 필요합니다.');
   }
 });
+
+/**
+ * node_에 값이 있나 체크 후 경고
+ * {{NULL_CHECK 'id'}}
+ */
+Handlebars.registerHelper('NULL_CHECK', function (node_name, location_info, options) {
+  const data = this[node_name];
+  if(typeof data === "undefined" ){
+    console.error(`${location_info} : ${node_name} 의 값이 지정되어 있지 않습니다.`);
+  }
+});
+
 
 /**
  * root 데이터 있나 없나 체크
