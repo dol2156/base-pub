@@ -181,4 +181,10 @@ const initAutoCompleteBox = (id) => {
   }
 };
 
+const initWheelDownHScrollWrap = (trigger) => {
+  if (typeof trigger === 'undefined') return;
+  const el_target = trigger.parentElement;
+  console.log(`el_target == `, el_target);
+}
+
 

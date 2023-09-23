@@ -362,7 +362,7 @@ Handlebars.registerHelper('CONATIN', function (p1, condition, options) {
  */
 Handlebars.registerHelper('DF', function (node_name, value, options) {
   const object = this;
-  
+
   if (value.name !== 'DF') {
     if (typeof object === 'object') {
       if (typeof object[node_name] === 'undefined') {
@@ -385,11 +385,10 @@ Handlebars.registerHelper('DF', function (node_name, value, options) {
  */
 Handlebars.registerHelper('NULL_CHECK', function (node_name, location_info, options) {
   const data = this[node_name];
-  if(typeof data === "undefined" ){
+  if (typeof data === 'undefined') {
     console.error(`${location_info} : ${node_name} 의 값이 지정되어 있지 않습니다.`);
   }
 });
-
 
 /**
  * root 데이터 있나 없나 체크
@@ -527,13 +526,19 @@ Handlebars.registerHelper('SITEMAP_ITEM', function (for_pub, options) {
   }
 
   function getHref() {
-    if (PAGE.indexOf(`http`) > -1) {
-      return `href="${PAGE}"`;
-    } else if (진행단계 != '완료') {
-      return '';
-    } else {
-      if (for_pub == 'for_pub') {
+    if (for_pub == 'for_pub') {
+      // 퍼블리싱 작업용 사이트맵
+      if (PAGE.indexOf(`http`) > -1) {
+        return `href="${PAGE}"`;
+      } else {
         return `href="/index.html?title=${MENU_NAME}&page=${PAGE}"`;
+      }
+    } else {
+      // 고객용 사이트맵
+      if (PAGE.indexOf(`http`) > -1) {
+        return `href="${PAGE}"`;
+      } else if (진행단계 != '완료') {
+        return '';
       } else {
         return `href='/html/${PAGE}.html'`;
       }

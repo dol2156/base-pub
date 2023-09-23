@@ -2224,4 +2224,11 @@ img.LoadingBg {
   transform-origin: top;
 }
 
+.WheelDownHScrollWrap {
+  display: flex;
+  gap: 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 /*# sourceMappingURL=global.css.map */
