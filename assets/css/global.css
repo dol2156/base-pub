@@ -2225,10 +2225,13 @@ img.LoadingBg {
 }
 
 .WheelDownHScrollWrap {
-  display: flex;
-  gap: 0px;
+  background-color: #ffffd4;
+}
+.WheelDownHScrollWrap > .Inner {
   overflow-x: auto;
   overflow-y: hidden;
+  display: flex;
+  gap: 0px;
 }
 
 /*# sourceMappingURL=global.css.map */

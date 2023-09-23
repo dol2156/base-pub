@@ -184,7 +184,20 @@ const initAutoCompleteBox = (id) => {
 const initWheelDownHScrollWrap = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
-  console.log(`el_target == `, el_target);
-}
+  const el_inner = el_target.querySelector(`:scope > .Inner`);
+  const { scrollWidth } = el_inner;
+  el_target.height(scrollWidth);
 
+  window.addEventListener('scroll', (evt) => {
+    updateDisplay();
+  });
 
+  updateDisplay();
+  function updateDisplay() {
+    const top = el_target.offset().top;
+    const k = -1 * top;
+    if (0 <= k && k <= scrollWidth) {
+      console.log('[ui_setter.js : updateDisplay : 201]');
+    }
+  }
+};
