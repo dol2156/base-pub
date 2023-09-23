@@ -185,7 +185,11 @@ const initWheelDownHScrollWrap = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
   const el_inner = el_target.querySelector(`:scope > .Inner`);
-  const { scrollWidth } = el_inner;
+  console.dir(el_inner);
+  const { scrollWidth, clientWidth } = el_inner;
+  const scrollRange = scrollWidth - clientWidth;
+  console.log(`scrollRange == `, scrollRange);
+
   el_target.height(scrollWidth);
 
   window.addEventListener('scroll', (evt) => {
@@ -196,8 +200,11 @@ const initWheelDownHScrollWrap = (trigger) => {
   function updateDisplay() {
     const top = el_target.offset().top;
     const k = -1 * top;
-    if (0 <= k && k <= scrollWidth) {
-      console.log('[ui_setter.js : updateDisplay : 201]');
-    }
+    let hScrollPercent = (k / scrollWidth) * 100;
+    if (hScrollPercent <= 0) hScrollPercent = 0;
+    if (100 <= hScrollPercent) hScrollPercent = 100;
+    
+    const hscrollPx = scrollRange * ( hScrollPercent / 100 );
+    el_inner.scrollLeft = hscrollPx;
   }
 };

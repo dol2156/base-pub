@@ -418,14 +418,14 @@ img.LoadingBg {
 }
 
 .WheelDownHScrollWrap {
-  &::-webkit-scrollbar {
-    //display: none;
-  }
-  //-ms-overflow-style: none;
-
   background-color: #ffffd4;
 
   > .Inner {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;

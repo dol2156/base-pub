@@ -2228,10 +2228,14 @@ img.LoadingBg {
   background-color: #ffffd4;
 }
 .WheelDownHScrollWrap > .Inner {
+  -ms-overflow-style: none;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
   gap: 0px;
+}
+.WheelDownHScrollWrap > .Inner::-webkit-scrollbar {
+  display: none;
 }
 
 /*# sourceMappingURL=global.css.map */
