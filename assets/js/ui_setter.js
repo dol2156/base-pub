@@ -185,12 +185,11 @@ const initWheelDownHScrollWrap = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
   const el_inner = el_target.querySelector(`:scope > .Inner`);
-  console.dir(el_inner);
-  const { scrollWidth, clientWidth } = el_inner;
+  const { scrollWidth, clientWidth, clientHeight } = el_inner;
+  const wrapHeight = scrollWidth + clientHeight;
   const scrollRange = scrollWidth - clientWidth;
-  console.log(`scrollRange == `, scrollRange);
 
-  el_target.height(scrollWidth);
+  el_target.height(wrapHeight);
 
   window.addEventListener('scroll', (evt) => {
     updateDisplay();
