@@ -2229,13 +2229,25 @@ img.LoadingBg {
 }
 .WheelDownHScrollWrap > .Inner {
   -ms-overflow-style: none;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   display: flex;
   gap: 0px;
 }
 .WheelDownHScrollWrap > .Inner::-webkit-scrollbar {
   display: none;
+}
+.WheelDownHScrollWrap > .Inner > div {
+  outline: 1px dashed red;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.WheelDownHScrollWrap > .Inner > div.On {
+  background-color: pink;
 }
 
 /*# sourceMappingURL=global.css.map */

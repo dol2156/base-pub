@@ -298,19 +298,20 @@ HTMLElement.prototype.prependHTML = function (newHtml) {
  *
  * @returns {{top: number, left: number}}
  */
-HTMLElement.prototype.offset = function() {
-    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    return { top: this.offsetTop - scrollTop, left: this.offsetLeft - scrollLeft };
-}
+HTMLElement.prototype.offset = function () {
+  var rect = this.getBoundingClientRect();
+  // var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+  // var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  return { top: rect.top, left: rect.left };
+};
 
 /**
  *
  * @returns {{top: number, left: number}}
  */
-HTMLElement.prototype.position = function() {
-    return { top: this.offsetTop, left: this.offsetLeft };
-}
+HTMLElement.prototype.position = function () {
+  return { top: this.offsetTop, left: this.offsetLeft };
+};
 
 /* // 2023-09-13 :: END :: HTMLElement */

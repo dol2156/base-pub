@@ -210,9 +210,8 @@ const initWheelDownHScrollWrap = (trigger) => {
     const scrollRange = scrollWidth - clientWidth;
 
     el_target.height(wrapHeight);
-
-    const top = el_target.offset().top;
-
+    
+    const top = el_target.getBoundingClientRect().top;
     const k = -1 * top;
     el_inner.scrollLeft = k;
   }
