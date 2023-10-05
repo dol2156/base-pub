@@ -300,10 +300,10 @@ HTMLElement.prototype.prependHTML = function (newHtml) {
  */
 HTMLElement.prototype.offset = function () {
   var rect = this.getBoundingClientRect();
-  // var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-  // var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  return { top: rect.top, left: rect.left };
+  return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
 };
 
 /**
