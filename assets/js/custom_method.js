@@ -102,13 +102,10 @@ HTMLElement.prototype.siblings = function (selector) {
   return siblings;
 };
 
-let originalDisplayValues = new Map();
-
 /**
  *
  */
 HTMLElement.prototype.hide = function () {
-  originalDisplayValues.set(this, this.style.display);
   this.style.display = 'none';
 };
 
@@ -116,12 +113,7 @@ HTMLElement.prototype.hide = function () {
  *
  */
 HTMLElement.prototype.show = function () {
-  if (originalDisplayValues.has(this)) {
-    this.style.display = originalDisplayValues.get(this);
-    originalDisplayValues.delete(this);
-  } else {
-    this.style.display = '';
-  }
+  this.style.display = '';
 };
 
 /**
