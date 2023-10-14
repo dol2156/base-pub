@@ -203,6 +203,16 @@
   padding: 0px 1em;
   outline: none;
   background-color: white;
+
+  .ResetBtn {
+    visibility: hidden;
+  }
+  &.HasValue {
+    .ResetBtn {
+      visibility: visible;
+    }
+  }
+
   &.Style1 {
     border: 1px solid var(--form-border-color);
     &.Focus,

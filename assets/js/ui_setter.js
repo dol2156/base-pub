@@ -6,6 +6,7 @@ const initInputUi = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
 
+  // HasValue Control
   const el_inp = el_target.querySelector(`:scope > input`);
 
   el_inp.addEventListener('keyup', (evt) => {
@@ -24,6 +25,20 @@ const initInputUi = (trigger) => {
 
   updateDisplay();
 
+  
+  
+  // ResetBtn Control
+  const el_reset_btn = el_target.querySelector(`.ResetBtn`);
+  if(el_reset_btn){
+    el_reset_btn.addEventListener('click', (evt) => {
+      el_inp.value = '';
+      updateDisplay();
+    });
+  }
+  
+  /**
+   *
+   */
   function updateDisplay() {
     const value = el_inp.value;
 
@@ -33,6 +48,7 @@ const initInputUi = (trigger) => {
       el_target.addClass('HasValue');
     }
   }
+  
 };
 
 /**
