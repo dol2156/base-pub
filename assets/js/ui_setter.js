@@ -25,17 +25,15 @@ const initInputUi = (trigger) => {
 
   updateDisplay();
 
-  
-  
   // ResetBtn Control
   const el_reset_btn = el_target.querySelector(`.ResetBtn`);
-  if(el_reset_btn){
+  if (el_reset_btn) {
     el_reset_btn.addEventListener('click', (evt) => {
       el_inp.value = '';
       updateDisplay();
     });
   }
-  
+
   /**
    *
    */
@@ -48,7 +46,6 @@ const initInputUi = (trigger) => {
       el_target.addClass('HasValue');
     }
   }
-  
 };
 
 /**
@@ -226,7 +223,7 @@ const initWheelDownHScrollWrap = (trigger) => {
     const scrollRange = scrollWidth - clientWidth;
 
     el_target.height(wrapHeight);
-    
+
     const top = el_target.getBoundingClientRect().top;
     const k = -1 * top;
     el_inner.scrollLeft = k;
@@ -243,5 +240,28 @@ const initWheelDownHScrollWrap = (trigger) => {
         el_child.removeClass('On');
       }
     });
+  }
+};
+
+/**
+ * CollapseAbleBox 클래스를 가진 박스를 세로로 접었다 펼쳤다 되도록 셋팅
+ * On 클래스로 컨트롤
+ */
+const initCollapseAbleBox = (trigger) => {
+  if (typeof trigger === 'undefined') return;
+  const el_target = trigger.parentElement;
+
+  const resizeObserver = new ResizeObserver((entries) => {
+    for (let entry of entries) {
+      const { width, height } = entry.contentRect;
+      // console.log('크기가 변경되었습니다:', width, height);
+      updateDisplay();
+    }
+  });
+  resizeObserver.observe(el_target);
+
+  function updateDisplay() {
+    const hei = el_target.scrollHeight;
+    el_target.style.maxHeight = `${hei}px`;
   }
 };

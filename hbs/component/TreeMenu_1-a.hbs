@@ -1,14 +1,22 @@
-<ul class='TreeMenu_1'>
-  {{#LOOP 5}}
-    <li>
-      <div class="Label">{{number}}</div>
-      <ul class="ChildList">
-        {{#LOOP 3}}
-          <li>
-            <div class="Label">{{../number}} - {{number}}</div>
-          </li>
-        {{/LOOP}}
-      </ul>
-    </li>
-  {{/LOOP}}
-</ul>
+<div class='TreeMenu_1'>
+  <ul>
+    {{#LOOP 5}}
+      <li>
+        <div class="Label">{{number}}</div>
+        <div class="ChildList CollapseAbleBox On">
+          <ul>
+            {{#LOOP 3}}
+              <li>
+                <div class="Label">
+                  {{../number}} - {{number}}
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+              </li>
+            {{/LOOP}}
+          </ul>
+          <img onerror="initCollapseAbleBox(this);" src=""/>
+        </div>
+      </li>
+    {{/LOOP}}
+  </ul>
+</div>
