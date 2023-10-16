@@ -246,6 +246,9 @@ const initWheelDownHScrollWrap = (trigger) => {
 /**
  * CollapseAbleBox 클래스를 가진 박스를 세로로 접었다 펼쳤다 되도록 셋팅
  * On 클래스로 컨트롤
+ * <div class="ChildList CollapseAbleBox On">
+ *   <img onerror="initCollapseAbleBox(this);" src=""/>
+ * </div>
  */
 const initCollapseAbleBox = (trigger) => {
   if (typeof trigger === 'undefined') return;
