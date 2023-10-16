@@ -1645,6 +1645,12 @@ strong {
   outline: none;
   background-color: white;
 }
+.InputUi .ResetBtn {
+  visibility: hidden;
+}
+.InputUi.HasValue .ResetBtn {
+  visibility: visible;
+}
 .InputUi.Style1 {
   border: 1px solid var(--form-border-color);
 }
