@@ -1034,6 +1034,13 @@ strong {
 
 .TreeMenu_1 {
   background-color: white;
+  user-select: none;
+}
+.TreeMenu_1 * {
+  position: relative;
+}
+.TreeMenu_1 .Label {
+  cursor: pointer;
 }
 .TreeMenu_1 > ul > li {
   border-bottom: 1px solid #ddd;

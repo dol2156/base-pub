@@ -2,8 +2,11 @@
   <ul>
     {{#LOOP 5}}
       <li>
-        <div class="Label">{{number}}</div>
-        <div class="ChildList CollapseAbleBox On">
+        <div class="Label">
+          {{number}}
+          <img class="z-10 absolute top-1/2 -translate-y-1/2 right-[20px] [.On_&]:-rotate-180" src="/assets/icon/star.svg" alt=""/>
+        </div>
+        <div class="ChildList CollapseAbleBox">
           <ul>
             {{#LOOP 3}}
               <li>
@@ -19,4 +22,5 @@
       </li>
     {{/LOOP}}
   </ul>
+  <img onerror="initTreeMenu(this, true);" src=""/>
 </div>
