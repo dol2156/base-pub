@@ -81,6 +81,18 @@ HTMLElement.prototype.hasClass = function (className) {
 };
 
 /**
+ * 클래스 토글
+ * @param className
+ */
+HTMLElement.prototype.toggleClass = function(className) {
+  if (this.hasClass(className)) {
+    this.removeClass(className);
+  } else {
+    this.addClass(className);
+  }
+};
+
+/**
  * 형제 요소 반환
  * @param selector
  * @returns {*[]}

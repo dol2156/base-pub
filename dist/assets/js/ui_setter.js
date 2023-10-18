@@ -268,3 +268,38 @@ const initCollapseAbleBox = (trigger) => {
     el_target.style.maxHeight = `${hei}px`;
   }
 };
+
+/**
+ *
+ * @param trigger
+ */
+const initTreeMenu = (trigger, close_other=false) => {
+  if (typeof trigger === 'undefined') return;
+  const el_target = trigger.parentElement;
+  const el_list_label = el_target.querySelectorAll(`.Label`);
+  el_list_label.forEach((el_label, idx) => {
+    el_label.addEventListener('click', (evt) => {
+      const ct = evt.currentTarget;
+      const el_li = ct.closest('li');
+      
+      // li Active control
+      const el_list_othger_li = el_li.closest('ul').querySelectorAll(`:scope > li`);
+      el_list_othger_li.forEach((el_other_li, idx) => {
+        if(close_other && el_other_li != el_li) el_other_li.removeClass('On');
+      });
+      
+      el_li.toggleClass('On');
+
+      // ChildList Active control
+      const el_child_list = el_li.querySelector(`.ChildList`);
+      if (!el_child_list) return;
+      
+      const el_list_other_child_list = el_target.querySelectorAll(`.ChildList`);
+      el_list_other_child_list.forEach((el_other_child_list, idx) => {
+        if(close_other && el_child_list != el_other_child_list) el_other_child_list.removeClass('On');
+      });
+      
+      el_child_list.toggleClass('On');
+    });
+  });
+};
