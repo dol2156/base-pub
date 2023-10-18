@@ -254,6 +254,7 @@ const initCollapseAbleBox = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
 
+  // target 크기 변경 감지
   const resizeObserver = new ResizeObserver((entries) => {
     for (let entry of entries) {
       const { width, height } = entry.contentRect;
@@ -282,24 +283,25 @@ const initTreeMenu = (trigger, close_other=false) => {
       const ct = evt.currentTarget;
       const el_li = ct.closest('li');
       
-      // li Active control
-      const el_list_othger_li = el_li.closest('ul').querySelectorAll(`:scope > li`);
+      // Other Deactive
+      const el_list_othger_li = el_li.siblings();
       el_list_othger_li.forEach((el_other_li, idx) => {
-        if(close_other && el_other_li != el_li) el_other_li.removeClass('On');
+        if(close_other){
+          el_other_li.removeClass('On');
+          const el_child_list = el_other_li.querySelectorAll(`:scope > .ChildList`);
+          if(el_child_list){
+            el_child_list.forEach((el_child, idx) => {
+              el_child.removeClass('On');
+            });
+          }
+        }
       });
-      
-      el_li.toggleClass('On');
 
-      // ChildList Active control
+      // target Active
+      el_li.toggleClass('On');
       const el_child_list = el_li.querySelector(`.ChildList`);
-      if (!el_child_list) return;
+      if (el_child_list) el_child_list.toggleClass('On');
       
-      const el_list_other_child_list = el_target.querySelectorAll(`.ChildList`);
-      el_list_other_child_list.forEach((el_other_child_list, idx) => {
-        if(close_other && el_child_list != el_other_child_list) el_other_child_list.removeClass('On');
-      });
-      
-      el_child_list.toggleClass('On');
     });
   });
 };
