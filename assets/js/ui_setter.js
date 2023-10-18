@@ -254,6 +254,7 @@ const initCollapseAbleBox = (trigger) => {
   if (typeof trigger === 'undefined') return;
   const el_target = trigger.parentElement;
 
+  // target 크기 변경 감지
   const resizeObserver = new ResizeObserver((entries) => {
     for (let entry of entries) {
       const { width, height } = entry.contentRect;
