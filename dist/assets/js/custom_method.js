@@ -82,14 +82,14 @@ HTMLElement.prototype.hasClass = function (className) {
 
 /**
  * 클래스 토글
- * @param className
+ * @param classNames
  */
-HTMLElement.prototype.toggleClass = function(className) {
-  if (this.hasClass(className)) {
-    this.removeClass(className);
-  } else {
-    this.addClass(className);
+HTMLElement.prototype.toggleClass = function(classNames) {
+  var classes = classNames.split(' ');
+  for (var i = 0; i < classes.length; i++) {
+    this.classList.toggle(classes[i]);
   }
+  return this;
 };
 
 /**
