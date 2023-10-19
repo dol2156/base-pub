@@ -74,6 +74,10 @@
         
         const el_current = document.querySelector('#_BannerSwiper-{{id}}-PagenationFraction > .current');
         el_current.textContent = swiper.realIndex + 1;
+        
+        const el_swiper = swiper.el;
+        el_swiper.setAttribute('data-current-number', swiper.realIndex + 1);
+        el_swiper.setAttribute('data-total-length', real_length);
       };
       
       let swiper = new Swiper('#_BannerSwiper-{{id}}', swiper_option);
